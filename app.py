@@ -46,6 +46,7 @@ def home():
             amazon_results = amazon_search(search_term)
             results.extend({**result, "store": "Amazon"} for result in amazon_results)
         except Exception as error:
+            print("AMAZON ERROR:", repr(error))
             if "No visible relevant Amazon product was found." in str(error):
                 amazon_status = "No matching Amazon products found"
             else:
@@ -68,4 +69,4 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False,use_reloader=False)
