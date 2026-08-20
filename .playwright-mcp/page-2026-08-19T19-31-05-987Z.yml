@@ -1,0 +1,959 @@
+- generic [ref=e3]:
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /
+        - img "Flipkart" [ref=e11]
+      - link "Explore Plus" [ref=e12] [cursor=pointer]:
+        - /url: /plus
+    - generic [ref=e16]:
+      - textbox "Search for products, brands and more" [ref=e18]: Nike shoes
+      - button [ref=e19] [cursor=pointer]
+    - generic [ref=e26] [cursor=pointer]:
+      - link "Login" [ref=e28]:
+        - /url: /account/login?ret=/search%3Fq%3DNike%2520shoes
+      - generic [ref=e33]:
+        - button "LOGIN" [ref=e34]
+        - generic [ref=e35]:
+          - generic [ref=e36]: New customer?
+          - generic [ref=e37]: Sign Up
+    - link "Become a Seller" [ref=e39] [cursor=pointer]:
+      - /url: https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect
+    - generic [ref=e41]: More
+    - link "Cart" [ref=e51] [cursor=pointer]:
+      - /url: /viewcart?exploreMode=true&preference=FLIPKART
+  - generic [ref=e59]:
+    - generic [ref=e60] [cursor=pointer]: Electronics
+    - generic [ref=e63] [cursor=pointer]: TVs & Appliances
+    - generic [ref=e66] [cursor=pointer]: Men
+    - generic [ref=e69] [cursor=pointer]: Women
+    - generic [ref=e72] [cursor=pointer]: Baby & Kids
+    - generic [ref=e75] [cursor=pointer]: Home & Furniture
+    - generic [ref=e78] [cursor=pointer]: Sports, Books & More
+    - link "Flights" [ref=e81] [cursor=pointer]:
+      - /url: /travel/flights?otracker=nmenu_Flights
+    - link "Offer Zone" [ref=e82] [cursor=pointer]:
+      - /url: /offers-list/top-deals?screen=dynamic&pk=themeViews%3DDT-OMU-A2%3ADT-OMU~widgetType%3DdealCard~contentType%3Dneo&otracker=nmenu_offer-zone
+  - generic [ref=e83]:
+    - generic [ref=e84]:
+      - generic [ref=e88]:
+        - generic [ref=e89]: Filters
+        - generic [ref=e93]:
+          - generic [ref=e94]: CATEGORIES
+          - generic [ref=e95]:
+            - generic [ref=e96]:
+              - img [ref=e98] [cursor=pointer]
+              - link "Footwear" [ref=e100] [cursor=pointer]:
+                - /url: /footwear/pr?sid=osp&q=Nike+shoes&otracker=categorytree
+            - generic [ref=e101]:
+              - link "Women's Footwear" [ref=e102] [cursor=pointer]:
+                - /url: /footwear/womens-footwear/pr?sid=osp,iko&q=Nike+shoes&otracker=categorytree
+              - link "Kids' & Infant Footwear" [ref=e103] [cursor=pointer]:
+                - /url: /footwear/kids-infant-footwear/pr?sid=osp,mba&q=Nike+shoes&otracker=categorytree
+              - link "Men's Footwear" [ref=e104] [cursor=pointer]:
+                - /url: /footwear/mens-footwear/pr?sid=osp,cil&q=Nike+shoes&otracker=categorytree
+        - generic [ref=e105]: Gender
+        - generic [ref=e110]:
+          - generic [ref=e111] [cursor=pointer]: Color
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - generic "Beige" [ref=e117] [cursor=pointer]
+              - generic "Black" [ref=e122] [cursor=pointer]
+              - generic "Blue" [ref=e127] [cursor=pointer]
+              - generic "Brown" [ref=e132] [cursor=pointer]
+              - generic "Dark Blue" [ref=e137] [cursor=pointer]
+              - generic "Gold" [ref=e142] [cursor=pointer]
+            - generic [ref=e147] [cursor=pointer]: 17 MORE
+        - generic [ref=e148]: Size
+        - generic [ref=e153]:
+          - generic [ref=e154]: Price
+          - generic [ref=e165]:
+            - generic [ref=e166] [cursor=pointer]
+            - generic [ref=e173]:
+              - generic [ref=e174]: .
+              - generic [ref=e175]: .
+              - generic [ref=e176]: .
+              - generic [ref=e177]: .
+              - generic [ref=e178]: .
+              - generic [ref=e179]: .
+              - generic [ref=e180]: .
+              - generic: .
+          - generic [ref=e181]:
+            - combobox [ref=e183]:
+              - option "Min" [selected]
+              - option "₹500"
+              - option "₹500"
+              - option "₹1000"
+              - option "₹1500"
+              - option "₹2000"
+              - option "₹3000"
+            - generic [ref=e184]: to
+            - combobox [ref=e186]:
+              - option "₹500"
+              - option "₹500"
+              - option "₹1000"
+              - option "₹1500"
+              - option "₹2000"
+              - option "₹3000"
+              - option "₹3000+" [selected]
+        - generic [ref=e187]:
+          - generic [ref=e188] [cursor=pointer]: Discount
+          - generic [ref=e193]:
+            - generic "30% or more" [ref=e194] [cursor=pointer]
+            - generic "40% or more" [ref=e199] [cursor=pointer]
+            - generic "50% or more" [ref=e204] [cursor=pointer]
+            - generic "60% or more" [ref=e209] [cursor=pointer]
+            - generic "70% or more" [ref=e214] [cursor=pointer]
+        - generic [ref=e219]:
+          - generic [ref=e220] [cursor=pointer]: Customer Ratings
+          - generic [ref=e225]:
+            - generic "4★ & above" [ref=e226] [cursor=pointer]
+            - generic "3★ & above" [ref=e231] [cursor=pointer]
+        - generic [ref=e236]:
+          - generic [ref=e237] [cursor=pointer]
+          - generic [ref=e242]: "?"
+        - generic [ref=e244]:
+          - generic [ref=e245] [cursor=pointer]: Brand
+          - generic [ref=e249]:
+            - generic [ref=e250]:
+              - textbox "Search Brand" [ref=e256]
+              - generic "ANZA" [ref=e257] [cursor=pointer]
+              - generic "Apni Dukan" [ref=e262] [cursor=pointer]
+              - generic "Attire&Aroma" [ref=e267] [cursor=pointer]
+              - generic "BUCKAROO" [ref=e272] [cursor=pointer]
+              - generic "BalanSole" [ref=e277] [cursor=pointer]
+              - generic "Elektriglow" [ref=e282] [cursor=pointer]
+            - generic [ref=e287] [cursor=pointer]: 30 MORE
+        - generic [ref=e288]:
+          - generic [ref=e289] [cursor=pointer]: Offers
+          - generic [ref=e294]:
+            - generic "Special Price" [ref=e295] [cursor=pointer]
+            - generic "Buy More, Save More" [ref=e300] [cursor=pointer]
+        - generic [ref=e305]: Age Group
+        - generic [ref=e310]: New Arrivals
+        - generic [ref=e315]: Availability
+      - generic [ref=e320]:
+        - generic [ref=e323]:
+          - generic [ref=e324]:
+            - link "Home" [ref=e326] [cursor=pointer]:
+              - /url: /
+            - link "Footwear" [ref=e330] [cursor=pointer]:
+              - /url: /footwear/pr?sid=osp&marketplace=FLIPKART
+          - generic [ref=e331]: Showing 1 – 40 of 1,400 results for "Nike shoes"
+          - generic [ref=e332]:
+            - generic [ref=e333]: Sort By
+            - generic [ref=e334]: Relevance
+            - generic [ref=e335] [cursor=pointer]: Popularity
+            - generic [ref=e336] [cursor=pointer]: Price -- Low to High
+            - generic [ref=e337] [cursor=pointer]: Price -- High to Low
+            - generic [ref=e338] [cursor=pointer]: Newest First
+        - generic [ref=e340]:
+          - generic [ref=e342]:
+            - link [ref=e343] [cursor=pointer]:
+              - /url: /nike-downshifter-14-running-shoes-men/p/itm9ccdcb7f0fe48?pid=SHOHHWZQ4VYGZSBB&lid=LSTSHOHHWZQ4VYGZSBBDCDSAF&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_1&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHWZQ4VYGZSBB.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e352]:
+              - generic [ref=e353]: NIKE
+              - link "DOWNSHIFTER 14 Running Shoes For Men" [ref=e354] [cursor=pointer]:
+                - /url: /nike-downshifter-14-running-shoes-men/p/itm9ccdcb7f0fe48?pid=SHOHHWZQ4VYGZSBB&lid=LSTSHOHHWZQ4VYGZSBBDCDSAF&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_1&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHWZQ4VYGZSBB.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹4,406 ₹4,895 9% off" [ref=e357] [cursor=pointer]:
+                - /url: /nike-downshifter-14-running-shoes-men/p/itm9ccdcb7f0fe48?pid=SHOHHWZQ4VYGZSBB&lid=LSTSHOHHWZQ4VYGZSBBDCDSAF&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_1&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHWZQ4VYGZSBB.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+                - generic [ref=e358]:
+                  - generic [ref=e359]: ₹4,406
+                  - generic [ref=e360]: ₹4,895
+                  - generic [ref=e361]: 9% off
+              - generic [ref=e362]: Only few left
+          - generic [ref=e366]:
+            - link [ref=e367] [cursor=pointer]:
+              - /url: /nike-air-max-alpha-trainer-6-training-gym-shoes-men/p/itm6e30f39a04b4a?pid=SHOHZJ23UNZJZFAE&lid=LSTSHOHZJ23UNZJZFAEWFE8VJ&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_2&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJ23UNZJZFAE.SEARCH&ppt=sp&ppn=sp&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e376]:
+              - generic [ref=e377]: NIKE
+              - link "Air Max Alpha Trainer 6 Training & Gym Shoes For Men" [ref=e378] [cursor=pointer]:
+                - /url: /nike-air-max-alpha-trainer-6-training-gym-shoes-men/p/itm6e30f39a04b4a?pid=SHOHZJ23UNZJZFAE&lid=LSTSHOHZJ23UNZJZFAEWFE8VJ&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_2&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJ23UNZJZFAE.SEARCH&ppt=sp&ppn=sp&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹8,495" [ref=e381] [cursor=pointer]:
+                - /url: /nike-air-max-alpha-trainer-6-training-gym-shoes-men/p/itm6e30f39a04b4a?pid=SHOHZJ23UNZJZFAE&lid=LSTSHOHZJ23UNZJZFAEWFE8VJ&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_2&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJ23UNZJZFAE.SEARCH&ppt=sp&ppn=sp&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e384]: Size 5, 6, 7, 8, 9, 10, 11, 12
+          - generic [ref=e387]:
+            - link [ref=e388] [cursor=pointer]:
+              - /url: /nike-w-journey-run-se-running-shoes-women/p/itmed2597c3dbb00?pid=SHOHHAEEU7SJGBX5&lid=LSTSHOHHAEEU7SJGBX5UJ6J36&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_3&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHAEEU7SJGBX5.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e397]:
+              - generic [ref=e398]: NIKE
+              - link "W JOURNEY RUN SE Running Shoes For Women" [ref=e399] [cursor=pointer]:
+                - /url: /nike-w-journey-run-se-running-shoes-women/p/itmed2597c3dbb00?pid=SHOHHAEEU7SJGBX5&lid=LSTSHOHHAEEU7SJGBX5UJ6J36&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_3&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHAEEU7SJGBX5.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹7,736 ₹8,595 9% off" [ref=e402] [cursor=pointer]:
+                - /url: /nike-w-journey-run-se-running-shoes-women/p/itmed2597c3dbb00?pid=SHOHHAEEU7SJGBX5&lid=LSTSHOHHAEEU7SJGBX5UJ6J36&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_3&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHAEEU7SJGBX5.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+                - generic [ref=e403]:
+                  - generic [ref=e404]: ₹7,736
+                  - generic [ref=e405]: ₹8,595
+                  - generic [ref=e406]: 9% off
+              - generic [ref=e407]: Only few left
+          - generic [ref=e411]:
+            - link [ref=e412] [cursor=pointer]:
+              - /url: /nike-ebernon-low-prem-sneakers-men/p/itma00770cdfd276?pid=SHOHP3SYJGF87BAG&lid=LSTSHOHP3SYJGF87BAGHEGM4T&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_4&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHP3SYJGF87BAG.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e421]:
+              - generic [ref=e422]: NIKE
+              - link "EBERNON LOW PREM Sneakers For Men" [ref=e423] [cursor=pointer]:
+                - /url: /nike-ebernon-low-prem-sneakers-men/p/itma00770cdfd276?pid=SHOHP3SYJGF87BAG&lid=LSTSHOHP3SYJGF87BAGHEGM4T&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_4&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHP3SYJGF87BAG.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹4,995" [ref=e426] [cursor=pointer]:
+                - /url: /nike-ebernon-low-prem-sneakers-men/p/itma00770cdfd276?pid=SHOHP3SYJGF87BAG&lid=LSTSHOHP3SYJGF87BAGHEGM4T&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_4&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHP3SYJGF87BAG.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e429]: Only few left
+        - generic [ref=e433]:
+          - generic [ref=e435]:
+            - link [ref=e436] [cursor=pointer]:
+              - /url: /nike-sb-delta-force-vulc-sneakers-men/p/itm7122b0f5d737e?pid=SHOHHWHZGGTGNYHM&lid=LSTSHOHHWHZGGTGNYHMKRJEPF&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_5&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHWHZGGTGNYHM.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e445]:
+              - generic [ref=e446]: NIKE
+              - link "SB Delta Force Vulc Sneakers For Men" [ref=e447] [cursor=pointer]:
+                - /url: /nike-sb-delta-force-vulc-sneakers-men/p/itm7122b0f5d737e?pid=SHOHHWHZGGTGNYHM&lid=LSTSHOHHWHZGGTGNYHMKRJEPF&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_5&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHWHZGGTGNYHM.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹4,495" [ref=e450] [cursor=pointer]:
+                - /url: /nike-sb-delta-force-vulc-sneakers-men/p/itm7122b0f5d737e?pid=SHOHHWHZGGTGNYHM&lid=LSTSHOHHWHZGGTGNYHMKRJEPF&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_5&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHWHZGGTGNYHM.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e453]: Only few left
+          - generic [ref=e457]:
+            - link [ref=e458] [cursor=pointer]:
+              - /url: /nike-sb-heritage-vulc-sneakers-men/p/itm4f92c6078dd32?pid=SHOGZN85Z9BPHDXJ&lid=LSTSHOGZN85Z9BPHDXJQY0DLU&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_6&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGZN85Z9BPHDXJ.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e467]:
+              - generic [ref=e468]: NIKE
+              - link "SB HERITAGE VULC Sneakers For Men" [ref=e469] [cursor=pointer]:
+                - /url: /nike-sb-heritage-vulc-sneakers-men/p/itm4f92c6078dd32?pid=SHOGZN85Z9BPHDXJ&lid=LSTSHOGZN85Z9BPHDXJQY0DLU&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_6&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGZN85Z9BPHDXJ.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹5,495" [ref=e472] [cursor=pointer]:
+                - /url: /nike-sb-heritage-vulc-sneakers-men/p/itm4f92c6078dd32?pid=SHOGZN85Z9BPHDXJ&lid=LSTSHOGZN85Z9BPHDXJQY0DLU&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_6&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGZN85Z9BPHDXJ.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e475]: Only few left
+          - generic [ref=e479]:
+            - link [ref=e480] [cursor=pointer]:
+              - /url: /nike-run-defy-running-shoes-men/p/itmb6d6fe3a1a5fd?pid=SHOHAVVAQ8H9QZDH&lid=LSTSHOHAVVAQ8H9QZDHRD7OJM&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_7&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHAVVAQ8H9QZDH.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e489]:
+              - generic [ref=e490]: NIKE
+              - link "RUN DEFY Running Shoes For Men" [ref=e491] [cursor=pointer]:
+                - /url: /nike-run-defy-running-shoes-men/p/itmb6d6fe3a1a5fd?pid=SHOHAVVAQ8H9QZDH&lid=LSTSHOHAVVAQ8H9QZDHRD7OJM&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_7&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHAVVAQ8H9QZDH.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹2,797 ₹3,995 29% off" [ref=e494] [cursor=pointer]:
+                - /url: /nike-run-defy-running-shoes-men/p/itmb6d6fe3a1a5fd?pid=SHOHAVVAQ8H9QZDH&lid=LSTSHOHAVVAQ8H9QZDHRD7OJM&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_7&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHAVVAQ8H9QZDH.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+                - generic [ref=e495]:
+                  - generic [ref=e496]: ₹2,797
+                  - generic [ref=e497]: ₹3,995
+                  - generic [ref=e498]: 29% off
+              - generic [ref=e499]: Hot Deal
+          - generic [ref=e503]:
+            - link [ref=e504] [cursor=pointer]:
+              - /url: /nike-revolution-7-sneakers-men/p/itm9c7b913dbc723?pid=SHOHZJFZEC5K8DGQ&lid=LSTSHOHZJFZEC5K8DGQPJQ4LI&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_8&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJFZEC5K8DGQ.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e513]:
+              - generic [ref=e514]: NIKE
+              - link "Revolution 7 Sneakers For Men" [ref=e515] [cursor=pointer]:
+                - /url: /nike-revolution-7-sneakers-men/p/itm9c7b913dbc723?pid=SHOHZJFZEC5K8DGQ&lid=LSTSHOHZJFZEC5K8DGQPJQ4LI&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_8&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJFZEC5K8DGQ.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹3,695" [ref=e518] [cursor=pointer]:
+                - /url: /nike-revolution-7-sneakers-men/p/itm9c7b913dbc723?pid=SHOHZJFZEC5K8DGQ&lid=LSTSHOHZJFZEC5K8DGQPJQ4LI&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_8&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJFZEC5K8DGQ.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e521]: Only few left
+        - generic [ref=e525]:
+          - generic [ref=e527]:
+            - link [ref=e528] [cursor=pointer]:
+              - /url: /nike-jordan-court-connect-low-sneakers-men/p/itm9db2d38dcc154?pid=SHOHZJFGCYQVTXSZ&lid=LSTSHOHZJFGCYQVTXSZLXPR6N&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_9&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJFGCYQVTXSZ.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e537]:
+              - generic [ref=e538]: NIKE
+              - link "Jordan Court Connect Low Sneakers For Men" [ref=e539] [cursor=pointer]:
+                - /url: /nike-jordan-court-connect-low-sneakers-men/p/itm9db2d38dcc154?pid=SHOHZJFGCYQVTXSZ&lid=LSTSHOHZJFGCYQVTXSZLXPR6N&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_9&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJFGCYQVTXSZ.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹7,095" [ref=e542] [cursor=pointer]:
+                - /url: /nike-jordan-court-connect-low-sneakers-men/p/itm9db2d38dcc154?pid=SHOHZJFGCYQVTXSZ&lid=LSTSHOHZJFGCYQVTXSZLXPR6N&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_9&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJFGCYQVTXSZ.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e545]: Only few left
+          - generic [ref=e549]:
+            - link [ref=e550] [cursor=pointer]:
+              - /url: /nike-revolution-7-running-shoes-men/p/itmef3e2099476ea?pid=SHOHFHVUGF2QKNXJ&lid=LSTSHOHFHVUGF2QKNXJZVKQEF&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_10&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHFHVUGF2QKNXJ.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e559]:
+              - generic [ref=e560]: NIKE
+              - link "NIKE REVOLUTION 7 Running Shoes For Men" [ref=e561] [cursor=pointer]:
+                - /url: /nike-revolution-7-running-shoes-men/p/itmef3e2099476ea?pid=SHOHFHVUGF2QKNXJ&lid=LSTSHOHFHVUGF2QKNXJZVKQEF&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_10&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHFHVUGF2QKNXJ.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹3,695" [ref=e564] [cursor=pointer]:
+                - /url: /nike-revolution-7-running-shoes-men/p/itmef3e2099476ea?pid=SHOHFHVUGF2QKNXJ&lid=LSTSHOHFHVUGF2QKNXJZVKQEF&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_10&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHFHVUGF2QKNXJ.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e567]: Only 4 left
+          - generic [ref=e571]:
+            - link [ref=e572] [cursor=pointer]:
+              - /url: /nike-sb-delta-force-vulc-sneakers-men/p/itm5d3ba4c214c7b?pid=SHOHMD8FGSWWJSXH&lid=LSTSHOHMD8FGSWWJSXHWIEZUU&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_11&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHMD8FGSWWJSXH.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e581]:
+              - generic [ref=e582]: NIKE
+              - link "SB Delta Force Vulc Sneakers For Men" [ref=e583] [cursor=pointer]:
+                - /url: /nike-sb-delta-force-vulc-sneakers-men/p/itm5d3ba4c214c7b?pid=SHOHMD8FGSWWJSXH&lid=LSTSHOHMD8FGSWWJSXHWIEZUU&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_11&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHMD8FGSWWJSXH.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹4,495" [ref=e586] [cursor=pointer]:
+                - /url: /nike-sb-delta-force-vulc-sneakers-men/p/itm5d3ba4c214c7b?pid=SHOHMD8FGSWWJSXH&lid=LSTSHOHMD8FGSWWJSXHWIEZUU&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_11&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHMD8FGSWWJSXH.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e589]: Only few left
+          - generic [ref=e593]:
+            - link [ref=e594] [cursor=pointer]:
+              - /url: /nike-mercurial-vapor-17-academy-sneakers-men/p/itm7790f1f193b48?pid=SHOHZEBBZHMCHDHV&lid=LSTSHOHZEBBZHMCHDHVVQ1VRY&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_12&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZEBBZHMCHDHV.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e603]:
+              - generic [ref=e604]: NIKE
+              - link "Mercurial Vapor 17 Academy Sneakers For Men" [ref=e605] [cursor=pointer]:
+                - /url: /nike-mercurial-vapor-17-academy-sneakers-men/p/itm7790f1f193b48?pid=SHOHZEBBZHMCHDHV&lid=LSTSHOHZEBBZHMCHDHVVQ1VRY&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_12&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZEBBZHMCHDHV.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹8,495" [ref=e608] [cursor=pointer]:
+                - /url: /nike-mercurial-vapor-17-academy-sneakers-men/p/itm7790f1f193b48?pid=SHOHZEBBZHMCHDHV&lid=LSTSHOHZEBBZHMCHDHVVQ1VRY&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_12&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZEBBZHMCHDHV.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e611]: Only 3 left
+        - generic [ref=e615]:
+          - generic [ref=e617]:
+            - link [ref=e618] [cursor=pointer]:
+              - /url: /nike-revolution-7-running-shoes-women/p/itma1d2db491e1e3?pid=SHOGVQ8HFGHTCG2Y&lid=LSTSHOGVQ8HFGHTCG2YRR4RA0&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_13&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGVQ8HFGHTCG2Y.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e627]:
+              - generic [ref=e628]: NIKE
+              - link "Revolution 7 Running Shoes For Women" [ref=e629] [cursor=pointer]:
+                - /url: /nike-revolution-7-running-shoes-women/p/itma1d2db491e1e3?pid=SHOGVQ8HFGHTCG2Y&lid=LSTSHOGVQ8HFGHTCG2YRR4RA0&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_13&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGVQ8HFGHTCG2Y.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹3,695" [ref=e632] [cursor=pointer]:
+                - /url: /nike-revolution-7-running-shoes-women/p/itma1d2db491e1e3?pid=SHOGVQ8HFGHTCG2Y&lid=LSTSHOGVQ8HFGHTCG2YRR4RA0&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_13&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGVQ8HFGHTCG2Y.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e635]: Only few left
+          - generic [ref=e639]:
+            - link [ref=e640] [cursor=pointer]:
+              - /url: /nike-revolution-8-running-shoes-men/p/itm40f9dc9291483?pid=SHOHZJ22ZK6GZHVF&lid=LSTSHOHZJ22ZK6GZHVFSQLWWQ&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_14&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJ22ZK6GZHVF.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e649]:
+              - generic [ref=e650]: NIKE
+              - link "Revolution 8 Running Shoes For Men" [ref=e651] [cursor=pointer]:
+                - /url: /nike-revolution-8-running-shoes-men/p/itm40f9dc9291483?pid=SHOHZJ22ZK6GZHVF&lid=LSTSHOHZJ22ZK6GZHVFSQLWWQ&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_14&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJ22ZK6GZHVF.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹4,295" [ref=e654] [cursor=pointer]:
+                - /url: /nike-revolution-8-running-shoes-men/p/itm40f9dc9291483?pid=SHOHZJ22ZK6GZHVF&lid=LSTSHOHZJ22ZK6GZHVFSQLWWQ&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_14&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJ22ZK6GZHVF.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e657]: Only 3 left
+          - generic [ref=e661]:
+            - link [ref=e662] [cursor=pointer]:
+              - /url: /nike-court-vision-lo-v2-nbk-sneakers-men/p/itm1432b1428c09c?pid=SHOHHAEFGHJEG2V6&lid=LSTSHOHHAEFGHJEG2V6VFJM8I&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_15&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHAEFGHJEG2V6.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e671]:
+              - generic [ref=e672]: NIKE
+              - link "COURT VISION LO V2 NBK Sneakers For Men" [ref=e673] [cursor=pointer]:
+                - /url: /nike-court-vision-lo-v2-nbk-sneakers-men/p/itm1432b1428c09c?pid=SHOHHAEFGHJEG2V6&lid=LSTSHOHHAEFGHJEG2V6VFJM8I&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_15&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHAEFGHJEG2V6.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹5,846 ₹6,495 9% off" [ref=e676] [cursor=pointer]:
+                - /url: /nike-court-vision-lo-v2-nbk-sneakers-men/p/itm1432b1428c09c?pid=SHOHHAEFGHJEG2V6&lid=LSTSHOHHAEFGHJEG2V6VFJM8I&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_15&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHAEFGHJEG2V6.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+                - generic [ref=e677]:
+                  - generic [ref=e678]: ₹5,846
+                  - generic [ref=e679]: ₹6,495
+                  - generic [ref=e680]: 9% off
+              - generic [ref=e681]: Only few left
+          - generic [ref=e685]:
+            - link [ref=e686] [cursor=pointer]:
+              - /url: /nike-revolution-7-running-shoes-men/p/itm6317b6cd4d67b?pid=SHOGTNT92ZMXWFUA&lid=LSTSHOGTNT92ZMXWFUAMKXJT6&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_16&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGTNT92ZMXWFUA.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e695]:
+              - generic [ref=e696]: NIKE
+              - link "REVOLUTION 7 Running Shoes For Men" [ref=e697] [cursor=pointer]:
+                - /url: /nike-revolution-7-running-shoes-men/p/itm6317b6cd4d67b?pid=SHOGTNT92ZMXWFUA&lid=LSTSHOGTNT92ZMXWFUAMKXJT6&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_16&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGTNT92ZMXWFUA.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹3,326 ₹3,695 9% off" [ref=e700] [cursor=pointer]:
+                - /url: /nike-revolution-7-running-shoes-men/p/itm6317b6cd4d67b?pid=SHOGTNT92ZMXWFUA&lid=LSTSHOGTNT92ZMXWFUAMKXJT6&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_16&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGTNT92ZMXWFUA.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+                - generic [ref=e701]:
+                  - generic [ref=e702]: ₹3,326
+                  - generic [ref=e703]: ₹3,695
+                  - generic [ref=e704]: 9% off
+              - generic [ref=e705]: Only 5 left
+        - generic [ref=e709]:
+          - generic [ref=e711]:
+            - link [ref=e712] [cursor=pointer]:
+              - /url: /nike-jordan-trunner-flow-sneakers-men/p/itm74a1fca5aeefb?pid=SHOHHWHZC66B79R2&lid=LSTSHOHHWHZC66B79R2UISYOL&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_17&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHWHZC66B79R2.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e721]:
+              - generic [ref=e722]: NIKE
+              - link "JORDAN TRUNNER FLOW Sneakers For Men" [ref=e723] [cursor=pointer]:
+                - /url: /nike-jordan-trunner-flow-sneakers-men/p/itm74a1fca5aeefb?pid=SHOHHWHZC66B79R2&lid=LSTSHOHHWHZC66B79R2UISYOL&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_17&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHWHZC66B79R2.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹6,386 ₹7,095 9% off" [ref=e726] [cursor=pointer]:
+                - /url: /nike-jordan-trunner-flow-sneakers-men/p/itm74a1fca5aeefb?pid=SHOHHWHZC66B79R2&lid=LSTSHOHHWHZC66B79R2UISYOL&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_17&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHWHZC66B79R2.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+                - generic [ref=e727]:
+                  - generic [ref=e728]: ₹6,386
+                  - generic [ref=e729]: ₹7,095
+                  - generic [ref=e730]: 9% off
+              - generic [ref=e731]: Only few left
+          - generic [ref=e735]:
+            - link [ref=e736] [cursor=pointer]:
+              - /url: /nike-revolution-7-sneakers-men/p/itmde64328b56d10?pid=SHOHZJFVHGM2GHSZ&lid=LSTSHOHZJFVHGM2GHSZUGYCFU&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_18&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJFVHGM2GHSZ.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e745]:
+              - generic [ref=e746]: NIKE
+              - link "Revolution 7 Sneakers For Men" [ref=e747] [cursor=pointer]:
+                - /url: /nike-revolution-7-sneakers-men/p/itmde64328b56d10?pid=SHOHZJFVHGM2GHSZ&lid=LSTSHOHZJFVHGM2GHSZUGYCFU&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_18&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJFVHGM2GHSZ.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹3,695" [ref=e750] [cursor=pointer]:
+                - /url: /nike-revolution-7-sneakers-men/p/itmde64328b56d10?pid=SHOHZJFVHGM2GHSZ&lid=LSTSHOHZJFVHGM2GHSZUGYCFU&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_18&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJFVHGM2GHSZ.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e753]: Only few left
+          - generic [ref=e757]:
+            - link [ref=e758] [cursor=pointer]:
+              - /url: /nike-run-defy-running-shoes-men/p/itmc1ecc25229bb4?pid=SHOHG6YWEQHFYHGE&lid=LSTSHOHG6YWEQHFYHGEAF7WCF&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_19&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHG6YWEQHFYHGE.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e767]:
+              - generic [ref=e768]: NIKE
+              - link "RUN DEFY Running Shoes For Men" [ref=e769] [cursor=pointer]:
+                - /url: /nike-run-defy-running-shoes-men/p/itmc1ecc25229bb4?pid=SHOHG6YWEQHFYHGE&lid=LSTSHOHG6YWEQHFYHGEAF7WCF&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_19&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHG6YWEQHFYHGE.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹3,596 ₹3,995 9% off" [ref=e772] [cursor=pointer]:
+                - /url: /nike-run-defy-running-shoes-men/p/itmc1ecc25229bb4?pid=SHOHG6YWEQHFYHGE&lid=LSTSHOHG6YWEQHFYHGEAF7WCF&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_19&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHG6YWEQHFYHGE.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+                - generic [ref=e773]:
+                  - generic [ref=e774]: ₹3,596
+                  - generic [ref=e775]: ₹3,995
+                  - generic [ref=e776]: 9% off
+              - generic [ref=e777]: Only few left
+          - generic [ref=e781]:
+            - link [ref=e782] [cursor=pointer]:
+              - /url: /nike-downshifter-14-running-shoes-men/p/itm53a0a33e4fc64?pid=SHOHHAEFUYWE2PVZ&lid=LSTSHOHHAEFUYWE2PVZUGKD2G&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_20&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHAEFUYWE2PVZ.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e791]:
+              - generic [ref=e792]: NIKE
+              - link "DOWNSHIFTER 14 Running Shoes For Men" [ref=e793] [cursor=pointer]:
+                - /url: /nike-downshifter-14-running-shoes-men/p/itm53a0a33e4fc64?pid=SHOHHAEFUYWE2PVZ&lid=LSTSHOHHAEFUYWE2PVZUGKD2G&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_20&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHAEFUYWE2PVZ.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹4,406 ₹4,895 9% off" [ref=e796] [cursor=pointer]:
+                - /url: /nike-downshifter-14-running-shoes-men/p/itm53a0a33e4fc64?pid=SHOHHAEFUYWE2PVZ&lid=LSTSHOHHAEFUYWE2PVZUGKD2G&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_20&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHAEFUYWE2PVZ.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+                - generic [ref=e797]:
+                  - generic [ref=e798]: ₹4,406
+                  - generic [ref=e799]: ₹4,895
+                  - generic [ref=e800]: 9% off
+              - generic [ref=e801]: Only few left
+        - generic [ref=e805]:
+          - generic [ref=e807]:
+            - link [ref=e808] [cursor=pointer]:
+              - /url: /nike-w-downshifter-13-running-shoes-women/p/itm79563c952e772?pid=SHOHD2VWVYJ5XJAS&lid=LSTSHOHD2VWVYJ5XJAS1JDMHH&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_21&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHD2VWVYJ5XJAS.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e817]:
+              - generic [ref=e818]: NIKE
+              - link "W DOWNSHIFTER 13 Running Shoes For Women" [ref=e819] [cursor=pointer]:
+                - /url: /nike-w-downshifter-13-running-shoes-women/p/itm79563c952e772?pid=SHOHD2VWVYJ5XJAS&lid=LSTSHOHD2VWVYJ5XJAS1JDMHH&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_21&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHD2VWVYJ5XJAS.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹4,295" [ref=e822] [cursor=pointer]:
+                - /url: /nike-w-downshifter-13-running-shoes-women/p/itm79563c952e772?pid=SHOHD2VWVYJ5XJAS&lid=LSTSHOHD2VWVYJ5XJAS1JDMHH&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_21&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHD2VWVYJ5XJAS.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e825]: Only 5 left
+          - generic [ref=e829]:
+            - link [ref=e830] [cursor=pointer]:
+              - /url: /nike-precision-vii-basketball-shoes-men/p/itm32320e1b85faf?pid=SHOH4E6UFVJ6M8NA&lid=LSTSHOH4E6UFVJ6M8NAZKJQEA&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_22&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOH4E6UFVJ6M8NA.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e839]:
+              - generic [ref=e840]: NIKE
+              - link "PRECISION VII Basketball Shoes For Men" [ref=e841] [cursor=pointer]:
+                - /url: /nike-precision-vii-basketball-shoes-men/p/itm32320e1b85faf?pid=SHOH4E6UFVJ6M8NA&lid=LSTSHOH4E6UFVJ6M8NAZKJQEA&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_22&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOH4E6UFVJ6M8NA.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹5,126 ₹5,695 9% off" [ref=e844] [cursor=pointer]:
+                - /url: /nike-precision-vii-basketball-shoes-men/p/itm32320e1b85faf?pid=SHOH4E6UFVJ6M8NA&lid=LSTSHOH4E6UFVJ6M8NAZKJQEA&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_22&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOH4E6UFVJ6M8NA.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+                - generic [ref=e845]:
+                  - generic [ref=e846]: ₹5,126
+                  - generic [ref=e847]: ₹5,695
+                  - generic [ref=e848]: 9% off
+              - generic [ref=e849]: Only 5 left
+          - generic [ref=e853]:
+            - link [ref=e854] [cursor=pointer]:
+              - /url: /nike-downshifter-14-running-shoes-men/p/itm74b85a7c4c47c?pid=SHOHGMJNHTQ8KZRK&lid=LSTSHOHGMJNHTQ8KZRKTUHPIV&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_23&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHGMJNHTQ8KZRK.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e863]:
+              - generic [ref=e864]: NIKE
+              - link "DOWNSHIFTER 14 Running Shoes For Men" [ref=e865] [cursor=pointer]:
+                - /url: /nike-downshifter-14-running-shoes-men/p/itm74b85a7c4c47c?pid=SHOHGMJNHTQ8KZRK&lid=LSTSHOHGMJNHTQ8KZRKTUHPIV&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_23&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHGMJNHTQ8KZRK.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹4,895" [ref=e868] [cursor=pointer]:
+                - /url: /nike-downshifter-14-running-shoes-men/p/itm74b85a7c4c47c?pid=SHOHGMJNHTQ8KZRK&lid=LSTSHOHGMJNHTQ8KZRKTUHPIV&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_23&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHGMJNHTQ8KZRK.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e871]: Only few left
+          - generic [ref=e875]:
+            - link [ref=e876] [cursor=pointer]:
+              - /url: /nike-air-max-alpha-trainer-5-sneakers-men/p/itme70d04ab33e4b?pid=SHOGWKBFZT7Y5M5V&lid=LSTSHOGWKBFZT7Y5M5VCS0SRV&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_24&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGWKBFZT7Y5M5V.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e885]:
+              - generic [ref=e886]: NIKE
+              - link "AIR MAX ALPHA TRAINER 5 Sneakers For Men" [ref=e887] [cursor=pointer]:
+                - /url: /nike-air-max-alpha-trainer-5-sneakers-men/p/itme70d04ab33e4b?pid=SHOGWKBFZT7Y5M5V&lid=LSTSHOGWKBFZT7Y5M5VCS0SRV&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_24&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGWKBFZT7Y5M5V.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹7,495" [ref=e890] [cursor=pointer]:
+                - /url: /nike-air-max-alpha-trainer-5-sneakers-men/p/itme70d04ab33e4b?pid=SHOGWKBFZT7Y5M5V&lid=LSTSHOGWKBFZT7Y5M5VCS0SRV&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_24&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGWKBFZT7Y5M5V.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e893]: Only few left
+        - generic [ref=e897]:
+          - generic [ref=e899]:
+            - link [ref=e900] [cursor=pointer]:
+              - /url: /nike-air-max-alpha-trainer-5-sneakers-men/p/itm86f1d076eb68e?pid=SHOGTHZ2M6NTPXCH&lid=LSTSHOGTHZ2M6NTPXCHP74BWU&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_25&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGTHZ2M6NTPXCH.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e909]:
+              - generic [ref=e910]: NIKE
+              - link "AIR MAX ALPHA TRAINER 5 Sneakers For Men" [ref=e911] [cursor=pointer]:
+                - /url: /nike-air-max-alpha-trainer-5-sneakers-men/p/itm86f1d076eb68e?pid=SHOGTHZ2M6NTPXCH&lid=LSTSHOGTHZ2M6NTPXCHP74BWU&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_25&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGTHZ2M6NTPXCH.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹7,495" [ref=e914] [cursor=pointer]:
+                - /url: /nike-air-max-alpha-trainer-5-sneakers-men/p/itm86f1d076eb68e?pid=SHOGTHZ2M6NTPXCH&lid=LSTSHOGTHZ2M6NTPXCHP74BWU&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_25&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGTHZ2M6NTPXCH.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e917]: Only few left
+          - generic [ref=e921]:
+            - link [ref=e922] [cursor=pointer]:
+              - /url: /nike-court-vision-lo-nn-sneakers-men/p/itmde6fa6fc67661?pid=SHOGGHYV5B3GHSZK&lid=LSTSHOGGHYV5B3GHSZKVCUDEZ&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_26&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGGHYV5B3GHSZK.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e931]:
+              - generic [ref=e932]: NIKE
+              - link "COURT VISION LO NN Sneakers For Men" [ref=e933] [cursor=pointer]:
+                - /url: /nike-court-vision-lo-nn-sneakers-men/p/itmde6fa6fc67661?pid=SHOGGHYV5B3GHSZK&lid=LSTSHOGGHYV5B3GHSZKVCUDEZ&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_26&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGGHYV5B3GHSZK.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹4,995" [ref=e936] [cursor=pointer]:
+                - /url: /nike-court-vision-lo-nn-sneakers-men/p/itmde6fa6fc67661?pid=SHOGGHYV5B3GHSZK&lid=LSTSHOGGHYV5B3GHSZKVCUDEZ&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_26&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGGHYV5B3GHSZK.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e939]: Only few left
+          - generic [ref=e943]:
+            - link [ref=e944] [cursor=pointer]:
+              - /url: /nike-precision-8-low-basketball-shoes-men/p/itmd8924c093401b?pid=SHOHHAEFXMWZMZQT&lid=LSTSHOHHAEFXMWZMZQTWTNFFN&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_27&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHAEFXMWZMZQT.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e953]:
+              - generic [ref=e954]: NIKE
+              - link "PRECISION 8 LOW Basketball Shoes For Men" [ref=e955] [cursor=pointer]:
+                - /url: /nike-precision-8-low-basketball-shoes-men/p/itmd8924c093401b?pid=SHOHHAEFXMWZMZQT&lid=LSTSHOHHAEFXMWZMZQTWTNFFN&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_27&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHAEFXMWZMZQT.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹5,396 ₹5,995 9% off" [ref=e958] [cursor=pointer]:
+                - /url: /nike-precision-8-low-basketball-shoes-men/p/itmd8924c093401b?pid=SHOHHAEFXMWZMZQT&lid=LSTSHOHHAEFXMWZMZQTWTNFFN&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_27&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHAEFXMWZMZQT.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+                - generic [ref=e959]:
+                  - generic [ref=e960]: ₹5,396
+                  - generic [ref=e961]: ₹5,995
+                  - generic [ref=e962]: 9% off
+              - generic [ref=e963]: Only 1 left
+          - generic [ref=e967]:
+            - link [ref=e968] [cursor=pointer]:
+              - /url: /nike-downshifter-14-running-shoes-men/p/itm92fd2d9e3846e?pid=SHOHHAEFNYFJ4MJS&lid=LSTSHOHHAEFNYFJ4MJSNRZUXH&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_28&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHAEFNYFJ4MJS.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e977]:
+              - generic [ref=e978]: NIKE
+              - link "DOWNSHIFTER 14 Running Shoes For Men" [ref=e979] [cursor=pointer]:
+                - /url: /nike-downshifter-14-running-shoes-men/p/itm92fd2d9e3846e?pid=SHOHHAEFNYFJ4MJS&lid=LSTSHOHHAEFNYFJ4MJSNRZUXH&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_28&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHAEFNYFJ4MJS.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹4,406 ₹4,895 9% off" [ref=e982] [cursor=pointer]:
+                - /url: /nike-downshifter-14-running-shoes-men/p/itm92fd2d9e3846e?pid=SHOHHAEFNYFJ4MJS&lid=LSTSHOHHAEFNYFJ4MJSNRZUXH&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_28&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHAEFNYFJ4MJS.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+                - generic [ref=e983]:
+                  - generic [ref=e984]: ₹4,406
+                  - generic [ref=e985]: ₹4,895
+                  - generic [ref=e986]: 9% off
+              - generic [ref=e987]: Only 3 left
+        - generic [ref=e991]:
+          - generic [ref=e993]:
+            - link [ref=e994] [cursor=pointer]:
+              - /url: /nike-sb-heritage-vulc-sneakers-men/p/itm3646e19dc34ba?pid=SHOHCTZT2G9ZEWHW&lid=LSTSHOHCTZT2G9ZEWHWRXJBUW&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_29&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHCTZT2G9ZEWHW.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e1003]:
+              - generic [ref=e1004]: NIKE
+              - link "SB HERITAGE VULC Sneakers For Men" [ref=e1005] [cursor=pointer]:
+                - /url: /nike-sb-heritage-vulc-sneakers-men/p/itm3646e19dc34ba?pid=SHOHCTZT2G9ZEWHW&lid=LSTSHOHCTZT2G9ZEWHWRXJBUW&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_29&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHCTZT2G9ZEWHW.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹5,495" [ref=e1008] [cursor=pointer]:
+                - /url: /nike-sb-heritage-vulc-sneakers-men/p/itm3646e19dc34ba?pid=SHOHCTZT2G9ZEWHW&lid=LSTSHOHCTZT2G9ZEWHWRXJBUW&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_29&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHCTZT2G9ZEWHW.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e1011]: Only few left
+          - generic [ref=e1015]:
+            - link [ref=e1016] [cursor=pointer]:
+              - /url: /nike-m-promina-extra-wide-walking-shoes-men/p/itmf76390a1b8529?pid=SHOHD2VWFX8N8ZDG&lid=LSTSHOHD2VWFX8N8ZDGEMJUAH&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_30&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHD2VWFX8N8ZDG.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e1025]:
+              - generic [ref=e1026]: NIKE
+              - link "M PROMINA EXTRA WIDE Walking Shoes For Men" [ref=e1027] [cursor=pointer]:
+                - /url: /nike-m-promina-extra-wide-walking-shoes-men/p/itmf76390a1b8529?pid=SHOHD2VWFX8N8ZDG&lid=LSTSHOHD2VWFX8N8ZDGEMJUAH&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_30&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHD2VWFX8N8ZDG.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹4,496 ₹4,995 9% off" [ref=e1030] [cursor=pointer]:
+                - /url: /nike-m-promina-extra-wide-walking-shoes-men/p/itmf76390a1b8529?pid=SHOHD2VWFX8N8ZDG&lid=LSTSHOHD2VWFX8N8ZDGEMJUAH&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_30&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHD2VWFX8N8ZDG.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+                - generic [ref=e1031]:
+                  - generic [ref=e1032]: ₹4,496
+                  - generic [ref=e1033]: ₹4,995
+                  - generic [ref=e1034]: 9% off
+              - generic [ref=e1035]: Only 1 left
+          - generic [ref=e1039]:
+            - link [ref=e1040] [cursor=pointer]:
+              - /url: /nike-m-mc-trainer-3-training-gym-shoes-men/p/itm84f173f4f0383?pid=SHOHFPTKMTZ43PQD&lid=LSTSHOHFPTKMTZ43PQDUMDKRC&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_31&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHFPTKMTZ43PQD.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e1049]:
+              - generic [ref=e1050]: NIKE
+              - link "M NIKE MC TRAINER 3 Training & Gym Shoes For Men" [ref=e1051] [cursor=pointer]:
+                - /url: /nike-m-mc-trainer-3-training-gym-shoes-men/p/itm84f173f4f0383?pid=SHOHFPTKMTZ43PQD&lid=LSTSHOHFPTKMTZ43PQDUMDKRC&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_31&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHFPTKMTZ43PQD.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹5,695" [ref=e1054] [cursor=pointer]:
+                - /url: /nike-m-mc-trainer-3-training-gym-shoes-men/p/itm84f173f4f0383?pid=SHOHFPTKMTZ43PQD&lid=LSTSHOHFPTKMTZ43PQDUMDKRC&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_31&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHFPTKMTZ43PQD.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e1057]: Only few left
+          - generic [ref=e1061]:
+            - link [ref=e1062] [cursor=pointer]:
+              - /url: /nike-sb-delta-force-vulc-sneakers-men/p/itm96ebf74170703?pid=SHOHZJFHUJFKP9SC&lid=LSTSHOHZJFHUJFKP9SC6IIWKO&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_32&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJFHUJFKP9SC.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e1071]:
+              - generic [ref=e1072]: NIKE
+              - link "SB Delta Force Vulc Sneakers For Men" [ref=e1073] [cursor=pointer]:
+                - /url: /nike-sb-delta-force-vulc-sneakers-men/p/itm96ebf74170703?pid=SHOHZJFHUJFKP9SC&lid=LSTSHOHZJFHUJFKP9SC6IIWKO&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_32&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJFHUJFKP9SC.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹4,495" [ref=e1076] [cursor=pointer]:
+                - /url: /nike-sb-delta-force-vulc-sneakers-men/p/itm96ebf74170703?pid=SHOHZJFHUJFKP9SC&lid=LSTSHOHZJFHUJFKP9SC6IIWKO&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_32&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJFHUJFKP9SC.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e1079]: Only few left
+        - generic [ref=e1083]:
+          - generic [ref=e1085]:
+            - link [ref=e1086] [cursor=pointer]:
+              - /url: /nike-quest-5-running-shoes-men/p/itm0303930f7b9b5?pid=SHOGRVCTCGHFAHNC&lid=LSTSHOGRVCTCGHFAHNCNNND65&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_33&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGRVCTCGHFAHNC.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e1095]:
+              - generic [ref=e1096]: NIKE
+              - link "QUEST 5 Running Shoes For Men" [ref=e1097] [cursor=pointer]:
+                - /url: /nike-quest-5-running-shoes-men/p/itm0303930f7b9b5?pid=SHOGRVCTCGHFAHNC&lid=LSTSHOGRVCTCGHFAHNCNNND65&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_33&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGRVCTCGHFAHNC.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹5,666 ₹6,295 9% off" [ref=e1100] [cursor=pointer]:
+                - /url: /nike-quest-5-running-shoes-men/p/itm0303930f7b9b5?pid=SHOGRVCTCGHFAHNC&lid=LSTSHOGRVCTCGHFAHNCNNND65&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_33&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGRVCTCGHFAHNC.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+                - generic [ref=e1101]:
+                  - generic [ref=e1102]: ₹5,666
+                  - generic [ref=e1103]: ₹6,295
+                  - generic [ref=e1104]: 9% off
+              - generic [ref=e1105]: Only 1 left
+          - generic [ref=e1109]:
+            - link [ref=e1110] [cursor=pointer]:
+              - /url: /nike-revolution-7-running-shoes-men/p/itm2deb54755755b?pid=SHOHG6ZUYDP6TYHC&lid=LSTSHOHG6ZUYDP6TYHCDKA0DT&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_34&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHG6ZUYDP6TYHC.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e1119]:
+              - generic [ref=e1120]: NIKE
+              - link "REVOLUTION 7 Running Shoes For Men" [ref=e1121] [cursor=pointer]:
+                - /url: /nike-revolution-7-running-shoes-men/p/itm2deb54755755b?pid=SHOHG6ZUYDP6TYHC&lid=LSTSHOHG6ZUYDP6TYHCDKA0DT&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_34&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHG6ZUYDP6TYHC.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹3,326 ₹3,695 9% off" [ref=e1124] [cursor=pointer]:
+                - /url: /nike-revolution-7-running-shoes-men/p/itm2deb54755755b?pid=SHOHG6ZUYDP6TYHC&lid=LSTSHOHG6ZUYDP6TYHCDKA0DT&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_34&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHG6ZUYDP6TYHC.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+                - generic [ref=e1125]:
+                  - generic [ref=e1126]: ₹3,326
+                  - generic [ref=e1127]: ₹3,695
+                  - generic [ref=e1128]: 9% off
+              - generic [ref=e1129]: Only 1 left
+          - generic [ref=e1133]:
+            - link [ref=e1134] [cursor=pointer]:
+              - /url: /nike-run-swift-2-sneakers-men/p/itmd70f5530f15b8?pid=SHOHZJFHF7RMPWQY&lid=LSTSHOHZJFHF7RMPWQYQVPVIP&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_35&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJFHF7RMPWQY.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e1143]:
+              - generic [ref=e1144]: NIKE
+              - link "Run Swift 2 Sneakers For Men" [ref=e1145] [cursor=pointer]:
+                - /url: /nike-run-swift-2-sneakers-men/p/itmd70f5530f15b8?pid=SHOHZJFHF7RMPWQY&lid=LSTSHOHZJFHF7RMPWQYQVPVIP&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_35&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJFHF7RMPWQY.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹5,495" [ref=e1148] [cursor=pointer]:
+                - /url: /nike-run-swift-2-sneakers-men/p/itmd70f5530f15b8?pid=SHOHZJFHF7RMPWQY&lid=LSTSHOHZJFHF7RMPWQYQVPVIP&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_35&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJFHF7RMPWQY.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e1151]: Only few left
+          - generic [ref=e1155]:
+            - link [ref=e1156] [cursor=pointer]:
+              - /url: /nike-sb-delta-force-vulc-sneakers-men/p/itm13b0a7e8a2351?pid=SHOHZJFUYYFU44RY&lid=LSTSHOHZJFUYYFU44RYK7XBVD&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_36&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJFUYYFU44RY.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e1165]:
+              - generic [ref=e1166]: NIKE
+              - link "SB Delta Force Vulc Sneakers For Men" [ref=e1167] [cursor=pointer]:
+                - /url: /nike-sb-delta-force-vulc-sneakers-men/p/itm13b0a7e8a2351?pid=SHOHZJFUYYFU44RY&lid=LSTSHOHZJFUYYFU44RYK7XBVD&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_36&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJFUYYFU44RY.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹4,495" [ref=e1170] [cursor=pointer]:
+                - /url: /nike-sb-delta-force-vulc-sneakers-men/p/itm13b0a7e8a2351?pid=SHOHZJFUYYFU44RY&lid=LSTSHOHZJFUYYFU44RYK7XBVD&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_36&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHZJFUYYFU44RY.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e1173]: Only few left
+        - generic [ref=e1177]:
+          - generic [ref=e1179]:
+            - link [ref=e1180] [cursor=pointer]:
+              - /url: /nike-m-legend-essential-3-nn-training-gym-shoes-men/p/itm01cbd57aef95e?pid=SHOGRZGZFJZFGEHG&lid=LSTSHOGRZGZFJZFGEHGI3O4HA&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_37&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGRZGZFJZFGEHG.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e1189]:
+              - generic [ref=e1190]: NIKE
+              - link "M LEGEND ESSENTIAL 3 NN Training & Gym Shoes For Men" [ref=e1191] [cursor=pointer]:
+                - /url: /nike-m-legend-essential-3-nn-training-gym-shoes-men/p/itm01cbd57aef95e?pid=SHOGRZGZFJZFGEHG&lid=LSTSHOGRZGZFJZFGEHGI3O4HA&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_37&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGRZGZFJZFGEHG.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹4,995" [ref=e1194] [cursor=pointer]:
+                - /url: /nike-m-legend-essential-3-nn-training-gym-shoes-men/p/itm01cbd57aef95e?pid=SHOGRZGZFJZFGEHG&lid=LSTSHOGRZGZFJZFGEHGI3O4HA&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_37&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGRZGZFJZFGEHG.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - generic [ref=e1197]: Only few left
+          - generic [ref=e1201]:
+            - link [ref=e1202] [cursor=pointer]:
+              - /url: /nike-wmns-waffle-debut-sneakers-women/p/itm0befdd07c72d7?pid=SHOHHAEEGUPWZMDG&lid=LSTSHOHHAEEGUPWZMDGMU7NKX&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_38&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHAEEGUPWZMDG.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e1211]:
+              - generic [ref=e1212]: NIKE
+              - link "WMNS WAFFLE DEBUT Sneakers For Women" [ref=e1213] [cursor=pointer]:
+                - /url: /nike-wmns-waffle-debut-sneakers-women/p/itm0befdd07c72d7?pid=SHOHHAEEGUPWZMDG&lid=LSTSHOHHAEEGUPWZMDGMU7NKX&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_38&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHAEEGUPWZMDG.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹5,126 ₹5,695 9% off" [ref=e1216] [cursor=pointer]:
+                - /url: /nike-wmns-waffle-debut-sneakers-women/p/itm0befdd07c72d7?pid=SHOHHAEEGUPWZMDG&lid=LSTSHOHHAEEGUPWZMDGMU7NKX&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_38&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHAEEGUPWZMDG.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+                - generic [ref=e1217]:
+                  - generic [ref=e1218]: ₹5,126
+                  - generic [ref=e1219]: ₹5,695
+                  - generic [ref=e1220]: 9% off
+              - generic [ref=e1221]: Only 1 left
+          - generic [ref=e1225]:
+            - link [ref=e1226] [cursor=pointer]:
+              - /url: /nike-w-promina-sneakers-women/p/itm47046d4c58931?pid=SHOHHXZHJZNXZY5Y&lid=LSTSHOHHXZHJZNXZY5YS7T5YO&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_39&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHXZHJZNXZY5Y.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e1235]:
+              - generic [ref=e1236]: NIKE
+              - link "W PROMINA Sneakers For Women" [ref=e1237] [cursor=pointer]:
+                - /url: /nike-w-promina-sneakers-women/p/itm47046d4c58931?pid=SHOHHXZHJZNXZY5Y&lid=LSTSHOHHXZHJZNXZY5YS7T5YO&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_39&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHXZHJZNXZY5Y.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹4,496 ₹4,995 9% off" [ref=e1240] [cursor=pointer]:
+                - /url: /nike-w-promina-sneakers-women/p/itm47046d4c58931?pid=SHOHHXZHJZNXZY5Y&lid=LSTSHOHHXZHJZNXZY5YS7T5YO&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_39&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOHHXZHJZNXZY5Y.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+                - generic [ref=e1241]:
+                  - generic [ref=e1242]: ₹4,496
+                  - generic [ref=e1243]: ₹4,995
+                  - generic [ref=e1244]: 9% off
+              - generic [ref=e1245]: Only few left
+          - generic [ref=e1249]:
+            - link [ref=e1250] [cursor=pointer]:
+              - /url: /nike-air-max-impact-4-sneakers-men/p/itma4c593713112b?pid=SHOGTHZ5PWGBSFWT&lid=LSTSHOGTHZ5PWGBSFWTM5BNMS&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_40&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGTHZ5PWGBSFWT.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+            - generic [ref=e1259]:
+              - generic [ref=e1260]: NIKE
+              - link "AIR MAX IMPACT 4 Sneakers For Men" [ref=e1261] [cursor=pointer]:
+                - /url: /nike-air-max-impact-4-sneakers-men/p/itma4c593713112b?pid=SHOGTHZ5PWGBSFWT&lid=LSTSHOGTHZ5PWGBSFWTM5BNMS&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_40&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGTHZ5PWGBSFWT.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+              - link "₹5,097 ₹8,495 40% off" [ref=e1264] [cursor=pointer]:
+                - /url: /nike-air-max-impact-4-sneakers-men/p/itma4c593713112b?pid=SHOGTHZ5PWGBSFWT&lid=LSTSHOGTHZ5PWGBSFWTM5BNMS&marketplace=FLIPKART&q=Nike+shoes&store=osp&srno=s_1_40&otracker=search&fm=organic&iid=aa8e8143-d299-48de-bd60-d72b51bb8f84.SHOGTHZ5PWGBSFWT.SEARCH&ppt=None&ppn=None&ssid=bvz79842nk0000001787167864507&qH=881440dd0fe01c89&ov_redirect=true
+                - generic [ref=e1265]:
+                  - generic [ref=e1266]: ₹5,097
+                  - generic [ref=e1267]: ₹8,495
+                  - generic [ref=e1268]: 40% off
+              - generic [ref=e1269]: Only few left
+        - generic [ref=e1274]:
+          - generic [ref=e1275]: Page 1 of 35
+          - navigation [ref=e1276]:
+            - link "1" [ref=e1277] [cursor=pointer]:
+              - /url: /search?q=Nike+shoes&page=1
+            - link "2" [ref=e1278] [cursor=pointer]:
+              - /url: /search?q=Nike+shoes&page=2
+            - link "3" [ref=e1279] [cursor=pointer]:
+              - /url: /search?q=Nike+shoes&page=3
+            - link "4" [ref=e1280] [cursor=pointer]:
+              - /url: /search?q=Nike+shoes&page=4
+            - link "5" [ref=e1281] [cursor=pointer]:
+              - /url: /search?q=Nike+shoes&page=5
+            - link "6" [ref=e1282] [cursor=pointer]:
+              - /url: /search?q=Nike+shoes&page=6
+            - link "7" [ref=e1283] [cursor=pointer]:
+              - /url: /search?q=Nike+shoes&page=7
+            - link "8" [ref=e1284] [cursor=pointer]:
+              - /url: /search?q=Nike+shoes&page=8
+            - link "9" [ref=e1285] [cursor=pointer]:
+              - /url: /search?q=Nike+shoes&page=9
+            - link "10" [ref=e1286] [cursor=pointer]:
+              - /url: /search?q=Nike+shoes&page=10
+            - link "Next" [ref=e1287] [cursor=pointer]:
+              - /url: /search?q=Nike+shoes&page=2
+        - generic [ref=e1289]:
+          - text: Did you find what you were looking for?
+          - generic [ref=e1290]:
+            - generic [ref=e1291] [cursor=pointer]: "Yes"
+            - generic [ref=e1292] [cursor=pointer]: "No"
+    - generic [ref=e1294]:
+      - generic [ref=e1295]: Reviews for Popular Footwear
+      - generic [ref=e1296]:
+        - generic [ref=e1297]:
+          - generic [ref=e1299]:
+            - img "NIKE M LEGEND ESSENTIAL 3 NN Training & Gym Shoes For Men"
+          - generic [ref=e1300]:
+            - link "1. NIKE M LEGEND ESSENTIAL 3 N... 4 7,298 Ratings&463 Reviews ₹4,995" [ref=e1301] [cursor=pointer]:
+              - /url: /nike-m-legend-essential-3-nn-training-gym-shoes-men/p/itm01cbd57aef95e?pid=SHOGRZGZFJZFGEHG&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1302]: 1. NIKE M LEGEND ESSENTIAL 3 N...
+              - generic [ref=e1304]:
+                - generic [ref=e1305]: "4"
+                - generic [ref=e1307]:
+                  - text: 7,298 Ratings
+                  - generic [ref=e1308]: "&463 Reviews"
+              - generic [ref=e1309]: ₹4,995
+            - list [ref=e1312]:
+              - listitem [ref=e1313]: "Colour: Black"
+              - listitem [ref=e1314]: 1 inch Heel Height
+              - listitem [ref=e1315]: "Outer Material: Mesh"
+        - generic [ref=e1316]:
+          - generic [ref=e1317]: Most Helpful Review
+          - generic [ref=e1319]:
+            - generic [ref=e1320]:
+              - generic [ref=e1321]: "5"
+              - paragraph [ref=e1323]: Super!
+            - generic [ref=e1324]: perfect shoes for gym.can use for treadmill.use while strength training.use while doing crossfit. comfortable and look good too
+            - generic [ref=e1329]:
+              - paragraph [ref=e1330]: Sanket Kambli
+              - paragraph [ref=e1335]: Certified Buyer
+              - paragraph [ref=e1336]: Nov, 2023
+        - generic [ref=e1337]:
+          - generic [ref=e1338]: Recent Review
+          - generic [ref=e1340]:
+            - generic [ref=e1341]:
+              - generic [ref=e1342]: "3"
+              - paragraph [ref=e1344]: Fair
+            - generic [ref=e1345]: Quality not good as expected
+            - generic [ref=e1350]:
+              - paragraph [ref=e1351]: Prajwal Karmore
+              - paragraph [ref=e1356]: Certified Buyer
+              - paragraph [ref=e1357]: 2 days ago
+      - generic [ref=e1358]:
+        - generic [ref=e1359]:
+          - generic [ref=e1361]:
+            - img "NIKE SB Delta Force Vulc Sneakers For Men"
+          - generic [ref=e1362]:
+            - link "2. NIKE SB Delta Force Vulc Sn... 4.3 24 Ratings&4 Reviews ₹4,495" [ref=e1363] [cursor=pointer]:
+              - /url: /nike-sb-delta-force-vulc-sneakers-men/p/itm96ebf74170703?pid=SHOHZJFHUJFKP9SC&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1364]: 2. NIKE SB Delta Force Vulc Sn...
+              - generic [ref=e1366]:
+                - generic [ref=e1367]: "4.3"
+                - generic [ref=e1369]:
+                  - text: 24 Ratings
+                  - generic [ref=e1370]: "&4 Reviews"
+              - generic [ref=e1371]: ₹4,495
+            - list [ref=e1374]:
+              - listitem [ref=e1375]: "Colour: Green"
+              - listitem [ref=e1376]: 1 inch Heel Height
+              - listitem [ref=e1377]: "Outer Material: Leather"
+        - generic [ref=e1378]:
+          - generic [ref=e1379]: Most Helpful Review
+          - generic [ref=e1381]:
+            - generic [ref=e1382]:
+              - generic [ref=e1383]: "5"
+              - paragraph [ref=e1385]: Wonderful
+            - generic [ref=e1386]: superb quality 👍
+            - generic [ref=e1391]:
+              - paragraph [ref=e1392]: Hitesh Hedamba
+              - paragraph [ref=e1397]: Certified Buyer
+              - paragraph [ref=e1398]: 12 days ago
+        - generic [ref=e1399]:
+          - generic [ref=e1400]: Recent Review
+          - generic [ref=e1402]:
+            - generic [ref=e1403]:
+              - generic [ref=e1404]: "5"
+              - paragraph [ref=e1406]: Excellent
+            - generic [ref=e1407]: Superb and sporty
+            - generic [ref=e1412]:
+              - paragraph [ref=e1413]: Sandeep UM
+              - paragraph [ref=e1418]: Certified Buyer
+              - paragraph [ref=e1419]: 9 days ago
+      - generic [ref=e1420]:
+        - generic [ref=e1421]:
+          - generic [ref=e1423]:
+            - img "NIKE M NIKE MC TRAINER 3 Training & Gym Shoes For Men"
+          - generic [ref=e1424]:
+            - link "3. NIKE M NIKE MC TRAINER 3 Tr... 4.2 436 Ratings&27 Reviews ₹5,695" [ref=e1425] [cursor=pointer]:
+              - /url: /nike-m-mc-trainer-3-training-gym-shoes-men/p/itm84f173f4f0383?pid=SHOHFPTKMTZ43PQD&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1426]: 3. NIKE M NIKE MC TRAINER 3 Tr...
+              - generic [ref=e1428]:
+                - generic [ref=e1429]: "4.2"
+                - generic [ref=e1431]:
+                  - text: 436 Ratings
+                  - generic [ref=e1432]: "&27 Reviews"
+              - generic [ref=e1433]: ₹5,695
+            - list [ref=e1436]:
+              - listitem [ref=e1437]: "Colour: Black"
+              - listitem [ref=e1438]: 1 inch Heel Height
+              - listitem [ref=e1439]: "Outer Material: Mesh"
+        - generic [ref=e1440]:
+          - generic [ref=e1441]: Most Helpful Review
+          - generic [ref=e1443]:
+            - generic [ref=e1444]:
+              - generic [ref=e1445]: "5"
+              - paragraph [ref=e1447]: Terrific purchase
+            - generic [ref=e1448]: No doubt NIKE is the best ever. Comfort is 10/10
+            - generic [ref=e1453]:
+              - paragraph [ref=e1454]: AMIYA BHOWMIK
+              - paragraph [ref=e1459]: Certified Buyer
+              - paragraph [ref=e1460]: Nov, 2024
+        - generic [ref=e1461]:
+          - generic [ref=e1462]: Recent Review
+          - generic [ref=e1464]:
+            - generic [ref=e1465]:
+              - generic [ref=e1466]: "4"
+              - paragraph [ref=e1468]: Very Good
+            - generic [ref=e1469]: A little uncomfortable due to support below, laces.
+            - generic [ref=e1474]:
+              - paragraph [ref=e1475]: Vineet Mishra
+              - paragraph [ref=e1480]: Certified Buyer
+              - paragraph [ref=e1481]: 8 days ago
+      - generic [ref=e1482]:
+        - generic [ref=e1483]:
+          - generic [ref=e1485]:
+            - img "NIKE PRECISION VII Basketball Shoes For Men"
+          - generic [ref=e1486]:
+            - link "4. NIKE PRECISION VII Basketba... 4.3 1,642 Ratings&134 Reviews ₹5,126 9% off" [ref=e1487] [cursor=pointer]:
+              - /url: /nike-precision-vii-basketball-shoes-men/p/itm32320e1b85faf?pid=SHOH4E6UFVJ6M8NA&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1488]: 4. NIKE PRECISION VII Basketba...
+              - generic [ref=e1490]:
+                - generic [ref=e1491]: "4.3"
+                - generic [ref=e1493]:
+                  - text: 1,642 Ratings
+                  - generic [ref=e1494]: "&134 Reviews"
+              - generic [ref=e1496]:
+                - generic [ref=e1497]: ₹5,126
+                - generic [ref=e1498]: 9% off
+            - list [ref=e1499]:
+              - listitem [ref=e1500]: "Colour: Black"
+              - listitem [ref=e1501]: 1 inch Heel Height
+              - listitem [ref=e1502]: "Outer Material: Textile"
+        - generic [ref=e1503]:
+          - generic [ref=e1504]: Most Helpful Review
+          - generic [ref=e1506]:
+            - generic [ref=e1507]:
+              - generic [ref=e1508]: "5"
+              - paragraph [ref=e1510]: Must buy!
+            - generic [ref=e1511]: Shoes colour and brand good 💯.....Size uncomfortable little .... it's ok try cheyavchu
+            - generic [ref=e1516]:
+              - paragraph [ref=e1517]: K R Ram
+              - paragraph [ref=e1522]: Certified Buyer
+              - paragraph [ref=e1523]: Jul, 2024
+        - generic [ref=e1524]:
+          - generic [ref=e1525]: Recent Review
+          - generic [ref=e1527]:
+            - generic [ref=e1528]:
+              - generic [ref=e1529]: "5"
+              - paragraph [ref=e1531]: Brilliant
+            - generic [ref=e1532]: The color, quality is very good, but the grip is a bit sticking out to the sides. It offers a great arch support for ppl with flat foot
+            - generic [ref=e1537]:
+              - paragraph [ref=e1538]: parthasarathy mani
+              - paragraph [ref=e1543]: Certified Buyer
+              - paragraph [ref=e1544]: 8 days ago
+      - generic [ref=e1545]:
+        - generic [ref=e1546]:
+          - generic [ref=e1548]:
+            - img "NIKE SB Delta Force Vulc Sneakers For Men"
+          - generic [ref=e1549]:
+            - link "5. NIKE SB Delta Force Vulc Sn... 4.2 38 Ratings&8 Reviews ₹4,495" [ref=e1550] [cursor=pointer]:
+              - /url: /nike-sb-delta-force-vulc-sneakers-men/p/itm13b0a7e8a2351?pid=SHOHZJFUYYFU44RY&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1551]: 5. NIKE SB Delta Force Vulc Sn...
+              - generic [ref=e1553]:
+                - generic [ref=e1554]: "4.2"
+                - generic [ref=e1556]:
+                  - text: 38 Ratings
+                  - generic [ref=e1557]: "&8 Reviews"
+              - generic [ref=e1558]: ₹4,495
+            - list [ref=e1561]:
+              - listitem [ref=e1562]: "Colour: White"
+              - listitem [ref=e1563]: 1 inch Heel Height
+              - listitem [ref=e1564]: "Outer Material: Leather"
+        - generic [ref=e1565]:
+          - generic [ref=e1566]: Most Helpful Review
+          - generic [ref=e1568]:
+            - generic [ref=e1569]:
+              - generic [ref=e1570]: "3"
+              - paragraph [ref=e1572]: Does the job
+            - generic [ref=e1573]: The product was ‘okay’.
+            - generic [ref=e1578]:
+              - paragraph [ref=e1579]: Chukkapalli Goutam
+              - paragraph [ref=e1584]: Certified Buyer
+              - paragraph [ref=e1585]: 2 days ago
+        - generic [ref=e1586]:
+          - generic [ref=e1587]: Recent Review
+          - generic [ref=e1589]:
+            - generic [ref=e1590]:
+              - generic [ref=e1591]: "3"
+              - paragraph [ref=e1593]: Does the job
+            - generic [ref=e1594]: The product was ‘okay’.
+            - generic [ref=e1599]:
+              - paragraph [ref=e1600]: Chukkapalli Goutam
+              - paragraph [ref=e1605]: Certified Buyer
+              - paragraph [ref=e1606]: 2 days ago
+  - contentinfo [ref=e1607]:
+    - generic [ref=e1609]:
+      - generic [ref=e1610]:
+        - generic [ref=e1611]:
+          - generic [ref=e1612]: ABOUT
+          - link "Contact Us" [ref=e1613] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+          - link "About Us" [ref=e1614] [cursor=pointer]:
+            - /url: https://corporate.flipkart.net/corporate-home
+          - link "Careers" [ref=e1615] [cursor=pointer]:
+            - /url: https://www.flipkartcareers.com/?otracker=footer_navlinks
+          - link "Flipkart Stories" [ref=e1616] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/?otracker=footer_navlinks
+          - link "Press" [ref=e1617] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/category/top-stories/news/
+          - link "Corporate Information" [ref=e1618] [cursor=pointer]:
+            - /url: /corporate-information
+        - generic [ref=e1619]:
+          - generic [ref=e1620]: GROUP COMPANIES
+          - link "Myntra" [ref=e1621] [cursor=pointer]:
+            - /url: https://www.myntra.com/
+          - link "Cleartrip" [ref=e1622] [cursor=pointer]:
+            - /url: https://www.cleartrip.com/
+          - link "Shopsy" [ref=e1623] [cursor=pointer]:
+            - /url: https://www.shopsy.in/
+        - generic [ref=e1624]:
+          - generic [ref=e1625]: HELP
+          - link "Payments" [ref=e1626] [cursor=pointer]:
+            - /url: /pages/payments
+          - link "Shipping" [ref=e1627] [cursor=pointer]:
+            - /url: /pages/shipping
+          - link "Cancellation & Returns" [ref=e1628] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG
+          - link "FAQ" [ref=e1629] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG
+        - generic [ref=e1630]:
+          - generic [ref=e1631]: CONSUMER POLICY
+          - link "Cancellation & Returns" [ref=e1632] [cursor=pointer]:
+            - /url: /pages/returnpolicy?otracker=footer_navlinks
+          - link "Terms Of Use" [ref=e1633] [cursor=pointer]:
+            - /url: /pages/terms?otracker=footer_navlinks
+          - link "Security" [ref=e1634] [cursor=pointer]:
+            - /url: /pages/paymentsecurity?otracker=footer_navlinks
+          - link "Privacy" [ref=e1635] [cursor=pointer]:
+            - /url: /pages/privacypolicy?otracker=footer_navlinks
+          - link "Sitemap" [ref=e1636] [cursor=pointer]:
+            - /url: /sitemap?otracker=footer_navlinks
+          - link "Grievance Redressal" [ref=e1637] [cursor=pointer]:
+            - /url: /pages/grievance-redressal-mechanism?otracker=footer_navlinks
+          - link "EPR Compliance" [ref=e1638] [cursor=pointer]:
+            - /url: /pages/ewaste-compliance-tnc?otracker=footer_navlinks
+          - link "FSSAI Food Safety Connect App" [ref=e1639] [cursor=pointer]:
+            - /url: https://fssai.gov.in/cms/food-safety-connect.php
+        - generic [ref=e1641]:
+          - generic [ref=e1642]: "Mail Us:"
+          - generic [ref=e1645]:
+            - paragraph [ref=e1646]: Flipkart Internet Private Limited,
+            - paragraph [ref=e1647]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e1648]: Clove Embassy Tech Village,
+            - paragraph [ref=e1649]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e1650]: Bengaluru, 560103,
+            - paragraph [ref=e1651]: Karnataka, India
+          - generic [ref=e1652]: Social
+          - generic [ref=e1653]:
+            - link [ref=e1655] [cursor=pointer]:
+              - /url: https://www.facebook.com/flipkart
+            - link [ref=e1658] [cursor=pointer]:
+              - /url: https://www.twitter.com/flipkart
+            - link [ref=e1661] [cursor=pointer]:
+              - /url: https://www.youtube.com/flipkart
+            - link [ref=e1664] [cursor=pointer]:
+              - /url: https://www.instagram.com/flipkart
+        - generic [ref=e1667]:
+          - generic [ref=e1668]: "Registered Office Address:"
+          - generic [ref=e1671]:
+            - paragraph [ref=e1672]: Flipkart Internet Private Limited,
+            - paragraph [ref=e1673]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e1674]: Clove Embassy Tech Village,
+            - paragraph [ref=e1675]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e1676]: Bengaluru, 560103,
+            - paragraph [ref=e1677]: Karnataka, India
+            - paragraph [ref=e1678]: "CIN : U51109KA2012PTC066107"
+            - paragraph [ref=e1679]:
+              - text: "Telephone:"
+              - link "044-45614709" [ref=e1680] [cursor=pointer]:
+                - /url: tel:044-45614709
+              - text: /
+              - link "044-45714709" [ref=e1681] [cursor=pointer]:
+                - /url: tel:044-45714709
+      - generic [ref=e1683]:
+        - link "Become a Seller" [ref=e1686] [cursor=pointer]:
+          - /url: https://seller.flipkart.com/?utm_source=fkwebsite&utm_medium=websitedirect
+        - generic [ref=e1687]: Advertise
+        - link "Gift Cards" [ref=e1691] [cursor=pointer]:
+          - /url: /the-gift-card-store?otracker=footer_navlinks
+        - link "Help Center" [ref=e1694] [cursor=pointer]:
+          - /url: /helpcentre?otracker=footer_navlinks
+        - generic [ref=e1695]: © 2007-2026 Flipkart.com

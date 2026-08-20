@@ -1,0 +1,158 @@
+[     857ms] [LOG] Affiliate logs: [amplitude.js][module-init] affiliateFeatureConfig: {} @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[     858ms] [LOG] Affiliate logs: [amplitude.js][module-init] creatorFeatureConfig: {masterFlag: false, creatorAttributionWindow: 24, tokenCacheDurationMinutes: 30, showNewTag: false, title: Vibe Tribe} @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[     858ms] [LOG] Affiliate logs: [amplitude.js][module-init] attributionWindow(hours): 24 @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[     858ms] [LOG] Affiliate logs: [amplitude.js][module-init] calling setAffiliateCookie, creatorEnabled: false @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[     858ms] [LOG] Affiliate logs: [setAffiliateCookie] STEP 1 - called with affiliateFeatureConfig: {attributionWindow: 24} creatorprogramconfig: {} @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[     858ms] [LOG] Affiliate logs: [setAffiliateCookie] STEP 2 - url utm_medium: null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[     859ms] [LOG] Affiliate logs: [getAffiliatePayload] STEP 1 - called, url: https://www.ajio.com/search/?text=iPhone%2015 @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[     859ms] [LOG] Affiliate logs: [getAffiliatePayload] STEP 2 - params: text=iPhone+15 @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[     859ms] [LOG] Affiliate logs: [getAffiliatePayload] STEP 3 - utmMedium: null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[     859ms] [LOG] Affiliate logs: [getAffiliatePayload] STEP 3a - utm_medium not affiliate/creator -> return null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[     859ms] [LOG] Affiliate logs: [setAffiliateCookie] STEP 3 - newData from payload: null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[     859ms] [LOG] Affiliate logs: [setAffiliateCookie] STEP 3a - no newData -> nothing to write @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[     859ms] [LOG] segmentTrackingEnabled ON @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[     859ms] [LOG] Affiliate logs: [segment.js][module-init] STEP 1 - affiliateFeatureConfig: {} creatorFeatureConfig: {masterFlag: false, creatorAttributionWindow: 24, tokenCacheDurationMinutes: 30, showNewTag: false, title: Vibe Tribe} attributionWindow(hours): 24 @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[     860ms] [LOG] Affiliate logs: [segment.js][module-init] STEP 2 - calling setAffiliateCookie with config: {attributionWindow: 24} creatorEnabled: false @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[     860ms] [LOG] Affiliate logs: [setAffiliateCookie] STEP 1 - called with affiliateFeatureConfig: {attributionWindow: 24} creatorprogramconfig: {} @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[     860ms] [LOG] Affiliate logs: [setAffiliateCookie] STEP 2 - url utm_medium: null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[     860ms] [LOG] Affiliate logs: [getAffiliatePayload] STEP 1 - called, url: https://www.ajio.com/search/?text=iPhone%2015 @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[     860ms] [LOG] Affiliate logs: [getAffiliatePayload] STEP 2 - params: text=iPhone+15 @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[     860ms] [LOG] Affiliate logs: [getAffiliatePayload] STEP 3 - utmMedium: null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[     860ms] [LOG] Affiliate logs: [getAffiliatePayload] STEP 3a - utm_medium not affiliate/creator -> return null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[     860ms] [LOG] Affiliate logs: [setAffiliateCookie] STEP 3 - newData from payload: null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[     860ms] [LOG] Affiliate logs: [setAffiliateCookie] STEP 3a - no newData -> nothing to write @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[    1273ms] [LOG] envData: prodGcp @ https://www.ajio.com/search/?text=iPhone%2015:357
+[    1273ms] [LOG] reqType: prod @ https://www.ajio.com/search/?text=iPhone%2015:362
+[    1275ms] [LOG] %cWebsdk log%csetConfiguration called with options: [object Object] color: white; background-color: #095aac; padding:1px 3px; border-radius: 3px; margin-right: 7px  @ https://jioadsweb.akamaized.net/jioads/retargeting/default/stable/v2/jioAds.js:1
+[    1278ms] [INFO] %cWebsdk log%cResponse from FETCH color: white; background-color: #095aac; padding:1px 3px; border-radius: 3px; margin-right: 7px  @ https://jioadsweb.akamaized.net/jioads/retargeting/default/stable/v2/jioAds.js:1
+[    1433ms] [LOG] :::: null {enabled: false, stores: Object, messages: Object} ajio desktop @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    1610ms] [LOG] v1.2 Deployed @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[    1611ms] [LOG] 777==> component Did mount executing @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[    1612ms] [LOG] 🚀 ~ file: Category.js:123 ~ Category ~ componentDidMount ~ entities: {493178898: Object, 494423093: Object, 703168329005: Object, 460963506008: Object, 469810100008: Object, 469163966008: Object, 460963524008: Object, 460963380008: Object, 469469091001: Object, 702214992005: Object, 702240173015: Object, 702529513001: Object, 443401068002: Object, 703810543005: Object, 469827477001: Object, 443401068015: Object, 469695687009: Object, 469750214009: Object, 469695357009: Object, 469695223009: Object, 469766933016: Object, 460963490008: Object, 443107964005: Object, 702834962033: Object, 469756295015: Object, 469650845023: Object, 469749965001: Object, 469750148009: Object, 469439879008: Object, 460963458008: Object, 460963500008: Object, 469163910008: Object, 469650753010: Object, 469650608036: Object, 469468845008: Object, 702834962038: Object, 469139282011: Object, 443118577005: Object, 469083446008: Object, 469525915011: Object, 469810076008: Object, 469526218011: Object, 702835114051: Object, 702083089001: Object, 702830065004: Object} @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    1616ms] [LOG] Affiliate logs: [getAffiliateCookie] STEP 1 - called @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[    1617ms] [LOG] Affiliate logs: [getAffiliateCookie] STEP 2 - raw cookie: undefined url params: text=iPhone+15 @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[    1617ms] [LOG] Affiliate logs: [getAffiliateCookie] STEP 3 - utmMedium: null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[    1617ms] [LOG] Affiliate logs: [getAffiliateCookie] STEP 3b - no affiliate_tracking cookie -> return null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[    1617ms] [LOG] Affiliate logs: [amplitude.js][getAffiliateProps] cookie: null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    1617ms] [LOG] Affiliate logs: [amplitude.js][getAffiliateProps] no cookie -> NA traits: {attributed_affiliate_name: NA, attributed_affiliate_id: NA, attributed_affiliate_campaign_id: NA, attributed_affiliate_click_id: NA, attributed_affiliate_sub_id: NA} @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    1617ms] [LOG] Affiliate logs: [amplitude.js][amplitudeTrack] event: Page Viewed affiliateProps: {attributed_affiliate_name: NA, attributed_affiliate_id: NA, attributed_affiliate_campaign_id: NA, attributed_affiliate_click_id: NA, attributed_affiliate_sub_id: NA} @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    1621ms] [LOG] gtmDynamicRemarketingSetup - Exception: Cannot read properties of undefined (reading 'toLowerCase') @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    1633ms] [LOG] :::: null {enabled: false, stores: Object, messages: Object} ajio desktop @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    1694ms] [LOG] TRACK PRODUCT LIST FUNCTION : jioSDKInitializedStatus NOTDONE @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    1695ms] [LOG] TRACK deeplinkLaunchEvent jioSDKInitializedStatus NOTDONE @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    1695ms] [LOG] TRACK JIO ADS OBSERVATION POINT 4 jioAdsProductViewEvent : jioSDKInitializedStatus NOTDONE @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    1695ms] [LOG] :::: null {enabled: false, stores: Object, messages: Object} ajio desktop @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    1729ms] [LOG] %cWebsdk log%cpost message for fetching uid color: white; background-color: #095aac; padding:1px 3px; border-radius: 3px; margin-right: 7px  @ https://jioadsweb.akamaized.net/jioads/retargeting/default/stable/v2/jioAds.js:1
+[    1730ms] [LOG] MessageEvent @ https://jioadsweb.akamaized.net/jioads/uid/uidGenerator.js:1
+[    1792ms] [LOG] :::: null {enabled: false, stores: Object, messages: Object} ajio desktop @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    1810ms] [LOG] creating UID: new one is being -- created @ https://jioadsweb.akamaized.net/jioads/uid/uidGenerator.js:37
+[    1845ms] [LOG] :::: null {enabled: false, stores: Object, messages: Object} ajio desktop @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    1883ms] [LOG] :::: null {enabled: false, stores: Object, messages: Object} ajio desktop @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    1981ms] [LOG] %cWebsdk log%cuid fetched: 9d972dc5-703e-4ae0-b712-150a27da5518 color: white; background-color: #095aac; padding:1px 3px; border-radius: 3px; margin-right: 7px  @ https://jioadsweb.akamaized.net/jioads/retargeting/default/stable/v2/jioAds.js:1
+[    1981ms] [LOG] sdk Initialised.......... @ https://www.ajio.com/search/?text=iPhone%2015:381
+[    1983ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://clientcdn.pushengage.com/core/1984.js:0
+[    1984ms] [LOG] Affiliate logs: [getAffiliateCookie] STEP 1 - called @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[    1986ms] [LOG] Affiliate logs: [getAffiliateCookie] STEP 2 - raw cookie: undefined url params: text=iPhone+15 @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[    1986ms] [LOG] Affiliate logs: [getAffiliateCookie] STEP 3 - utmMedium: null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[    1986ms] [LOG] Affiliate logs: [getAffiliateCookie] STEP 3b - no affiliate_tracking cookie -> return null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[    1986ms] [LOG] Affiliate logs: [segment.js][guest] cookie: null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    1986ms] [LOG] Affiliate logs: [segment.js][guest] medium/enabled: undefined true @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    1986ms] [LOG] Affiliate logs: [segment.js][guest] final traits: {customer_pk: , name: , email: , mobileNumber: , cleverTap_Id: 48K-4R4-K84Z} @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    1987ms] [LOG] Affiliate logs: [getAffiliateCookie] STEP 1 - called @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[    1987ms] [LOG] Affiliate logs: [getAffiliateCookie] STEP 2 - raw cookie: undefined url params: text=iPhone+15 @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[    1987ms] [LOG] Affiliate logs: [getAffiliateCookie] STEP 3 - utmMedium: null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[    1987ms] [LOG] Affiliate logs: [getAffiliateCookie] STEP 3b - no affiliate_tracking cookie -> return null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[    1988ms] [LOG] Affiliate logs: [amplitude.js][getAffiliateProps] cookie: null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    1988ms] [LOG] Affiliate logs: [amplitude.js][getAffiliateProps] no cookie -> NA traits: {attributed_affiliate_name: NA, attributed_affiliate_id: NA, attributed_affiliate_campaign_id: NA, attributed_affiliate_click_id: NA, attributed_affiliate_sub_id: NA} @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    1988ms] [LOG] Affiliate logs: [amplitude.js][amplitudeIdentify] userId:  affiliateProps: {attributed_affiliate_name: NA, attributed_affiliate_id: NA, attributed_affiliate_campaign_id: NA, attributed_affiliate_click_id: NA, attributed_affiliate_sub_id: NA} traits: {customer_pk: , name: , email: , mobileNumber: , cleverTap_Id: 48K-4R4-K84Z} @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    2011ms] [LOG] :::: null {enabled: false, stores: Object, messages: Object} ajio desktop @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    2190ms] [LOG] HITTING WISHLIST OPTIONSCODE API @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[    2531ms] [LOG] :::: null {enabled: false, stores: Object, messages: Object} ajio desktop @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    2697ms] [LOG] TRACK PRODUCT LIST FUNCTION : jioSDKInitializedStatus DONE @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    2697ms] [LOG] TRACK PRODUCT LIST FUNCTION CALLED @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    2697ms] [LOG] TRACK PRODUCT LIST FUNCTION CALLED ~ filterList: [] @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    2697ms] [LOG] 🚀 ~ file: jioAds.js:207 ~ jioAdsProductListViewEvent ~ productListViewEvent: {startTime: , endTime: , productDetails: Object} @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    2699ms] [LOG] TRACK deeplinkLaunchEvent jioSDKInitializedStatus DONE @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    2699ms] [LOG] 🚀 ~ file: jioAds.js:67 ~ deeplinkLaunchEvent ~ isDeeplink: false @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    2699ms] [LOG] TRACK JIO ADS OBSERVATION POINT 4 jioAdsProductViewEvent : jioSDKInitializedStatus DONE @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[    6364ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://capi.ajio.com/static/DhPixel.js:0
+[    6366ms] [LOG] CHECK LOGIN FLOW - 1111111111111111111111 @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[    6366ms] [LOG] CHECK LOGIN FLOW - 4444444444444444444444 @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[    6367ms] [LOG] CHECK LOGIN FLOW - 666666666666666666 @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[    6367ms] [LOG] CHECK LOGIN FLOW - 777777777777777777777 uRxNNVeURb9BVWdICijjz @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[    6443ms] [WARNING] [Meta Pixel] - Duplicate Pixel ID: 524320038082149. @ https://connect.facebook.net/en_US/fbevents.js:197
+[    6537ms] ReferenceError: pushData is not defined
+    at <anonymous>:1:223
+    at https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:881:429
+    at OS (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:883:31)
+    at Jd.NS (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:880:92)
+    at Jd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:392:187)
+    at l.apply (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:313:465)
+    at fb (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:276:750)
+    at eb (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:276:501)
+    at Jd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:337:473)
+    at l.apply (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:313:465)
+[    6541ms] ReferenceError: pushData is not defined
+    at <anonymous>:1:151
+    at https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:881:429
+    at OS (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:883:31)
+    at Jd.NS (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:880:92)
+    at Jd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:392:187)
+    at l.apply (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:313:465)
+    at fb (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:276:750)
+    at eb (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:276:501)
+    at Jd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:337:473)
+    at l.apply (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:313:465)
+[    6542ms] ReferenceError: pushData is not defined
+    at <anonymous>:2:237
+    at https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:881:429
+    at OS (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:883:31)
+    at Jd.NS (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:880:92)
+    at Jd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:392:187)
+    at l.apply (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:313:465)
+    at fb (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:276:750)
+    at eb (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:276:501)
+    at Jd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:337:473)
+    at l.apply (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:313:465)
+[    6542ms] ReferenceError: pushData is not defined
+    at <anonymous>:1:230
+    at https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:881:429
+    at OS (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:883:31)
+    at Jd.NS (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:880:92)
+    at Jd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:392:187)
+    at l.apply (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:313:465)
+    at fb (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:276:750)
+    at eb (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:276:501)
+    at Jd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:337:473)
+    at l.apply (https://www.googletagmanager.com/gtm.js?id=GTM-PF2BPZ8&gtm=4e68i0:313:465)
+[    7839ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://gum.criteo.com/sync?c=1037&r=1&a=1&gdpr=0&gdpr_consent=&u=https%3A%2F%2Fsync.crwdcntrl.net%2Fqmap%3Fc%3D16722%26tp%3DMDAG%26tpid%3D%40USERID%40%26gdpr%3D0%26gdpr_consent%3D%26lac%3Dy:0
+[    7957ms] [LOG] ServiceWorker registration successful with scope:  https://www.ajio.com/ @ https://www.ajio.com/search/?text=iPhone%2015:422
+[    8184ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://www.ajio.com/search/?text=iPhone%2015:0
+[    8623ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://gum.criteo.com/sync?c=9&r=1&a=1&u=https%3A%2F%2Faa.agkn.com%2Fadscores%2Fg.pixel%3Fsid%3D9212273938%26ct%3D%40USERID%40:0
+[   12218ms] [WARNING] The resource https://assets-jiocdn.ajio.com/ was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://www.ajio.com/search/?text=iPhone%2015:0
+[   12218ms] [WARNING] The resource https://assets-jiocdn.ajio.com/static/assets/fonts/Lora--12c052959e60357f292b2bed94162d01.12c052959e60357f292b2bed94162d01.woff was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://www.ajio.com/search/?text=iPhone%2015:0
+[   13037ms] [WARNING] [copilot] Max attempts reached. Copilot initialization failed @ https://assets-jiocdn.ajio.com/static/assets/2.74be4ab9d023eb05f9ae.74be4ab9d023eb05f9ae.js:0
+[   14178ms] [LOG] :::: null {enabled: false, stores: Object, messages: Object} ajio desktop @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[   14522ms] [LOG] getProductItemPDP :: {code: 469810100008, couponStatus: Coupon Applicable, fnlColorVariantData: Object, images: Array(3), extraImages: Array(7)} @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[   14523ms] [LOG] Affiliate logs: [getAffiliateCookie] STEP 1 - called @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[   14523ms] [LOG] Affiliate logs: [getAffiliateCookie] STEP 2 - raw cookie: undefined url params: text=iPhone+15 @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[   14523ms] [LOG] Affiliate logs: [getAffiliateCookie] STEP 3 - utmMedium: null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[   14524ms] [LOG] Affiliate logs: [getAffiliateCookie] STEP 3b - no affiliate_tracking cookie -> return null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[   14524ms] [LOG] Affiliate logs: [amplitude.js][getAffiliateProps] cookie: null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[   14524ms] [LOG] Affiliate logs: [amplitude.js][getAffiliateProps] no cookie -> NA traits: {attributed_affiliate_name: NA, attributed_affiliate_id: NA, attributed_affiliate_campaign_id: NA, attributed_affiliate_click_id: NA, attributed_affiliate_sub_id: NA} @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[   14524ms] [LOG] Affiliate logs: [amplitude.js][amplitudeTrack] event: Quick View Product Viewed affiliateProps: {attributed_affiliate_name: NA, attributed_affiliate_id: NA, attributed_affiliate_campaign_id: NA, attributed_affiliate_click_id: NA, attributed_affiliate_sub_id: NA} @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[   18157ms] [WARNING] The resource https://assets-jiocdn.ajio.com/ was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://www.ajio.com/search/?text=iPhone%2015:0
+[   18157ms] [WARNING] The resource https://assets-jiocdn.ajio.com/static/assets/fonts/Lora--12c052959e60357f292b2bed94162d01.12c052959e60357f292b2bed94162d01.woff was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://www.ajio.com/search/?text=iPhone%2015:0
+[   19549ms] [LOG] ga4AjioEnable true @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[   19622ms] [LOG] getProductItem :: adsFlag :: {} :: position :: 0 @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[   19623ms] [LOG] getProductItem :: adsFlag :: {} :: position :: 1 @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[   19623ms] [LOG] getProductItem :: adsFlag :: {} :: position :: 3 @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[   19623ms] [LOG] getProductItem :: adsFlag :: {} :: position :: 4 @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[   19623ms] [LOG] testing newObjForSegment {event: Product Viewed, screen_title: iPhone 15, store_type: ajio, impression_source: Product Grid, impression_type: Vertical} @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[   19624ms] [LOG] Affiliate logs: [getAffiliateCookie] STEP 1 - called @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[   19624ms] [LOG] Affiliate logs: [getAffiliateCookie] STEP 2 - raw cookie: undefined url params: text=iPhone+15 @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[   19624ms] [LOG] Affiliate logs: [getAffiliateCookie] STEP 3 - utmMedium: null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[   19624ms] [LOG] Affiliate logs: [getAffiliateCookie] STEP 3b - no affiliate_tracking cookie -> return null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:4
+[   19624ms] [LOG] Affiliate logs: [amplitude.js][getAffiliateProps] cookie: null @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[   19624ms] [LOG] Affiliate logs: [amplitude.js][getAffiliateProps] no cookie -> NA traits: {attributed_affiliate_name: NA, attributed_affiliate_id: NA, attributed_affiliate_campaign_id: NA, attributed_affiliate_click_id: NA, attributed_affiliate_sub_id: NA} @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2
+[   19624ms] [LOG] Affiliate logs: [amplitude.js][amplitudeTrack] event: Product Viewed affiliateProps: {attributed_affiliate_name: NA, attributed_affiliate_id: NA, attributed_affiliate_campaign_id: NA, attributed_affiliate_click_id: NA, attributed_affiliate_sub_id: NA} @ https://assets-jiocdn.ajio.com/static/assets/desktop.f0f0ddd793887e3d8536.f0f0ddd793887e3d8536.js:2

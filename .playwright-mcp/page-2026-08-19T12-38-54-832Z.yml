@@ -1,0 +1,1148 @@
+- generic [ref=e3]:
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /
+        - img "Flipkart" [ref=e11]
+      - link "Explore Plus" [ref=e12] [cursor=pointer]:
+        - /url: /plus
+    - generic [ref=e16]:
+      - textbox "Search for products, brands and more" [ref=e18]: buds
+      - button [ref=e19] [cursor=pointer]
+    - generic [ref=e26] [cursor=pointer]:
+      - link "Login" [ref=e28]:
+        - /url: /account/login?ret=/search%3Fq%3Dbuds
+      - generic [ref=e33]:
+        - button "LOGIN" [ref=e34]
+        - generic [ref=e35]:
+          - generic [ref=e36]: New customer?
+          - generic [ref=e37]: Sign Up
+    - link "Become a Seller" [ref=e39] [cursor=pointer]:
+      - /url: https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect
+    - generic [ref=e41]: More
+    - link "Cart" [ref=e51] [cursor=pointer]:
+      - /url: /viewcart?exploreMode=true&preference=FLIPKART
+  - generic [ref=e59]:
+    - generic [ref=e60] [cursor=pointer]: Electronics
+    - generic [ref=e63] [cursor=pointer]: TVs & Appliances
+    - generic [ref=e66] [cursor=pointer]: Men
+    - generic [ref=e69] [cursor=pointer]: Women
+    - generic [ref=e72] [cursor=pointer]: Baby & Kids
+    - generic [ref=e75] [cursor=pointer]: Home & Furniture
+    - generic [ref=e78] [cursor=pointer]: Sports, Books & More
+    - link "Flights" [ref=e81] [cursor=pointer]:
+      - /url: /travel/flights?otracker=nmenu_Flights
+    - link "Offer Zone" [ref=e82] [cursor=pointer]:
+      - /url: /offers-list/top-deals?screen=dynamic&pk=themeViews%3DDT-OMU-A2%3ADT-OMU~widgetType%3DdealCard~contentType%3Dneo&otracker=nmenu_offer-zone
+  - generic [ref=e83]:
+    - generic [ref=e84]:
+      - generic [ref=e86]:
+        - generic [ref=e88]:
+          - generic [ref=e89]: Filters
+          - generic [ref=e93]:
+            - generic [ref=e94]: CATEGORIES
+            - generic [ref=e96]:
+              - img [ref=e98] [cursor=pointer]
+              - link "Audio & Video" [ref=e100] [cursor=pointer]:
+                - /url: /audio-video/pr?sid=0pm&q=buds&otracker=categorytree
+            - generic [ref=e101]:
+              - generic [ref=e102]:
+                - img [ref=e104] [cursor=pointer]
+                - link "Headset" [ref=e106] [cursor=pointer]:
+                  - /url: /audio-video/headset/pr?sid=0pm,fcn&q=buds&otracker=categorytree
+              - generic [ref=e107]:
+                - link "Headphones" [ref=e108] [cursor=pointer]:
+                  - /url: /audio-video/headset/headphones/pr?sid=0pm,fcn,gc3&q=buds&otracker=categorytree
+                - link "Earphones" [ref=e109] [cursor=pointer]:
+                  - /url: /audio-video/headset/earphones/pr?sid=0pm,fcn,821&q=buds&otracker=categorytree
+          - generic [ref=e110]:
+            - generic [ref=e111] [cursor=pointer]: Brand
+            - generic [ref=e115]:
+              - generic [ref=e116]:
+                - textbox "Search Brand" [ref=e122]
+                - generic "boAt" [ref=e123] [cursor=pointer]
+                - generic "OnePlus" [ref=e128] [cursor=pointer]
+                - generic "realme" [ref=e133] [cursor=pointer]
+                - generic "SONY" [ref=e138] [cursor=pointer]
+                - generic "CMF by Nothing" [ref=e143] [cursor=pointer]
+                - generic "JBL" [ref=e148] [cursor=pointer]
+              - generic [ref=e153] [cursor=pointer]: 901 MORE
+          - generic [ref=e154]:
+            - generic [ref=e155]: Price
+            - generic [ref=e168]:
+              - generic [ref=e169] [cursor=pointer]
+              - generic [ref=e176]:
+                - generic [ref=e177]: .
+                - generic [ref=e178]: .
+                - generic [ref=e179]: .
+                - generic [ref=e180]: .
+                - generic [ref=e181]: .
+                - generic [ref=e182]: .
+                - generic [ref=e183]: .
+                - generic [ref=e184]: .
+                - generic [ref=e185]: .
+                - generic: .
+            - generic [ref=e186]:
+              - combobox [ref=e188]:
+                - option "Min" [selected]
+                - option "₹600"
+                - option "₹1000"
+                - option "₹1500"
+                - option "₹2000"
+                - option "₹2600"
+                - option "₹4000"
+                - option "₹7000"
+                - option "₹10000"
+              - generic [ref=e189]: to
+              - combobox [ref=e191]:
+                - option "₹600"
+                - option "₹1000"
+                - option "₹1500"
+                - option "₹2000"
+                - option "₹2600"
+                - option "₹4000"
+                - option "₹7000"
+                - option "₹10000"
+                - option "₹10000+" [selected]
+          - generic [ref=e192]: Connectivity
+          - generic [ref=e197]: Features
+          - generic [ref=e202]: Headphone Design
+          - generic [ref=e207]: Color
+          - generic [ref=e212]:
+            - generic [ref=e213] [cursor=pointer]: Headphone Type
+            - generic [ref=e218]:
+              - generic "In the Ear" [ref=e219] [cursor=pointer]
+              - generic "On the Ear" [ref=e224] [cursor=pointer]
+              - generic "True Wireless" [ref=e229] [cursor=pointer]
+          - generic [ref=e234]:
+            - generic [ref=e235] [cursor=pointer]: Customer Ratings
+            - generic [ref=e240]:
+              - generic "4★ & above" [ref=e241] [cursor=pointer]
+              - generic "3★ & above" [ref=e246] [cursor=pointer]
+              - generic "2★ & above" [ref=e251] [cursor=pointer]
+              - generic "1★ & above" [ref=e256] [cursor=pointer]
+          - generic [ref=e261]: Discount
+          - generic [ref=e266]: Compatible With
+          - generic [ref=e271]:
+            - generic [ref=e272] [cursor=pointer]
+            - generic [ref=e277]: "?"
+          - generic [ref=e279]:
+            - generic [ref=e280] [cursor=pointer]: Offers
+            - generic "Special Price" [ref=e286] [cursor=pointer]
+          - generic [ref=e291]: New Arrivals
+          - generic [ref=e296]: GST Invoice Available
+          - generic [ref=e301]: Availability
+        - link "Need help? Help me decide Buying Guide" [ref=e307] [cursor=pointer]:
+          - /url: /buying-guide/headset?sid=0pm,fcn&otracker=bg_from_browse_lhs
+          - generic [ref=e308]: Need help?
+          - generic [ref=e309]: Help me decide
+          - img "Buying Guide" [ref=e312]
+      - generic [ref=e313]:
+        - generic [ref=e316]:
+          - generic [ref=e317]:
+            - link "Home" [ref=e319] [cursor=pointer]:
+              - /url: /
+            - link "Audio & Video" [ref=e323] [cursor=pointer]:
+              - /url: /audio-video/pr?sid=0pm&marketplace=FLIPKART
+            - link "Headset" [ref=e327] [cursor=pointer]:
+              - /url: /audio-video/headset/pr?sid=0pm,fcn&marketplace=FLIPKART
+          - generic [ref=e328]: Showing 1 – 40 of 18,245 results for "buds"
+          - generic [ref=e329]:
+            - generic [ref=e330]: Sort By
+            - generic [ref=e331]: Relevance
+            - generic [ref=e332] [cursor=pointer]: Popularity
+            - generic [ref=e333] [cursor=pointer]: Price -- Low to High
+            - generic [ref=e334] [cursor=pointer]: Price -- High to Low
+            - generic [ref=e335] [cursor=pointer]: Newest First
+            - generic [ref=e336] [cursor=pointer]: Discount
+        - generic [ref=e338]:
+          - generic [ref=e340]:
+            - link [ref=e341] [cursor=pointer]:
+              - /url: /adrivan-meghla-buds-3-bluetooth/p/itmdeac8517e1ae8?pid=ACCHNFPFDUPY5CWX&lid=LSTACCHNFPFDUPY5CWX8BGEVL&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_1&otracker=search&fm=organic&iid=en_rfCm6nuDWx82VY34_kOXV7KDo45ez5MaBd08ryBqiWFPaTxIMAZnBxh1EN7F2z8nf7Up4z81LWDckyPCUGZpiXgBdP0GrlL-BJs1ibRU4QItvjeDoNVXWNAth4eS7O5C&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "adrivan Meghla buds 3 Bluetooth" [ref=e345]
+            - link "adrivan Meghla buds 3 Bluetooth" [ref=e354] [cursor=pointer]:
+              - /url: /adrivan-meghla-buds-3-bluetooth/p/itmdeac8517e1ae8?pid=ACCHNFPFDUPY5CWX&lid=LSTACCHNFPFDUPY5CWX8BGEVL&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_1&otracker=search&fm=organic&iid=en_rfCm6nuDWx82VY34_kOXV7KDo45ez5MaBd08ryBqiWFPaTxIMAZnBxh1EN7F2z8nf7Up4z81LWDckyPCUGZpiXgBdP0GrlL-BJs1ibRU4QItvjeDoNVXWNAth4eS7O5C&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e355]: Black, In the Ear
+            - link "₹699 ₹2,199 68% off" [ref=e356] [cursor=pointer]:
+              - /url: /adrivan-meghla-buds-3-bluetooth/p/itmdeac8517e1ae8?pid=ACCHNFPFDUPY5CWX&lid=LSTACCHNFPFDUPY5CWX8BGEVL&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_1&otracker=search&fm=organic&iid=en_rfCm6nuDWx82VY34_kOXV7KDo45ez5MaBd08ryBqiWFPaTxIMAZnBxh1EN7F2z8nf7Up4z81LWDckyPCUGZpiXgBdP0GrlL-BJs1ibRU4QItvjeDoNVXWNAth4eS7O5C&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e357]:
+                - generic [ref=e358]: ₹699
+                - generic [ref=e359]: ₹2,199
+                - generic [ref=e360]: 68% off
+            - generic [ref=e361]: Bank Offer
+          - generic [ref=e365]:
+            - link [ref=e366] [cursor=pointer]:
+              - /url: /uag-urbn-armour-gear-buds-2r-bassx-wireless-earbuds-deep-bass-audio-enc-mic-50-hours-bluetooth/p/itm44b57f0c36167?pid=ACCHPFZR5PEFPDQ7&lid=LSTACCHPFZR5PEFPDQ7QBZB6K&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_2&otracker=search&fm=organic&iid=en_rfCm6nuDWx82VY34_kOXV7KDo45ez5MaBd08ryBqiWFTMJEE7Gz8rqU9Vn0vtfUFQjbNdd5pn0CKMnB_gr4SX6XJskJAoZjX9Svu6kJepM_UOBL38GUr1MXbX8B7J0R9&ppt=sp&ppn=sp&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "uag urbn armour gear UAG Buds 2R BassX Wireless Earbuds | Deep Bass Audio | ENC Mic | 50 Hours Bluetooth" [ref=e370]
+            - link "uag urbn armour gear UAG Buds 2R BassX Wireless Earbuds..." [ref=e379] [cursor=pointer]:
+              - /url: /uag-urbn-armour-gear-buds-2r-bassx-wireless-earbuds-deep-bass-audio-enc-mic-50-hours-bluetooth/p/itm44b57f0c36167?pid=ACCHPFZR5PEFPDQ7&lid=LSTACCHPFZR5PEFPDQ7QBZB6K&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_2&otracker=search&fm=organic&iid=en_rfCm6nuDWx82VY34_kOXV7KDo45ez5MaBd08ryBqiWFTMJEE7Gz8rqU9Vn0vtfUFQjbNdd5pn0CKMnB_gr4SX6XJskJAoZjX9Svu6kJepM_UOBL38GUr1MXbX8B7J0R9&ppt=sp&ppn=sp&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e380]: White, True Wireless
+            - generic [ref=e381]:
+              - generic [ref=e382]: "3"
+              - text: (6)
+            - link "₹726 ₹1,899 61% off" [ref=e387] [cursor=pointer]:
+              - /url: /uag-urbn-armour-gear-buds-2r-bassx-wireless-earbuds-deep-bass-audio-enc-mic-50-hours-bluetooth/p/itm44b57f0c36167?pid=ACCHPFZR5PEFPDQ7&lid=LSTACCHPFZR5PEFPDQ7QBZB6K&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_2&otracker=search&fm=organic&iid=en_rfCm6nuDWx82VY34_kOXV7KDo45ez5MaBd08ryBqiWFTMJEE7Gz8rqU9Vn0vtfUFQjbNdd5pn0CKMnB_gr4SX6XJskJAoZjX9Svu6kJepM_UOBL38GUr1MXbX8B7J0R9&ppt=sp&ppn=sp&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e388]:
+                - generic [ref=e389]: ₹726
+                - generic [ref=e390]: ₹1,899
+                - generic [ref=e391]: 61% off
+            - generic [ref=e392]: Bank Offer
+            - generic [ref=e397]:
+              - generic [ref=e399] [cursor=pointer]
+              - generic [ref=e401] [cursor=pointer]: Add to Compare
+          - generic [ref=e403]:
+            - link [ref=e404] [cursor=pointer]:
+              - /url: /techio-tws-white-earbud-bluetooth/p/itmdaf506440ee6d?pid=ACCHBXBZTDHZTEEW&lid=LSTACCHBXBZTDHZTEEWSFKCVE&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_3&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHBXBZTDHZTEEW.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "TECHIO TWS WHITE Earbud Bluetooth" [ref=e408]
+            - link "TECHIO TWS WHITE Earbud Bluetooth" [ref=e413] [cursor=pointer]:
+              - /url: /techio-tws-white-earbud-bluetooth/p/itmdaf506440ee6d?pid=ACCHBXBZTDHZTEEW&lid=LSTACCHBXBZTDHZTEEWSFKCVE&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_3&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHBXBZTDHZTEEW.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e414]: White, True Wireless
+            - generic [ref=e415]:
+              - generic [ref=e416]: "3.4"
+              - text: (383)
+            - link "₹270 ₹999 72% off" [ref=e419] [cursor=pointer]:
+              - /url: /techio-tws-white-earbud-bluetooth/p/itmdaf506440ee6d?pid=ACCHBXBZTDHZTEEW&lid=LSTACCHBXBZTDHZTEEWSFKCVE&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_3&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHBXBZTDHZTEEW.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e420]:
+                - generic [ref=e421]: ₹270
+                - generic [ref=e422]: ₹999
+                - generic [ref=e423]: 72% off
+            - generic [ref=e424]: Only few left
+          - generic [ref=e428]:
+            - link [ref=e429] [cursor=pointer]:
+              - /url: /allons-tws-bluetooth-earbuds-true-wireless-headphone-magsafe-charging-case-a56/p/itm85458293738da?pid=ACCHFYEJX3RTVZST&lid=LSTACCHFYEJX3RTVZST7AMVJM&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&spotlightTagId=default_BestsellerId_0pm%2Ffcn&srno=s_1_4&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHFYEJX3RTVZST.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "allons TWS Bluetooth Earbuds True Wireless Headphone with MagSafe Charging Case A56 Bluetooth" [ref=e433]
+            - link "allons TWS Bluetooth Earbuds True Wireless Headphone wi..." [ref=e438] [cursor=pointer]:
+              - /url: /allons-tws-bluetooth-earbuds-true-wireless-headphone-magsafe-charging-case-a56/p/itm85458293738da?pid=ACCHFYEJX3RTVZST&lid=LSTACCHFYEJX3RTVZST7AMVJM&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&spotlightTagId=default_BestsellerId_0pm%2Ffcn&srno=s_1_4&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHFYEJX3RTVZST.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e439]: Black, True Wireless
+            - generic [ref=e440]:
+              - generic [ref=e441]: "3.5"
+              - text: (2,373)
+            - link "₹298 ₹1,599 81% off" [ref=e444] [cursor=pointer]:
+              - /url: /allons-tws-bluetooth-earbuds-true-wireless-headphone-magsafe-charging-case-a56/p/itm85458293738da?pid=ACCHFYEJX3RTVZST&lid=LSTACCHFYEJX3RTVZST7AMVJM&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&spotlightTagId=default_BestsellerId_0pm%2Ffcn&srno=s_1_4&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHFYEJX3RTVZST.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e445]:
+                - generic [ref=e446]: ₹298
+                - generic [ref=e447]: ₹1,599
+                - generic [ref=e448]: 81% off
+            - generic [ref=e449]: Only few left
+        - generic [ref=e453]:
+          - generic [ref=e455]:
+            - link [ref=e456] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-aeb-bluetooth/p/itm441167f8900d9?pid=ACCHP9TG2CBHPUM9&lid=LSTACCHP9TG2CBHPUM9ZYHJ2R&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_5&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9TG2CBHPUM9.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "BeastBass Buds 2A TWS 40H Playtime BT 5.3 ENC Mic AEB Bluetooth" [ref=e460]
+            - link "BeastBass Buds 2A TWS 40H Playtime BT 5.3 ENC Mic AEB B..." [ref=e465] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-aeb-bluetooth/p/itm441167f8900d9?pid=ACCHP9TG2CBHPUM9&lid=LSTACCHP9TG2CBHPUM9ZYHJ2R&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_5&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9TG2CBHPUM9.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e466]: Black, True Wireless
+            - generic [ref=e467]:
+              - generic [ref=e468]: "2.9"
+              - text: (15)
+            - link "₹420 ₹1,999 78% off" [ref=e471] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-aeb-bluetooth/p/itm441167f8900d9?pid=ACCHP9TG2CBHPUM9&lid=LSTACCHP9TG2CBHPUM9ZYHJ2R&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_5&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9TG2CBHPUM9.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e472]:
+                - generic [ref=e473]: ₹420
+                - generic [ref=e474]: ₹1,999
+                - generic [ref=e475]: 78% off
+            - generic [ref=e476]: Only few left
+          - generic [ref=e480]:
+            - link [ref=e481] [cursor=pointer]:
+              - /url: /nexbuds-buds-wireless-3-1-bluetooth/p/itmca3614372dc54?pid=ACCHPDVRYYUCGZGJ&lid=LSTACCHPDVRYYUCGZGJUCJB4N&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_6&otracker=search&fm=organic&iid=en_rfCm6nuDWx82VY34_kOXV7KDo45ez5MaBd08ryBqiWGkvcEUw_PmCiKZ06oLdwGsWhEuTiLj-Kr9PatHMOOV6MykkZKr4Y09AJ2v90nC2v9X4iLfKzLH7AG3Hw2URfEt&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "Nexbuds BUDS WIRELESS 3-1 Bluetooth" [ref=e485]
+            - link "Nexbuds BUDS WIRELESS 3-1 Bluetooth" [ref=e494] [cursor=pointer]:
+              - /url: /nexbuds-buds-wireless-3-1-bluetooth/p/itmca3614372dc54?pid=ACCHPDVRYYUCGZGJ&lid=LSTACCHPDVRYYUCGZGJUCJB4N&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_6&otracker=search&fm=organic&iid=en_rfCm6nuDWx82VY34_kOXV7KDo45ez5MaBd08ryBqiWGkvcEUw_PmCiKZ06oLdwGsWhEuTiLj-Kr9PatHMOOV6MykkZKr4Y09AJ2v90nC2v9X4iLfKzLH7AG3Hw2URfEt&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e495]: Black, In the Ear
+            - link "₹488 ₹2,999 83% off" [ref=e498] [cursor=pointer]:
+              - /url: /nexbuds-buds-wireless-3-1-bluetooth/p/itmca3614372dc54?pid=ACCHPDVRYYUCGZGJ&lid=LSTACCHPDVRYYUCGZGJUCJB4N&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_6&otracker=search&fm=organic&iid=en_rfCm6nuDWx82VY34_kOXV7KDo45ez5MaBd08ryBqiWGkvcEUw_PmCiKZ06oLdwGsWhEuTiLj-Kr9PatHMOOV6MykkZKr4Y09AJ2v90nC2v9X4iLfKzLH7AG3Hw2URfEt&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e499]:
+                - generic [ref=e500]: ₹488
+                - generic [ref=e501]: ₹2,999
+                - generic [ref=e502]: 83% off
+            - generic [ref=e503]: Bank Offer
+          - generic [ref=e507]:
+            - link [ref=e508] [cursor=pointer]:
+              - /url: /gwalbros-cmf-black-buds-0-34-bluetooth/p/itm9b506c89de60e?pid=ACCHPPJ6EZDQQHMW&lid=LSTACCHPPJ6EZDQQHMWFIHZOV&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_7&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHPPJ6EZDQQHMW.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "GWALBROS CMF BLACK BUDS 0.34 BLUETOOTH Bluetooth" [ref=e512]
+            - link "GWALBROS CMF BLACK BUDS 0.34 BLUETOOTH Bluetooth" [ref=e517] [cursor=pointer]:
+              - /url: /gwalbros-cmf-black-buds-0-34-bluetooth/p/itm9b506c89de60e?pid=ACCHPPJ6EZDQQHMW&lid=LSTACCHPPJ6EZDQQHMWFIHZOV&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_7&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHPPJ6EZDQQHMW.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e518]: Black, True Wireless
+            - generic [ref=e519]:
+              - generic [ref=e520]: "3.4"
+              - text: (14)
+            - link "₹398 ₹699 43% off" [ref=e523] [cursor=pointer]:
+              - /url: /gwalbros-cmf-black-buds-0-34-bluetooth/p/itm9b506c89de60e?pid=ACCHPPJ6EZDQQHMW&lid=LSTACCHPPJ6EZDQQHMWFIHZOV&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_7&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHPPJ6EZDQQHMW.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e524]:
+                - generic [ref=e525]: ₹398
+                - generic [ref=e526]: ₹699
+                - generic [ref=e527]: 43% off
+            - generic [ref=e528]: Super Deals
+          - generic [ref=e532]:
+            - link [ref=e533] [cursor=pointer]:
+              - /url: /earbuddy-snapx-buds-touch-sensor-waterproof-anc-bluetooth-v5-1/p/itm26b6e5e0f5487?pid=ACCHFZFHYCDWC5MW&lid=LSTACCHFZFHYCDWC5MWNHCLVR&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_8&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHFZFHYCDWC5MW.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "EARBUDDY SnapX Buds With Touch Sensor, Waterproof, ANC, Bluetooth V5.1 Bluetooth" [ref=e537]
+            - link "EARBUDDY SnapX Buds With Touch Sensor, Waterproof, ANC,..." [ref=e542] [cursor=pointer]:
+              - /url: /earbuddy-snapx-buds-touch-sensor-waterproof-anc-bluetooth-v5-1/p/itm26b6e5e0f5487?pid=ACCHFZFHYCDWC5MW&lid=LSTACCHFZFHYCDWC5MWNHCLVR&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_8&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHFZFHYCDWC5MW.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e543]: Matt Black, True Wireless
+            - generic [ref=e544]:
+              - generic [ref=e545]: "3.7"
+              - text: (1,378)
+            - link "₹283 ₹1,599 82% off" [ref=e548] [cursor=pointer]:
+              - /url: /earbuddy-snapx-buds-touch-sensor-waterproof-anc-bluetooth-v5-1/p/itm26b6e5e0f5487?pid=ACCHFZFHYCDWC5MW&lid=LSTACCHFZFHYCDWC5MWNHCLVR&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_8&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHFZFHYCDWC5MW.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e549]:
+                - generic [ref=e550]: ₹283
+                - generic [ref=e551]: ₹1,599
+                - generic [ref=e552]: 82% off
+            - generic [ref=e553]: Only few left
+        - generic [ref=e557]:
+          - generic [ref=e559]:
+            - link [ref=e560] [cursor=pointer]:
+              - /url: /techio-ultrapods-tws-earbuds-enc-series-long-battery-life-headphone-bluetooth/p/itmc76ffb1a91d96?pid=ACCHFRNFYANGGXRN&lid=LSTACCHFRNFYANGGXRNPOTUJZ&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_9&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHFRNFYANGGXRN.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "TECHIO Ultrapods tws earbuds ENC Series Long Battery Life headphone Bluetooth" [ref=e564]
+            - link "TECHIO Ultrapods tws earbuds ENC Series Long Battery Li..." [ref=e569] [cursor=pointer]:
+              - /url: /techio-ultrapods-tws-earbuds-enc-series-long-battery-life-headphone-bluetooth/p/itmc76ffb1a91d96?pid=ACCHFRNFYANGGXRN&lid=LSTACCHFRNFYANGGXRNPOTUJZ&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_9&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHFRNFYANGGXRN.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e570]: Black, True Wireless
+            - generic [ref=e571]:
+              - generic [ref=e572]: "3.4"
+              - text: (428)
+            - link "₹258 ₹1,999 87% off" [ref=e575] [cursor=pointer]:
+              - /url: /techio-ultrapods-tws-earbuds-enc-series-long-battery-life-headphone-bluetooth/p/itmc76ffb1a91d96?pid=ACCHFRNFYANGGXRN&lid=LSTACCHFRNFYANGGXRNPOTUJZ&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_9&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHFRNFYANGGXRN.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e576]:
+                - generic [ref=e577]: ₹258
+                - generic [ref=e578]: ₹1,999
+                - generic [ref=e579]: 87% off
+            - generic [ref=e580]: Only few left
+          - generic [ref=e584]:
+            - link [ref=e585] [cursor=pointer]:
+              - /url: /ns-world-fx9-buds-max-power-hd-sound-bt-earbuds-mic-touch-controls-headphone-bluetooth/p/itm9d7022d302fe4?pid=ACCH9HNFC6WHZWKG&lid=LSTACCH9HNFC6WHZWKGCZUWRM&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_10&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCH9HNFC6WHZWKG.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "NS WORLD FX9 Buds |Max Power| HD Sound | BT Earbuds |Mic & Touch Controls Headphone Bluetooth" [ref=e589]
+            - link "NS WORLD FX9 Buds |Max Power| HD Sound | BT Earbuds |Mi..." [ref=e594] [cursor=pointer]:
+              - /url: /ns-world-fx9-buds-max-power-hd-sound-bt-earbuds-mic-touch-controls-headphone-bluetooth/p/itm9d7022d302fe4?pid=ACCH9HNFC6WHZWKG&lid=LSTACCH9HNFC6WHZWKGCZUWRM&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_10&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCH9HNFC6WHZWKG.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e595]: Thunder Black, True Wireless
+            - generic [ref=e596]:
+              - generic [ref=e597]: "3.6"
+              - text: (607)
+            - link "₹300 ₹1,400 78% off" [ref=e600] [cursor=pointer]:
+              - /url: /ns-world-fx9-buds-max-power-hd-sound-bt-earbuds-mic-touch-controls-headphone-bluetooth/p/itm9d7022d302fe4?pid=ACCH9HNFC6WHZWKG&lid=LSTACCH9HNFC6WHZWKGCZUWRM&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_10&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCH9HNFC6WHZWKG.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e601]:
+                - generic [ref=e602]: ₹300
+                - generic [ref=e603]: ₹1,400
+                - generic [ref=e604]: 78% off
+            - generic [ref=e605]: Only few left
+          - generic [ref=e609]:
+            - link [ref=e610] [cursor=pointer]:
+              - /url: /uag-urbn-armour-gear-3r-buds-wireless-bluetooth-earbuds-enc-noise-cancellation/p/itm24625da3fd213?pid=ACCHPANMQBKR4HYV&lid=LSTACCHPANMQBKR4HYVIPBQPF&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_11&otracker=search&fm=organic&iid=en_rfCm6nuDWx82VY34_kOXV7KDo45ez5MaBd08ryBqiWHVYYIxszjBe8_XmW6UHPWUMxwrpECM6LHEINc118FOGdwr2z5Zzn3-d6quaJGzwn5X4iLfKzLH7AG3Hw2URfEt&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "uag urbn armour gear UAG 3R Buds Wireless Bluetooth Earbuds | ENC Noise Cancellation Bluetooth" [ref=e614]
+            - link "uag urbn armour gear UAG 3R Buds Wireless Bluetooth Ear..." [ref=e623] [cursor=pointer]:
+              - /url: /uag-urbn-armour-gear-3r-buds-wireless-bluetooth-earbuds-enc-noise-cancellation/p/itm24625da3fd213?pid=ACCHPANMQBKR4HYV&lid=LSTACCHPANMQBKR4HYVIPBQPF&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_11&otracker=search&fm=organic&iid=en_rfCm6nuDWx82VY34_kOXV7KDo45ez5MaBd08ryBqiWHVYYIxszjBe8_XmW6UHPWUMxwrpECM6LHEINc118FOGdwr2z5Zzn3-d6quaJGzwn5X4iLfKzLH7AG3Hw2URfEt&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e624]: Blue, True Wireless
+            - link "₹722 ₹1,990 63% off" [ref=e627] [cursor=pointer]:
+              - /url: /uag-urbn-armour-gear-3r-buds-wireless-bluetooth-earbuds-enc-noise-cancellation/p/itm24625da3fd213?pid=ACCHPANMQBKR4HYV&lid=LSTACCHPANMQBKR4HYVIPBQPF&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_11&otracker=search&fm=organic&iid=en_rfCm6nuDWx82VY34_kOXV7KDo45ez5MaBd08ryBqiWHVYYIxszjBe8_XmW6UHPWUMxwrpECM6LHEINc118FOGdwr2z5Zzn3-d6quaJGzwn5X4iLfKzLH7AG3Hw2URfEt&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e628]:
+                - generic [ref=e629]: ₹722
+                - generic [ref=e630]: ₹1,990
+                - generic [ref=e631]: 63% off
+            - generic [ref=e632]: Bank Offer
+          - generic [ref=e636]:
+            - link [ref=e637] [cursor=pointer]:
+              - /url: /dyc-buds-x-prime-wireless-earbuds-bluetooth-v5-0-tws-super-pods-10mm-driver-bass/p/itmb9ebc9d6f05aa?pid=ACCHZAWFMBVR2WZK&lid=LSTACCHZAWFMBVR2WZKQBO2D8&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_12&otracker=search&fm=organic&iid=en_rfCm6nuDWx82VY34_kOXV7KDo45ez5MaBd08ryBqiWF0zjuMRVPekOkA936zG2DqkmXQnyIs8oydytAV0Nq3KSeGT5eQjZ_myezpxEL_sl1jUqdf75wdCaUwKOHQ-sRT&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "Dyc Buds X Prime Wireless Earbuds Bluetooth V5.0 TWS Super Pods 10mm Driver Bass Bluetooth" [ref=e641]
+            - link "Dyc Buds X Prime Wireless Earbuds Bluetooth V5.0 TWS Su..." [ref=e650] [cursor=pointer]:
+              - /url: /dyc-buds-x-prime-wireless-earbuds-bluetooth-v5-0-tws-super-pods-10mm-driver-bass/p/itmb9ebc9d6f05aa?pid=ACCHZAWFMBVR2WZK&lid=LSTACCHZAWFMBVR2WZKQBO2D8&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_12&otracker=search&fm=organic&iid=en_rfCm6nuDWx82VY34_kOXV7KDo45ez5MaBd08ryBqiWF0zjuMRVPekOkA936zG2DqkmXQnyIs8oydytAV0Nq3KSeGT5eQjZ_myezpxEL_sl1jUqdf75wdCaUwKOHQ-sRT&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e651]: Green, True Wireless
+            - link "₹569 ₹1,599 64% off" [ref=e654] [cursor=pointer]:
+              - /url: /dyc-buds-x-prime-wireless-earbuds-bluetooth-v5-0-tws-super-pods-10mm-driver-bass/p/itmb9ebc9d6f05aa?pid=ACCHZAWFMBVR2WZK&lid=LSTACCHZAWFMBVR2WZKQBO2D8&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_12&otracker=search&fm=organic&iid=en_rfCm6nuDWx82VY34_kOXV7KDo45ez5MaBd08ryBqiWF0zjuMRVPekOkA936zG2DqkmXQnyIs8oydytAV0Nq3KSeGT5eQjZ_myezpxEL_sl1jUqdf75wdCaUwKOHQ-sRT&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e655]:
+                - generic [ref=e656]: ₹569
+                - generic [ref=e657]: ₹1,599
+                - generic [ref=e658]: 64% off
+            - generic [ref=e659]: Bank Offer
+        - generic [ref=e663]:
+          - generic [ref=e665]:
+            - link [ref=e666] [cursor=pointer]:
+              - /url: /nozler-original-one-pluss-bluetooth-headset-buds-2r-107-gaming/p/itm1b123db93e6b0?pid=ACCHPPFEWV52WGT4&lid=LSTACCHPPFEWV52WGT4H4C3MK&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_13&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHPPFEWV52WGT4.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "NOZLER ORIGINAL +One Pluss Bluetooth Headset Buds 2R - 107 Bluetooth Gaming" [ref=e670]
+            - link "NOZLER ORIGINAL +One Pluss Bluetooth Headset Buds 2R - ..." [ref=e675] [cursor=pointer]:
+              - /url: /nozler-original-one-pluss-bluetooth-headset-buds-2r-107-gaming/p/itm1b123db93e6b0?pid=ACCHPPFEWV52WGT4&lid=LSTACCHPPFEWV52WGT4H4C3MK&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_13&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHPPFEWV52WGT4.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e676]: Black, In the Ear
+            - link "₹1,422 ₹2,299 38% off" [ref=e677] [cursor=pointer]:
+              - /url: /nozler-original-one-pluss-bluetooth-headset-buds-2r-107-gaming/p/itm1b123db93e6b0?pid=ACCHPPFEWV52WGT4&lid=LSTACCHPPFEWV52WGT4H4C3MK&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_13&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHPPFEWV52WGT4.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e678]:
+                - generic [ref=e679]: ₹1,422
+                - generic [ref=e680]: ₹2,299
+                - generic [ref=e681]: 38% off
+            - generic [ref=e682]: Only few left
+          - generic [ref=e686]:
+            - link [ref=e687] [cursor=pointer]:
+              - /url: /divya-m10-earbuds-buds-5-1-earbuds-280h-playtime-headphones-bluetooth-gaming/p/itm73964e647ac7e?pid=ACCHEDGJSMMBTKRT&lid=LSTACCHEDGJSMMBTKRTWUZ9NO&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_14&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHEDGJSMMBTKRT.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "Divya M10 Earbuds/buds 5.1 Earbuds with 280H Playtime, Headphones Bluetooth Gaming Bluetooth" [ref=e691]
+            - link "Divya M10 Earbuds/buds 5.1 Earbuds with 280H Playtime, ..." [ref=e696] [cursor=pointer]:
+              - /url: /divya-m10-earbuds-buds-5-1-earbuds-280h-playtime-headphones-bluetooth-gaming/p/itm73964e647ac7e?pid=ACCHEDGJSMMBTKRT&lid=LSTACCHEDGJSMMBTKRTWUZ9NO&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_14&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHEDGJSMMBTKRT.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e697]: Black, In the Ear
+            - generic [ref=e698]:
+              - generic [ref=e699]: "3.5"
+              - text: (1,051)
+            - link "₹364 ₹1,999 81% off" [ref=e702] [cursor=pointer]:
+              - /url: /divya-m10-earbuds-buds-5-1-earbuds-280h-playtime-headphones-bluetooth-gaming/p/itm73964e647ac7e?pid=ACCHEDGJSMMBTKRT&lid=LSTACCHEDGJSMMBTKRTWUZ9NO&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_14&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHEDGJSMMBTKRT.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e703]:
+                - generic [ref=e704]: ₹364
+                - generic [ref=e705]: ₹1,999
+                - generic [ref=e706]: 81% off
+            - generic [ref=e707]: Only few left
+          - generic [ref=e711]:
+            - link [ref=e712] [cursor=pointer]:
+              - /url: /myxes-earbuds-bluetooth-v5-1-true-wireless-stereo/p/itm033f1e9d4f504?pid=ACCGM3NGCCDZKGKS&lid=LSTACCGM3NGCCDZKGKSWYHEYM&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_15&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCGM3NGCCDZKGKS.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "myxes Earbuds Bluetooth V5.1 True Wireless stereo Bluetooth" [ref=e716]
+            - link "myxes Earbuds Bluetooth V5.1 True Wireless stereo Bluet..." [ref=e721] [cursor=pointer]:
+              - /url: /myxes-earbuds-bluetooth-v5-1-true-wireless-stereo/p/itm033f1e9d4f504?pid=ACCGM3NGCCDZKGKS&lid=LSTACCGM3NGCCDZKGKSWYHEYM&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_15&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCGM3NGCCDZKGKS.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e722]: Black, In the Ear
+            - generic [ref=e723]:
+              - generic [ref=e724]: "3.6"
+              - text: (4,450)
+            - link "₹378 ₹1,999 81% off" [ref=e727] [cursor=pointer]:
+              - /url: /myxes-earbuds-bluetooth-v5-1-true-wireless-stereo/p/itm033f1e9d4f504?pid=ACCGM3NGCCDZKGKS&lid=LSTACCGM3NGCCDZKGKSWYHEYM&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_15&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCGM3NGCCDZKGKS.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e728]:
+                - generic [ref=e729]: ₹378
+                - generic [ref=e730]: ₹1,999
+                - generic [ref=e731]: 81% off
+            - generic [ref=e732]: Bank Offer
+          - generic [ref=e736]:
+            - link [ref=e737] [cursor=pointer]:
+              - /url: /ebbato-nord-buds-3-bluetooth/p/itmac48eb2ab1163?pid=ACCHZD8CFHEXAKK6&lid=LSTACCHZD8CFHEXAKK6TEMSLL&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_16&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHZD8CFHEXAKK6.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "ebbato Nord buds 3 Bluetooth" [ref=e741]
+            - link "ebbato Nord buds 3 Bluetooth" [ref=e746] [cursor=pointer]:
+              - /url: /ebbato-nord-buds-3-bluetooth/p/itmac48eb2ab1163?pid=ACCHZD8CFHEXAKK6&lid=LSTACCHZD8CFHEXAKK6TEMSLL&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_16&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHZD8CFHEXAKK6.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e747]: White, In the Ear
+            - link "₹388 ₹1,699 77% off" [ref=e748] [cursor=pointer]:
+              - /url: /ebbato-nord-buds-3-bluetooth/p/itmac48eb2ab1163?pid=ACCHZD8CFHEXAKK6&lid=LSTACCHZD8CFHEXAKK6TEMSLL&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_16&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHZD8CFHEXAKK6.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e749]:
+                - generic [ref=e750]: ₹388
+                - generic [ref=e751]: ₹1,699
+                - generic [ref=e752]: 77% off
+            - generic [ref=e753]: Only few left
+        - generic [ref=e757]:
+          - generic [ref=e759]:
+            - link [ref=e760] [cursor=pointer]:
+              - /url: /uag-urbn-armour-gear-buds-2r-hyperbass-anc-wireless-earbuds-bluetooth/p/itma7565d7f9a50c?pid=ACCHQF9DYNKU3VR8&lid=LSTACCHQF9DYNKU3VR8WAIWVJ&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_17&otracker=search&fm=organic&iid=en_rfCm6nuDWx82VY34_kOXV7KDo45ez5MaBd08ryBqiWE357pYDrnVxak34mze8kBXuC14YhNw4CGRkCLPeVmzVy262rKMYzztR5NnPamXKmFX4iLfKzLH7AG3Hw2URfEt&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "uag urbn armour gear UAG Buds 2R HyperBass ANC Wireless Earbuds Bluetooth" [ref=e764]
+            - link "uag urbn armour gear UAG Buds 2R HyperBass ANC Wireless..." [ref=e773] [cursor=pointer]:
+              - /url: /uag-urbn-armour-gear-buds-2r-hyperbass-anc-wireless-earbuds-bluetooth/p/itma7565d7f9a50c?pid=ACCHQF9DYNKU3VR8&lid=LSTACCHQF9DYNKU3VR8WAIWVJ&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_17&otracker=search&fm=organic&iid=en_rfCm6nuDWx82VY34_kOXV7KDo45ez5MaBd08ryBqiWE357pYDrnVxak34mze8kBXuC14YhNw4CGRkCLPeVmzVy262rKMYzztR5NnPamXKmFX4iLfKzLH7AG3Hw2URfEt&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e774]: Black, True Wireless
+            - link "₹726 ₹1,699 57% off" [ref=e777] [cursor=pointer]:
+              - /url: /uag-urbn-armour-gear-buds-2r-hyperbass-anc-wireless-earbuds-bluetooth/p/itma7565d7f9a50c?pid=ACCHQF9DYNKU3VR8&lid=LSTACCHQF9DYNKU3VR8WAIWVJ&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_17&otracker=search&fm=organic&iid=en_rfCm6nuDWx82VY34_kOXV7KDo45ez5MaBd08ryBqiWE357pYDrnVxak34mze8kBXuC14YhNw4CGRkCLPeVmzVy262rKMYzztR5NnPamXKmFX4iLfKzLH7AG3Hw2URfEt&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e778]:
+                - generic [ref=e779]: ₹726
+                - generic [ref=e780]: ₹1,699
+                - generic [ref=e781]: 57% off
+            - generic [ref=e782]: Bank Offer
+          - generic [ref=e786]:
+            - link [ref=e787] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-aag-bluetooth/p/itm14e0bf6f4ebb5?pid=ACCHP9THJUJCZ3BQ&lid=LSTACCHP9THJUJCZ3BQSQXYUA&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_18&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9THJUJCZ3BQ.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "BeastBass Buds 2A TWS 40H Playtime BT 5.3 ENC Mic AAG Bluetooth" [ref=e791]
+            - link "BeastBass Buds 2A TWS 40H Playtime BT 5.3 ENC Mic AAG B..." [ref=e796] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-aag-bluetooth/p/itm14e0bf6f4ebb5?pid=ACCHP9THJUJCZ3BQ&lid=LSTACCHP9THJUJCZ3BQSQXYUA&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_18&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9THJUJCZ3BQ.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e797]: Black, True Wireless
+            - generic [ref=e798]:
+              - generic [ref=e799]: "3"
+              - text: (3)
+            - link "₹395 ₹1,999 80% off" [ref=e802] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-aag-bluetooth/p/itm14e0bf6f4ebb5?pid=ACCHP9THJUJCZ3BQ&lid=LSTACCHP9THJUJCZ3BQSQXYUA&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_18&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9THJUJCZ3BQ.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e803]:
+                - generic [ref=e804]: ₹395
+                - generic [ref=e805]: ₹1,999
+                - generic [ref=e806]: 80% off
+            - generic [ref=e807]: Only few left
+          - generic [ref=e811]:
+            - link [ref=e812] [cursor=pointer]:
+              - /url: /gwalbros-new-trending-buds-r2-true-wireless-earbuds-mic-12-4mm-drivers-f03-bluetooth/p/itm97207f23e9ae5?pid=ACCHZQP5KUJZDK6U&lid=LSTACCHZQP5KUJZDK6UASYUVU&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_19&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHZQP5KUJZDK6U.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "GWALBROS New Trending BUDS R2 True Wireless Earbuds with Mic, 12.4mm Drivers F03 Bluetooth" [ref=e816]
+            - link "GWALBROS New Trending BUDS R2 True Wireless Earbuds wit..." [ref=e821] [cursor=pointer]:
+              - /url: /gwalbros-new-trending-buds-r2-true-wireless-earbuds-mic-12-4mm-drivers-f03-bluetooth/p/itm97207f23e9ae5?pid=ACCHZQP5KUJZDK6U&lid=LSTACCHZQP5KUJZDK6UASYUVU&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_19&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHZQP5KUJZDK6U.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e822]: Blue, True Wireless
+            - generic [ref=e823]:
+              - generic [ref=e824]: "4.3"
+              - text: (40)
+            - link "₹419 ₹1,999 79% off" [ref=e829] [cursor=pointer]:
+              - /url: /gwalbros-new-trending-buds-r2-true-wireless-earbuds-mic-12-4mm-drivers-f03-bluetooth/p/itm97207f23e9ae5?pid=ACCHZQP5KUJZDK6U&lid=LSTACCHZQP5KUJZDK6UASYUVU&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_19&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHZQP5KUJZDK6U.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e830]:
+                - generic [ref=e831]: ₹419
+                - generic [ref=e832]: ₹1,999
+                - generic [ref=e833]: 79% off
+            - generic [ref=e834]: Only few left
+          - generic [ref=e838]:
+            - link [ref=e839] [cursor=pointer]:
+              - /url: /baot-earbuds-newly-launched-60hrs-playtime-fast-charging-deep-bass-enc-bluetooth/p/itm080b3322ebe72?pid=ACCHHJFG3WF6HH3Z&lid=LSTACCHHJFG3WF6HH3ZAH8UIC&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_20&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHHJFG3WF6HH3Z.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "bAot EarBuds Newly Launched with 60Hrs Playtime & Fast Charging with Deep Bass & ENC Bluetooth" [ref=e843]
+            - link "bAot EarBuds Newly Launched with 60Hrs Playtime & Fast ..." [ref=e848] [cursor=pointer]:
+              - /url: /baot-earbuds-newly-launched-60hrs-playtime-fast-charging-deep-bass-enc-bluetooth/p/itm080b3322ebe72?pid=ACCHHJFG3WF6HH3Z&lid=LSTACCHHJFG3WF6HH3ZAH8UIC&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_20&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHHJFG3WF6HH3Z.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e849]: White, True Wireless
+            - generic [ref=e850]:
+              - generic [ref=e851]: "3.5"
+              - text: (1,700)
+            - link "₹654 ₹1,999 67% off" [ref=e854] [cursor=pointer]:
+              - /url: /baot-earbuds-newly-launched-60hrs-playtime-fast-charging-deep-bass-enc-bluetooth/p/itm080b3322ebe72?pid=ACCHHJFG3WF6HH3Z&lid=LSTACCHHJFG3WF6HH3ZAH8UIC&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_20&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHHJFG3WF6HH3Z.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e855]:
+                - generic [ref=e856]: ₹654
+                - generic [ref=e857]: ₹1,999
+                - generic [ref=e858]: 67% off
+            - generic [ref=e859]: Bank Offer
+        - generic [ref=e863]:
+          - generic [ref=e865]:
+            - link [ref=e866] [cursor=pointer]:
+              - /url: /lufina-buds-ft-ai-enc-calls-38-hours-playback-deep-bass-bluetooth/p/itm92538ac0edef6?pid=ACCHFG76KFCBQ3VH&lid=LSTACCHFG76KFCBQ3VHRTTLPY&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_21&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHFG76KFCBQ3VH.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "Lufina Buds FT with AI ENC for calls, 38 hours of Playback and Deep Bass Bluetooth Bluetooth" [ref=e870]
+            - link "Lufina Buds FT with AI ENC for calls, 38 hours of Playb..." [ref=e875] [cursor=pointer]:
+              - /url: /lufina-buds-ft-ai-enc-calls-38-hours-playback-deep-bass-bluetooth/p/itm92538ac0edef6?pid=ACCHFG76KFCBQ3VH&lid=LSTACCHFG76KFCBQ3VHRTTLPY&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_21&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHFG76KFCBQ3VH.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e876]: White, True Wireless
+            - generic [ref=e877]:
+              - generic [ref=e878]: "3.2"
+              - text: (312)
+            - link "₹280 ₹1,999 85% off" [ref=e881] [cursor=pointer]:
+              - /url: /lufina-buds-ft-ai-enc-calls-38-hours-playback-deep-bass-bluetooth/p/itm92538ac0edef6?pid=ACCHFG76KFCBQ3VH&lid=LSTACCHFG76KFCBQ3VHRTTLPY&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_21&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHFG76KFCBQ3VH.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e882]:
+                - generic [ref=e883]: ₹280
+                - generic [ref=e884]: ₹1,999
+                - generic [ref=e885]: 85% off
+            - generic [ref=e886]: Only few left
+          - generic [ref=e890]:
+            - link [ref=e891] [cursor=pointer]:
+              - /url: /three-guys-black-buds-touch-sensor-waterproof-anc-33-bluetooth-v5-1-true/p/itm6ffb5a2e35831?pid=ACCHFSAGTB7MASXD&lid=LSTACCHFSAGTB7MASXD8GEZ7J&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_22&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHFSAGTB7MASXD.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "Three Guys Black Buds With Touch Sensor, Waterproof, ANC,33 Bluetooth V5.1 Bluetooth True Bluetooth" [ref=e895]
+            - link "Three Guys Black Buds With Touch Sensor, Waterproof, AN..." [ref=e900] [cursor=pointer]:
+              - /url: /three-guys-black-buds-touch-sensor-waterproof-anc-33-bluetooth-v5-1-true/p/itm6ffb5a2e35831?pid=ACCHFSAGTB7MASXD&lid=LSTACCHFSAGTB7MASXD8GEZ7J&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_22&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHFSAGTB7MASXD.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e901]: Black, In the Ear
+            - generic [ref=e902]:
+              - generic [ref=e903]: "3.8"
+              - text: (255)
+            - link "₹300 ₹1,699 82% off" [ref=e906] [cursor=pointer]:
+              - /url: /three-guys-black-buds-touch-sensor-waterproof-anc-33-bluetooth-v5-1-true/p/itm6ffb5a2e35831?pid=ACCHFSAGTB7MASXD&lid=LSTACCHFSAGTB7MASXD8GEZ7J&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_22&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHFSAGTB7MASXD.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e907]:
+                - generic [ref=e908]: ₹300
+                - generic [ref=e909]: ₹1,699
+                - generic [ref=e910]: 82% off
+            - generic [ref=e911]: Only few left
+          - generic [ref=e915]:
+            - link [ref=e916] [cursor=pointer]:
+              - /url: /zenvy-ear-buds-bluetooth/p/itm53f304d9d6210?pid=ACCHPJTYFWUYVAJA&lid=LSTACCHPJTYFWUYVAJAM311CV&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_23&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHPJTYFWUYVAJA.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "Zenvy Ear buds Bluetooth" [ref=e920]
+            - link "Zenvy Ear buds Bluetooth" [ref=e925] [cursor=pointer]:
+              - /url: /zenvy-ear-buds-bluetooth/p/itm53f304d9d6210?pid=ACCHPJTYFWUYVAJA&lid=LSTACCHPJTYFWUYVAJAM311CV&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_23&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHPJTYFWUYVAJA.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e926]: Orange, In the Ear
+            - link "₹615 ₹1,499 58% off" [ref=e929] [cursor=pointer]:
+              - /url: /zenvy-ear-buds-bluetooth/p/itm53f304d9d6210?pid=ACCHPJTYFWUYVAJA&lid=LSTACCHPJTYFWUYVAJAM311CV&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_23&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHPJTYFWUYVAJA.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e930]:
+                - generic [ref=e931]: ₹615
+                - generic [ref=e932]: ₹1,499
+                - generic [ref=e933]: 58% off
+            - generic [ref=e934]: Only few left
+          - generic [ref=e938]:
+            - link [ref=e939] [cursor=pointer]:
+              - /url: /techio-buds-ft-ai-enc-calls-38-hours-playback-deep-bass-bluetooth/p/itm90f7d21567a47?pid=ACCHJPGDCXSEMB3Q&lid=LSTACCHJPGDCXSEMB3QWNJLLQ&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_24&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHJPGDCXSEMB3Q.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "TECHIO Buds FT with AI ENC for calls, 38 hours of Playback and Deep Bass Bluetooth Bluetooth" [ref=e943]
+            - link "TECHIO Buds FT with AI ENC for calls, 38 hours of Playb..." [ref=e948] [cursor=pointer]:
+              - /url: /techio-buds-ft-ai-enc-calls-38-hours-playback-deep-bass-bluetooth/p/itm90f7d21567a47?pid=ACCHJPGDCXSEMB3Q&lid=LSTACCHJPGDCXSEMB3QWNJLLQ&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_24&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHJPGDCXSEMB3Q.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e949]: White, True Wireless
+            - generic [ref=e950]:
+              - generic [ref=e951]: "3.5"
+              - text: (21)
+            - link "₹283 ₹1,999 85% off" [ref=e954] [cursor=pointer]:
+              - /url: /techio-buds-ft-ai-enc-calls-38-hours-playback-deep-bass-bluetooth/p/itm90f7d21567a47?pid=ACCHJPGDCXSEMB3Q&lid=LSTACCHJPGDCXSEMB3QWNJLLQ&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_24&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHJPGDCXSEMB3Q.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e955]:
+                - generic [ref=e956]: ₹283
+                - generic [ref=e957]: ₹1,999
+                - generic [ref=e958]: 85% off
+            - generic [ref=e959]: Only few left
+        - generic [ref=e963]:
+          - generic [ref=e965]:
+            - link [ref=e966] [cursor=pointer]:
+              - /url: /allons-tws-bluetooth-anc-earbuds-spatial-sound-magsafe-charging-case-a402/p/itme944548d93a22?pid=ACCHHZHJV27HKS3E&lid=LSTACCHHZHJV27HKS3EZDBFTF&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_25&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHHZHJV27HKS3E.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "allons TWS Bluetooth ANC Earbuds Spatial Sound with MagSafe Charging Case A402 Bluetooth" [ref=e970]
+            - link "allons TWS Bluetooth ANC Earbuds Spatial Sound with Mag..." [ref=e975] [cursor=pointer]:
+              - /url: /allons-tws-bluetooth-anc-earbuds-spatial-sound-magsafe-charging-case-a402/p/itme944548d93a22?pid=ACCHHZHJV27HKS3E&lid=LSTACCHHZHJV27HKS3EZDBFTF&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_25&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHHZHJV27HKS3E.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e976]: Black, True Wireless
+            - generic [ref=e977]:
+              - generic [ref=e978]: "4.4"
+              - text: (8)
+            - link "₹298 ₹2,188 86% off" [ref=e983] [cursor=pointer]:
+              - /url: /allons-tws-bluetooth-anc-earbuds-spatial-sound-magsafe-charging-case-a402/p/itme944548d93a22?pid=ACCHHZHJV27HKS3E&lid=LSTACCHHZHJV27HKS3EZDBFTF&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_25&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHHZHJV27HKS3E.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e984]:
+                - generic [ref=e985]: ₹298
+                - generic [ref=e986]: ₹2,188
+                - generic [ref=e987]: 86% off
+            - generic [ref=e988]: Only few left
+          - generic [ref=e992]:
+            - link [ref=e993] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-ail-bluetooth/p/itm5054a833bb50c?pid=ACCHP9TUZAMZGAHY&lid=LSTACCHP9TUZAMZGAHYQWJ7TT&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_26&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9TUZAMZGAHY.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "BeastBass Buds 2A TWS 40H Playtime BT 5.3 ENC Mic AIL Bluetooth" [ref=e997]
+            - link "BeastBass Buds 2A TWS 40H Playtime BT 5.3 ENC Mic AIL B..." [ref=e1002] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-ail-bluetooth/p/itm5054a833bb50c?pid=ACCHP9TUZAMZGAHY&lid=LSTACCHP9TUZAMZGAHYQWJ7TT&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_26&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9TUZAMZGAHY.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1003]: Black, True Wireless
+            - link "₹398 ₹2,499 84% off" [ref=e1004] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-ail-bluetooth/p/itm5054a833bb50c?pid=ACCHP9TUZAMZGAHY&lid=LSTACCHP9TUZAMZGAHYQWJ7TT&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_26&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9TUZAMZGAHY.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1005]:
+                - generic [ref=e1006]: ₹398
+                - generic [ref=e1007]: ₹2,499
+                - generic [ref=e1008]: 84% off
+            - generic [ref=e1009]: Only few left
+          - generic [ref=e1013]:
+            - link [ref=e1014] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-adu-bluetooth/p/itmc8c99b02c388e?pid=ACCHP9TDW3MZMFZJ&lid=LSTACCHP9TDW3MZMFZJHGHD0K&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_27&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9TDW3MZMFZJ.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "BeastBass Buds 2A TWS 40H Playtime BT 5.3 ENC Mic ADU Bluetooth" [ref=e1018]
+            - link "BeastBass Buds 2A TWS 40H Playtime BT 5.3 ENC Mic ADU B..." [ref=e1023] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-adu-bluetooth/p/itmc8c99b02c388e?pid=ACCHP9TDW3MZMFZJ&lid=LSTACCHP9TDW3MZMFZJHGHD0K&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_27&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9TDW3MZMFZJ.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1024]: Black, True Wireless
+            - link "₹398 ₹2,499 84% off" [ref=e1025] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-adu-bluetooth/p/itmc8c99b02c388e?pid=ACCHP9TDW3MZMFZJ&lid=LSTACCHP9TDW3MZMFZJHGHD0K&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_27&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9TDW3MZMFZJ.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1026]:
+                - generic [ref=e1027]: ₹398
+                - generic [ref=e1028]: ₹2,499
+                - generic [ref=e1029]: 84% off
+            - generic [ref=e1030]: Only few left
+          - generic [ref=e1034]:
+            - link [ref=e1035] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-afv-bluetooth/p/itm797eb3b63554d?pid=ACCHP9TJ8YVUYA8Q&lid=LSTACCHP9TJ8YVUYA8QSVL2CG&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_28&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9TJ8YVUYA8Q.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "BeastBass Buds 2A TWS 40H Playtime BT 5.3 ENC Mic AFV Bluetooth" [ref=e1039]
+            - link "BeastBass Buds 2A TWS 40H Playtime BT 5.3 ENC Mic AFV B..." [ref=e1044] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-afv-bluetooth/p/itm797eb3b63554d?pid=ACCHP9TJ8YVUYA8Q&lid=LSTACCHP9TJ8YVUYA8QSVL2CG&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_28&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9TJ8YVUYA8Q.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1045]: Black, True Wireless
+            - link "₹398 ₹2,499 84% off" [ref=e1046] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-afv-bluetooth/p/itm797eb3b63554d?pid=ACCHP9TJ8YVUYA8Q&lid=LSTACCHP9TJ8YVUYA8QSVL2CG&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_28&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9TJ8YVUYA8Q.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1047]:
+                - generic [ref=e1048]: ₹398
+                - generic [ref=e1049]: ₹2,499
+                - generic [ref=e1050]: 84% off
+            - generic [ref=e1051]: Only few left
+        - generic [ref=e1055]:
+          - generic [ref=e1057]:
+            - link [ref=e1058] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-ajf-bluetooth/p/itm120945dbe3167?pid=ACCHP9TQ9G6H9ZWT&lid=LSTACCHP9TQ9G6H9ZWTMRVUUR&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_29&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9TQ9G6H9ZWT.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "BeastBass Buds 2A TWS 40H Playtime BT 5.3 ENC Mic AJF Bluetooth" [ref=e1062]
+            - link "BeastBass Buds 2A TWS 40H Playtime BT 5.3 ENC Mic AJF B..." [ref=e1067] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-ajf-bluetooth/p/itm120945dbe3167?pid=ACCHP9TQ9G6H9ZWT&lid=LSTACCHP9TQ9G6H9ZWTMRVUUR&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_29&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9TQ9G6H9ZWT.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1068]: Black, True Wireless
+            - link "₹398 ₹2,499 84% off" [ref=e1069] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-ajf-bluetooth/p/itm120945dbe3167?pid=ACCHP9TQ9G6H9ZWT&lid=LSTACCHP9TQ9G6H9ZWTMRVUUR&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_29&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9TQ9G6H9ZWT.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1070]:
+                - generic [ref=e1071]: ₹398
+                - generic [ref=e1072]: ₹2,499
+                - generic [ref=e1073]: 84% off
+            - generic [ref=e1074]: Only few left
+          - generic [ref=e1078]:
+            - link [ref=e1079] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-acb-bluetooth/p/itmefd92b717a87c?pid=ACCHP9TJSYJVEGXC&lid=LSTACCHP9TJSYJVEGXCWLJAV3&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_30&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9TJSYJVEGXC.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "BeastBass Buds 2A TWS 40H Playtime BT 5.3 ENC Mic ACB Bluetooth" [ref=e1083]
+            - link "BeastBass Buds 2A TWS 40H Playtime BT 5.3 ENC Mic ACB B..." [ref=e1088] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-acb-bluetooth/p/itmefd92b717a87c?pid=ACCHP9TJSYJVEGXC&lid=LSTACCHP9TJSYJVEGXCWLJAV3&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_30&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9TJSYJVEGXC.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1089]: Black, True Wireless
+            - link "₹398 ₹2,499 84% off" [ref=e1090] [cursor=pointer]:
+              - /url: /beastbass-buds-2a-tws-40h-playtime-bt-5-3-enc-mic-acb-bluetooth/p/itmefd92b717a87c?pid=ACCHP9TJSYJVEGXC&lid=LSTACCHP9TJSYJVEGXCWLJAV3&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_30&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP9TJSYJVEGXC.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1091]:
+                - generic [ref=e1092]: ₹398
+                - generic [ref=e1093]: ₹2,499
+                - generic [ref=e1094]: 84% off
+            - generic [ref=e1095]: Only few left
+          - generic [ref=e1099]:
+            - link [ref=e1100] [cursor=pointer]:
+              - /url: /woonk-on-plus-buds1-pro-3-bluetooth-tws-in-ear-buds-dual-drivers-r91/p/itmaef6e4a982208?pid=ACCHPTW5D67UEA3Y&lid=LSTACCHPTW5D67UEA3YJ9FB1K&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_31&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHPTW5D67UEA3Y.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "Woonk On_ Plus Buds1 Pro 3 Bluetooth TWS in-Ear Buds – Dual Drivers Dual R91 Bluetooth" [ref=e1104]
+            - link "Woonk On_ Plus Buds1 Pro 3 Bluetooth TWS in-Ear Buds – ..." [ref=e1109] [cursor=pointer]:
+              - /url: /woonk-on-plus-buds1-pro-3-bluetooth-tws-in-ear-buds-dual-drivers-r91/p/itmaef6e4a982208?pid=ACCHPTW5D67UEA3Y&lid=LSTACCHPTW5D67UEA3YJ9FB1K&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_31&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHPTW5D67UEA3Y.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1110]: Black, True Wireless
+            - generic [ref=e1111]:
+              - generic [ref=e1112]: "4.2"
+              - text: (60)
+            - link "₹722 ₹2,790 74% off" [ref=e1115] [cursor=pointer]:
+              - /url: /woonk-on-plus-buds1-pro-3-bluetooth-tws-in-ear-buds-dual-drivers-r91/p/itmaef6e4a982208?pid=ACCHPTW5D67UEA3Y&lid=LSTACCHPTW5D67UEA3YJ9FB1K&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_31&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHPTW5D67UEA3Y.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1116]:
+                - generic [ref=e1117]: ₹722
+                - generic [ref=e1118]: ₹2,790
+                - generic [ref=e1119]: 74% off
+            - generic [ref=e1120]: Only few left
+          - generic [ref=e1124]:
+            - link [ref=e1125] [cursor=pointer]:
+              - /url: /woonk-on-plus-buds1-pro-3-bluetooth-tws-in-ear-buds-dual-drivers-r28/p/itm14119cc4de325?pid=ACCHPTW4TXHDZBE2&lid=LSTACCHPTW4TXHDZBE2B39DNI&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_32&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHPTW4TXHDZBE2.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "Woonk On_ Plus Buds1 Pro 3 Bluetooth TWS in-Ear Buds – Dual Drivers Dual R28 Bluetooth" [ref=e1129]
+            - link "Woonk On_ Plus Buds1 Pro 3 Bluetooth TWS in-Ear Buds – ..." [ref=e1134] [cursor=pointer]:
+              - /url: /woonk-on-plus-buds1-pro-3-bluetooth-tws-in-ear-buds-dual-drivers-r28/p/itm14119cc4de325?pid=ACCHPTW4TXHDZBE2&lid=LSTACCHPTW4TXHDZBE2B39DNI&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_32&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHPTW4TXHDZBE2.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1135]: Black, True Wireless
+            - link "₹722 ₹2,790 74% off" [ref=e1136] [cursor=pointer]:
+              - /url: /woonk-on-plus-buds1-pro-3-bluetooth-tws-in-ear-buds-dual-drivers-r28/p/itm14119cc4de325?pid=ACCHPTW4TXHDZBE2&lid=LSTACCHPTW4TXHDZBE2B39DNI&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_32&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHPTW4TXHDZBE2.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1137]:
+                - generic [ref=e1138]: ₹722
+                - generic [ref=e1139]: ₹2,790
+                - generic [ref=e1140]: 74% off
+            - generic [ref=e1141]: Only few left
+        - generic [ref=e1145]:
+          - generic [ref=e1147]:
+            - link [ref=e1148] [cursor=pointer]:
+              - /url: /three-guys-black-buds-touch-sensor-waterproof-anx-2-bluetooth-v5-1-true-k41/p/itm43e91a2d201f5?pid=ACCHGHFGXYHFZGQ8&lid=LSTACCHGHFGXYHFZGQ8JNZRHU&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_33&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHGHFGXYHFZGQ8.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "Three Guys Black Buds Touch Sensor, Waterproof, ANX,2 Bluetooth V5.1 Bluetooth True K41 Bluetooth" [ref=e1152]
+            - link "Three Guys Black Buds Touch Sensor, Waterproof, ANX,2 B..." [ref=e1157] [cursor=pointer]:
+              - /url: /three-guys-black-buds-touch-sensor-waterproof-anx-2-bluetooth-v5-1-true-k41/p/itm43e91a2d201f5?pid=ACCHGHFGXYHFZGQ8&lid=LSTACCHGHFGXYHFZGQ8JNZRHU&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_33&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHGHFGXYHFZGQ8.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1158]: Black, In the Ear
+            - generic [ref=e1159]:
+              - generic [ref=e1160]: "3.8"
+              - text: (79)
+            - link "₹267 ₹1,299 79% off" [ref=e1165] [cursor=pointer]:
+              - /url: /three-guys-black-buds-touch-sensor-waterproof-anx-2-bluetooth-v5-1-true-k41/p/itm43e91a2d201f5?pid=ACCHGHFGXYHFZGQ8&lid=LSTACCHGHFGXYHFZGQ8JNZRHU&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_33&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHGHFGXYHFZGQ8.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1166]:
+                - generic [ref=e1167]: ₹267
+                - generic [ref=e1168]: ₹1,299
+                - generic [ref=e1169]: 79% off
+            - generic [ref=e1170]: Only few left
+          - generic [ref=e1174]:
+            - link [ref=e1175] [cursor=pointer]:
+              - /url: /ucool-buds-ai-enc-100-hours-playback-fast-charging-low-latency-gaming-bluetooth/p/itm1472e4ec2d130?pid=ACCHHHGKEZS2GYQG&lid=LSTACCHHHGKEZS2GYQGWCOIFZ&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_34&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHHHGKEZS2GYQG.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "Ucool Buds AI ENC, 100 Hours Playback with Fast Charging and Low Latency Gaming Bluetooth" [ref=e1179]
+            - link "Ucool Buds AI ENC, 100 Hours Playback with Fast Chargin..." [ref=e1184] [cursor=pointer]:
+              - /url: /ucool-buds-ai-enc-100-hours-playback-fast-charging-low-latency-gaming-bluetooth/p/itm1472e4ec2d130?pid=ACCHHHGKEZS2GYQG&lid=LSTACCHHHGKEZS2GYQGWCOIFZ&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_34&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHHHGKEZS2GYQG.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1185]: Black, True Wireless
+            - generic [ref=e1186]:
+              - generic [ref=e1187]: "3.8"
+              - text: (114)
+            - link "₹489 ₹2,499 80% off" [ref=e1190] [cursor=pointer]:
+              - /url: /ucool-buds-ai-enc-100-hours-playback-fast-charging-low-latency-gaming-bluetooth/p/itm1472e4ec2d130?pid=ACCHHHGKEZS2GYQG&lid=LSTACCHHHGKEZS2GYQGWCOIFZ&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_34&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHHHGKEZS2GYQG.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1191]:
+                - generic [ref=e1192]: ₹489
+                - generic [ref=e1193]: ₹2,499
+                - generic [ref=e1194]: 80% off
+            - generic [ref=e1195]: Only few left
+          - generic [ref=e1199]:
+            - link [ref=e1200] [cursor=pointer]:
+              - /url: /earbuddy-snapx-20-buds-touch-sensor-waterproof-anc-bluetooth-v5-3/p/itm82c563b70eda3?pid=ACCHFMAAUXZRNVGX&lid=LSTACCHFMAAUXZRNVGXEOAMIR&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_35&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHFMAAUXZRNVGX.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "EARBUDDY SnapX 20 Buds With Touch Sensor, Waterproof, ANC, Bluetooth V5.3 Bluetooth" [ref=e1204]
+            - link "EARBUDDY SnapX 20 Buds With Touch Sensor, Waterproof, A..." [ref=e1209] [cursor=pointer]:
+              - /url: /earbuddy-snapx-20-buds-touch-sensor-waterproof-anc-bluetooth-v5-3/p/itm82c563b70eda3?pid=ACCHFMAAUXZRNVGX&lid=LSTACCHFMAAUXZRNVGXEOAMIR&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_35&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHFMAAUXZRNVGX.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1210]: Black, True Wireless
+            - generic [ref=e1211]:
+              - generic [ref=e1212]: "3.8"
+              - text: (686)
+            - link "₹283 ₹1,599 82% off" [ref=e1217] [cursor=pointer]:
+              - /url: /earbuddy-snapx-20-buds-touch-sensor-waterproof-anc-bluetooth-v5-3/p/itm82c563b70eda3?pid=ACCHFMAAUXZRNVGX&lid=LSTACCHFMAAUXZRNVGXEOAMIR&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_35&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHFMAAUXZRNVGX.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1218]:
+                - generic [ref=e1219]: ₹283
+                - generic [ref=e1220]: ₹1,599
+                - generic [ref=e1221]: 82% off
+            - generic [ref=e1222]: Only few left
+          - generic [ref=e1226]:
+            - link [ref=e1227] [cursor=pointer]:
+              - /url: /techio-buds-pro-2-wireless-earbud-dual-mic-enc-clear-calls-60h-playback-bluetooth/p/itma2ccbd007eced?pid=ACCHP3UETZ7YNGFE&lid=LSTACCHP3UETZ7YNGFEJMZAMY&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_36&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP3UETZ7YNGFE.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "TECHIO Buds Pro 2 Wireless Earbud with Dual Mic ENC for Clear Calls, 60H Playback Bluetooth" [ref=e1231]
+            - link "TECHIO Buds Pro 2 Wireless Earbud with Dual Mic ENC for..." [ref=e1236] [cursor=pointer]:
+              - /url: /techio-buds-pro-2-wireless-earbud-dual-mic-enc-clear-calls-60h-playback-bluetooth/p/itma2ccbd007eced?pid=ACCHP3UETZ7YNGFE&lid=LSTACCHP3UETZ7YNGFEJMZAMY&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_36&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP3UETZ7YNGFE.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1237]: Orange, True Wireless
+            - generic [ref=e1238]:
+              - generic [ref=e1239]: "3.6"
+              - text: (2,866)
+            - link "₹699 ₹1,999 65% off" [ref=e1242] [cursor=pointer]:
+              - /url: /techio-buds-pro-2-wireless-earbud-dual-mic-enc-clear-calls-60h-playback-bluetooth/p/itma2ccbd007eced?pid=ACCHP3UETZ7YNGFE&lid=LSTACCHP3UETZ7YNGFEJMZAMY&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_36&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHP3UETZ7YNGFE.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1243]:
+                - generic [ref=e1244]: ₹699
+                - generic [ref=e1245]: ₹1,999
+                - generic [ref=e1246]: 65% off
+            - generic [ref=e1247]: Only few left
+        - generic [ref=e1251]:
+          - generic [ref=e1253]:
+            - link [ref=e1254] [cursor=pointer]:
+              - /url: /zpeldorn-superpods-immersio-dolby-audio-3d-soundstage-ear-buds-wireless-deep-bass-bluetooth/p/itm783e82c13e147?pid=ACCHKGEAS4CEHD2G&lid=LSTACCHKGEAS4CEHD2GNOHSII&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_37&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHKGEAS4CEHD2G.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "ZPELDORN SuperPods Immersio Dolby Audio, 3D Soundstage, Ear Buds Wireless with Deep Bass Bluetooth" [ref=e1258]
+            - link "ZPELDORN SuperPods Immersio Dolby Audio, 3D Soundstage,..." [ref=e1263] [cursor=pointer]:
+              - /url: /zpeldorn-superpods-immersio-dolby-audio-3d-soundstage-ear-buds-wireless-deep-bass-bluetooth/p/itm783e82c13e147?pid=ACCHKGEAS4CEHD2G&lid=LSTACCHKGEAS4CEHD2GNOHSII&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_37&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHKGEAS4CEHD2G.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1264]: Black, True Wireless
+            - generic [ref=e1265]:
+              - generic [ref=e1266]: "4"
+              - text: (383)
+            - link "₹497 ₹2,999 83% off" [ref=e1269] [cursor=pointer]:
+              - /url: /zpeldorn-superpods-immersio-dolby-audio-3d-soundstage-ear-buds-wireless-deep-bass-bluetooth/p/itm783e82c13e147?pid=ACCHKGEAS4CEHD2G&lid=LSTACCHKGEAS4CEHD2GNOHSII&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_37&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHKGEAS4CEHD2G.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1270]:
+                - generic [ref=e1271]: ₹497
+                - generic [ref=e1272]: ₹2,999
+                - generic [ref=e1273]: 83% off
+            - generic [ref=e1274]: Only few left
+          - generic [ref=e1278]:
+            - link [ref=e1279] [cursor=pointer]:
+              - /url: /qeikim-airbuds-qx-151-48hrs-payback-music-enc-11-2mm-drivers-blk3-bluetooth-gaming/p/itm7acbc95aa6102?pid=ACCH7TY2R5PZ4MTP&lid=LSTACCH7TY2R5PZ4MTPAIWNB4&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_38&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCH7TY2R5PZ4MTP.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "Qeikim AirBuds QX-151 with 48Hrs Payback Music, with ENC & 11.2mm Drivers (BLK3) Bluetooth Gaming" [ref=e1283]
+            - link "Qeikim AirBuds QX-151 with 48Hrs Payback Music, with EN..." [ref=e1288] [cursor=pointer]:
+              - /url: /qeikim-airbuds-qx-151-48hrs-payback-music-enc-11-2mm-drivers-blk3-bluetooth-gaming/p/itm7acbc95aa6102?pid=ACCH7TY2R5PZ4MTP&lid=LSTACCH7TY2R5PZ4MTPAIWNB4&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_38&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCH7TY2R5PZ4MTP.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1289]: Black, True Wireless
+            - generic [ref=e1290]:
+              - generic [ref=e1291]: "4.1"
+              - text: (7)
+            - link "₹450 ₹1,999 77% off" [ref=e1296] [cursor=pointer]:
+              - /url: /qeikim-airbuds-qx-151-48hrs-payback-music-enc-11-2mm-drivers-blk3-bluetooth-gaming/p/itm7acbc95aa6102?pid=ACCH7TY2R5PZ4MTP&lid=LSTACCH7TY2R5PZ4MTPAIWNB4&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_38&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCH7TY2R5PZ4MTP.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1297]:
+                - generic [ref=e1298]: ₹450
+                - generic [ref=e1299]: ₹1,999
+                - generic [ref=e1300]: 77% off
+            - generic [ref=e1301]: Lowest price in the year
+          - generic [ref=e1305]:
+            - link [ref=e1306] [cursor=pointer]:
+              - /url: /ucool-nord-10-hour-playtime-buds-bluetooth/p/itm2fed287d521f8?pid=ACCHGZVVZBXZ3TKW&lid=LSTACCHGZVVZBXZ3TKWYBVOUP&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_39&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHGZVVZBXZ3TKW.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "Ucool Nord 10 Hour playtime Buds Bluetooth" [ref=e1310]
+            - link "Ucool Nord 10 Hour playtime Buds Bluetooth" [ref=e1315] [cursor=pointer]:
+              - /url: /ucool-nord-10-hour-playtime-buds-bluetooth/p/itm2fed287d521f8?pid=ACCHGZVVZBXZ3TKW&lid=LSTACCHGZVVZBXZ3TKWYBVOUP&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_39&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHGZVVZBXZ3TKW.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1316]: Harmonic Gray, True Wireless
+            - generic [ref=e1317]:
+              - generic [ref=e1318]: "3.8"
+              - text: (570)
+            - link "₹498 ₹2,499 80% off" [ref=e1321] [cursor=pointer]:
+              - /url: /ucool-nord-10-hour-playtime-buds-bluetooth/p/itm2fed287d521f8?pid=ACCHGZVVZBXZ3TKW&lid=LSTACCHGZVVZBXZ3TKWYBVOUP&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_39&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHGZVVZBXZ3TKW.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1322]:
+                - generic [ref=e1323]: ₹498
+                - generic [ref=e1324]: ₹2,499
+                - generic [ref=e1325]: 80% off
+            - generic [ref=e1326]: Only few left
+          - generic [ref=e1330]:
+            - link [ref=e1331] [cursor=pointer]:
+              - /url: /shincart-n-o-ise-buds-uno-40hrs-playtime-quad-mic-enc-bluetooth-headset-z81/p/itma4fec67ec0b8d?pid=ACCHMN4ZGQEBSSZU&lid=LSTACCHMN4ZGQEBSSZUY2JXY8&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_40&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHMN4ZGQEBSSZU.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - img "Shincart N_o_ ise Buds UNO, 40Hrs Playtime, Quad Mic with ENC, Bluetooth Headset Z81 Bluetooth" [ref=e1335]
+            - link "Shincart N_o_ ise Buds UNO, 40Hrs Playtime, Quad Mic wi..." [ref=e1340] [cursor=pointer]:
+              - /url: /shincart-n-o-ise-buds-uno-40hrs-playtime-quad-mic-enc-bluetooth-headset-z81/p/itma4fec67ec0b8d?pid=ACCHMN4ZGQEBSSZU&lid=LSTACCHMN4ZGQEBSSZUY2JXY8&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_40&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHMN4ZGQEBSSZU.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1341]: Gold, True Wireless
+            - generic [ref=e1342]:
+              - generic [ref=e1343]: "3.5"
+              - text: (114)
+            - link "₹498 ₹2,999 83% off" [ref=e1346] [cursor=pointer]:
+              - /url: /shincart-n-o-ise-buds-uno-40hrs-playtime-quad-mic-enc-bluetooth-headset-z81/p/itma4fec67ec0b8d?pid=ACCHMN4ZGQEBSSZU&lid=LSTACCHMN4ZGQEBSSZUY2JXY8&marketplace=FLIPKART&q=buds&store=0pm%2Ffcn&srno=s_1_40&otracker=search&fm=organic&iid=960ece5f-a72e-4c0d-966a-c0fe0f737f41.ACCHMN4ZGQEBSSZU.SEARCH&ppt=None&ppn=None&ssid=mcvmkbd8740000001787143134068&qH=af72d0de2dddfb43&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1347]:
+                - generic [ref=e1348]: ₹498
+                - generic [ref=e1349]: ₹2,999
+                - generic [ref=e1350]: 83% off
+            - generic [ref=e1351]: Only few left
+        - generic [ref=e1356]:
+          - generic [ref=e1357]: Page 1 of 457
+          - navigation [ref=e1358]:
+            - link "1" [ref=e1359] [cursor=pointer]:
+              - /url: /search?q=buds&page=1
+            - link "2" [ref=e1360] [cursor=pointer]:
+              - /url: /search?q=buds&page=2
+            - link "3" [ref=e1361] [cursor=pointer]:
+              - /url: /search?q=buds&page=3
+            - link "4" [ref=e1362] [cursor=pointer]:
+              - /url: /search?q=buds&page=4
+            - link "5" [ref=e1363] [cursor=pointer]:
+              - /url: /search?q=buds&page=5
+            - link "6" [ref=e1364] [cursor=pointer]:
+              - /url: /search?q=buds&page=6
+            - link "7" [ref=e1365] [cursor=pointer]:
+              - /url: /search?q=buds&page=7
+            - link "8" [ref=e1366] [cursor=pointer]:
+              - /url: /search?q=buds&page=8
+            - link "9" [ref=e1367] [cursor=pointer]:
+              - /url: /search?q=buds&page=9
+            - link "10" [ref=e1368] [cursor=pointer]:
+              - /url: /search?q=buds&page=10
+            - link "Next" [ref=e1369] [cursor=pointer]:
+              - /url: /search?q=buds&page=2
+        - generic [ref=e1371]:
+          - text: Did you find what you were looking for?
+          - generic [ref=e1372]:
+            - generic [ref=e1373] [cursor=pointer]: "Yes"
+            - generic [ref=e1374] [cursor=pointer]: "No"
+    - generic [ref=e1376]:
+      - generic [ref=e1377]: Reviews for Popular Headset
+      - generic [ref=e1378]:
+        - generic [ref=e1379]:
+          - generic [ref=e1381]:
+            - img "NS WORLD FX9 Buds |Max Power| HD Sound | BT Earbuds |Mic & Touch Controls Headphone Bluetooth"
+          - generic [ref=e1382]:
+            - link "1. NS WORLD FX9 Buds |Max Powe... 3.6 607 Ratings&35 Reviews ₹300 78% off" [ref=e1383] [cursor=pointer]:
+              - /url: /ns-world-fx9-buds-max-power-hd-sound-bt-earbuds-mic-touch-controls-headphone-bluetooth/p/itm9d7022d302fe4?pid=ACCH9HNFC6WHZWKG&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1384]: 1. NS WORLD FX9 Buds |Max Powe...
+              - generic [ref=e1386]:
+                - generic [ref=e1387]: "3.6"
+                - generic [ref=e1389]:
+                  - text: 607 Ratings
+                  - generic [ref=e1390]: "&35 Reviews"
+              - generic [ref=e1392]:
+                - generic [ref=e1393]: ₹300
+                - generic [ref=e1394]: 78% off
+            - list [ref=e1395]:
+              - listitem [ref=e1396]: With Mic:Yes
+              - listitem [ref=e1397]: "Connector type: no"
+              - listitem [ref=e1398]: "Bluetooth version: 5.2"
+        - generic [ref=e1399]:
+          - generic [ref=e1400]: Most Helpful Review
+          - generic [ref=e1402]:
+            - generic [ref=e1403]:
+              - generic [ref=e1404]: "4"
+              - paragraph [ref=e1406]: Very poor
+            - generic [ref=e1407]: After delivery ...I have checked one side ear buds not working ..very bad product also sound quality not like that .
+            - generic [ref=e1412]:
+              - paragraph [ref=e1413]: Flipkart Customer
+              - paragraph [ref=e1418]: Certified Buyer
+              - paragraph [ref=e1419]: Jun, 2025
+        - generic [ref=e1420]:
+          - generic [ref=e1421]: Recent Review
+          - generic [ref=e1423]:
+            - generic [ref=e1424]:
+              - generic [ref=e1425]: "1"
+              - paragraph [ref=e1427]: Don't waste your money
+            - generic [ref=e1430]:
+              - generic [ref=e1431]: Very bad product. The sound quality is poor and the bass is not good at all. Audio is unclear and disappointing. Build quality also feels cheap. Not worth th...
+              - generic [ref=e1432] [cursor=pointer]: Read full review
+            - generic [ref=e1434]:
+              - paragraph [ref=e1435]: Flipkart Customer
+              - paragraph [ref=e1440]: Certified Buyer
+              - paragraph [ref=e1441]: 21 days ago
+      - generic [ref=e1442]:
+        - generic [ref=e1443]:
+          - generic [ref=e1445]:
+            - img "TECHIO Buds Pro 2 Wireless Earbud with Dual Mic ENC for Clear Calls, 60H Playback Bluetooth"
+          - generic [ref=e1446]:
+            - link "2. TECHIO Buds Pro 2 Wireless ... 3.6 2,866 Ratings&151 Reviews ₹699 65% off" [ref=e1447] [cursor=pointer]:
+              - /url: /techio-buds-pro-2-wireless-earbud-dual-mic-enc-clear-calls-60h-playback-bluetooth/p/itma2ccbd007eced?pid=ACCHP3UETZ7YNGFE&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1448]: 2. TECHIO Buds Pro 2 Wireless ...
+              - generic [ref=e1450]:
+                - generic [ref=e1451]: "3.6"
+                - generic [ref=e1453]:
+                  - text: 2,866 Ratings
+                  - generic [ref=e1454]: "&151 Reviews"
+              - generic [ref=e1456]:
+                - generic [ref=e1457]: ₹699
+                - generic [ref=e1458]: 65% off
+            - list [ref=e1459]:
+              - listitem [ref=e1460]: With Mic:Yes
+        - generic [ref=e1461]:
+          - generic [ref=e1462]: Most Helpful Review
+          - generic [ref=e1464]:
+            - generic [ref=e1465]:
+              - generic [ref=e1466]: "5"
+              - paragraph [ref=e1468]: Highly recommended
+            - generic [ref=e1469]: So great 👍 So just looking of wow
+            - generic [ref=e1474]:
+              - paragraph [ref=e1475]: Puspa Jaruri He Kiya
+              - paragraph [ref=e1480]: Certified Buyer
+              - paragraph [ref=e1481]: 10 months ago
+        - generic [ref=e1482]:
+          - generic [ref=e1483]: Recent Review
+          - generic [ref=e1485]:
+            - generic [ref=e1486]:
+              - generic [ref=e1487]: "5"
+              - paragraph [ref=e1489]: Terrific
+            - generic [ref=e1490]: Great quality price k according
+            - generic [ref=e1495]:
+              - paragraph [ref=e1496]: Flipkart Customer
+              - paragraph [ref=e1501]: Certified Buyer
+              - paragraph [ref=e1502]: 1 day ago
+      - generic [ref=e1503]:
+        - generic [ref=e1504]:
+          - generic [ref=e1506]:
+            - img "Woonk On_ Plus Buds1 Pro 3 Bluetooth TWS in-Ear Buds – Dual Drivers Dual R91 Bluetooth"
+          - generic [ref=e1507]:
+            - link "3. Woonk On_ Plus Buds1 Pro 3 ... 4.2 60 Ratings&15 Reviews ₹722 74% off" [ref=e1508] [cursor=pointer]:
+              - /url: /woonk-on-plus-buds1-pro-3-bluetooth-tws-in-ear-buds-dual-drivers-r91/p/itmaef6e4a982208?pid=ACCHPTW5D67UEA3Y&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1509]: 3. Woonk On_ Plus Buds1 Pro 3 ...
+              - generic [ref=e1511]:
+                - generic [ref=e1512]: "4.2"
+                - generic [ref=e1514]:
+                  - text: 60 Ratings
+                  - generic [ref=e1515]: "&15 Reviews"
+              - generic [ref=e1517]:
+                - generic [ref=e1518]: ₹722
+                - generic [ref=e1519]: 74% off
+            - list [ref=e1520]:
+              - listitem [ref=e1521]: With Mic:Yes
+              - listitem [ref=e1522]: "Connector type: No"
+              - listitem [ref=e1523]: "Bluetooth version: 5.3"
+        - generic [ref=e1524]:
+          - generic [ref=e1525]: Most Helpful Review
+          - generic [ref=e1527]:
+            - generic [ref=e1528]:
+              - generic [ref=e1529]: "5"
+              - paragraph [ref=e1531]: Must buy!
+            - generic [ref=e1532]: I love the product and good sound for call and music 🎶👍👍👍
+            - generic [ref=e1537]:
+              - paragraph [ref=e1538]: Flipkart Customer
+              - paragraph [ref=e1543]: Certified Buyer
+              - paragraph [ref=e1544]: Today
+        - generic [ref=e1545]:
+          - generic [ref=e1546]: Recent Review
+          - generic [ref=e1548]:
+            - generic [ref=e1549]:
+              - generic [ref=e1550]: "5"
+              - paragraph [ref=e1552]: Must buy!
+            - generic [ref=e1553]: I love the product and good sound for call and music 🎶👍👍👍
+            - generic [ref=e1558]:
+              - paragraph [ref=e1559]: Flipkart Customer
+              - paragraph [ref=e1564]: Certified Buyer
+              - paragraph [ref=e1565]: Today
+      - generic [ref=e1566]:
+        - generic [ref=e1567]:
+          - generic [ref=e1569]:
+            - img "Three Guys Black Buds Touch Sensor, Waterproof, ANX,2 Bluetooth V5.1 Bluetooth True K41 Bluetooth"
+          - generic [ref=e1570]:
+            - link "4. Three Guys Black Buds Touch... 3.8 79 Ratings&6 Reviews ₹267 79% off" [ref=e1571] [cursor=pointer]:
+              - /url: /three-guys-black-buds-touch-sensor-waterproof-anx-2-bluetooth-v5-1-true-k41/p/itm43e91a2d201f5?pid=ACCHGHFGXYHFZGQ8&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1572]: 4. Three Guys Black Buds Touch...
+              - generic [ref=e1574]:
+                - generic [ref=e1575]: "3.8"
+                - generic [ref=e1577]:
+                  - text: 79 Ratings
+                  - generic [ref=e1578]: "&6 Reviews"
+              - generic [ref=e1580]:
+                - generic [ref=e1581]: ₹267
+                - generic [ref=e1582]: 79% off
+            - list [ref=e1583]:
+              - listitem [ref=e1584]: With Mic:Yes
+              - listitem [ref=e1585]: "Connector type: 5"
+              - listitem [ref=e1586]: "Bluetooth version: V5"
+        - generic [ref=e1587]:
+          - generic [ref=e1588]: Most Helpful Review
+          - generic [ref=e1590]:
+            - generic [ref=e1591]:
+              - generic [ref=e1592]: "5"
+              - paragraph [ref=e1594]: Classy product
+            - generic [ref=e1595]: Very nice voice sound like it
+            - generic [ref=e1600]:
+              - paragraph [ref=e1601]: M r Naim
+              - paragraph [ref=e1606]: Certified Buyer
+              - paragraph [ref=e1607]: 9 months ago
+        - generic [ref=e1608]:
+          - generic [ref=e1609]: Recent Review
+          - generic [ref=e1611]:
+            - generic [ref=e1612]:
+              - generic [ref=e1613]: "1"
+              - paragraph [ref=e1615]: Unsatisfactory
+            - generic [ref=e1616]: Left side sound coming in right sideRide side sound in left
+            - generic [ref=e1621]:
+              - paragraph [ref=e1622]: Uday Chadokar
+              - paragraph [ref=e1627]: Certified Buyer
+              - paragraph [ref=e1628]: 8 months ago
+      - generic [ref=e1629]:
+        - generic [ref=e1630]:
+          - generic [ref=e1632]:
+            - img "GWALBROS New Trending BUDS R2 True Wireless Earbuds with Mic, 12.4mm Drivers F03 Bluetooth"
+          - generic [ref=e1633]:
+            - link "5. GWALBROS New Trending BUDS ... 4.3 40 Ratings&7 Reviews ₹419 79% off" [ref=e1634] [cursor=pointer]:
+              - /url: /gwalbros-new-trending-buds-r2-true-wireless-earbuds-mic-12-4mm-drivers-f03-bluetooth/p/itm97207f23e9ae5?pid=ACCHZQP5KUJZDK6U&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1635]: 5. GWALBROS New Trending BUDS ...
+              - generic [ref=e1637]:
+                - generic [ref=e1638]: "4.3"
+                - generic [ref=e1640]:
+                  - text: 40 Ratings
+                  - generic [ref=e1641]: "&7 Reviews"
+              - generic [ref=e1643]:
+                - generic [ref=e1644]: ₹419
+                - generic [ref=e1645]: 79% off
+            - list [ref=e1646]:
+              - listitem [ref=e1647]: With Mic:Yes
+              - listitem [ref=e1648]: "Bluetooth version: Bluetooth 5.1 Powerful Performance"
+              - listitem [ref=e1649]: "Wireless range: 20 m"
+        - generic [ref=e1650]:
+          - generic [ref=e1651]: Most Helpful Review
+          - generic [ref=e1653]:
+            - generic [ref=e1654]:
+              - generic [ref=e1655]: "5"
+              - paragraph [ref=e1657]: Terrific
+            - generic [ref=e1658]: Nice product money valuable this product clear calls and easily end call
+            - generic [ref=e1663]:
+              - paragraph [ref=e1664]: Debojit Telenga
+              - paragraph [ref=e1669]: Certified Buyer
+              - paragraph [ref=e1670]: 6 days ago
+        - generic [ref=e1671]:
+          - generic [ref=e1672]: Recent Review
+          - generic [ref=e1674]:
+            - generic [ref=e1675]:
+              - generic [ref=e1676]: "5"
+              - paragraph [ref=e1678]: Highly recommended
+            - generic [ref=e1679]: Exlent product tnq flipkart
+            - generic [ref=e1684]:
+              - paragraph [ref=e1685]: Pilli Mahesh
+              - paragraph [ref=e1690]: Certified Buyer
+              - paragraph [ref=e1691]: Today
+  - contentinfo [ref=e1692]:
+    - generic [ref=e1694]:
+      - generic [ref=e1695]:
+        - generic [ref=e1696]:
+          - generic [ref=e1697]: ABOUT
+          - link "Contact Us" [ref=e1698] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+          - link "About Us" [ref=e1699] [cursor=pointer]:
+            - /url: https://corporate.flipkart.net/corporate-home
+          - link "Careers" [ref=e1700] [cursor=pointer]:
+            - /url: https://www.flipkartcareers.com/?otracker=footer_navlinks
+          - link "Flipkart Stories" [ref=e1701] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/?otracker=footer_navlinks
+          - link "Press" [ref=e1702] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/category/top-stories/news/
+          - link "Corporate Information" [ref=e1703] [cursor=pointer]:
+            - /url: /corporate-information
+        - generic [ref=e1704]:
+          - generic [ref=e1705]: GROUP COMPANIES
+          - link "Myntra" [ref=e1706] [cursor=pointer]:
+            - /url: https://www.myntra.com/
+          - link "Cleartrip" [ref=e1707] [cursor=pointer]:
+            - /url: https://www.cleartrip.com/
+          - link "Shopsy" [ref=e1708] [cursor=pointer]:
+            - /url: https://www.shopsy.in/
+        - generic [ref=e1709]:
+          - generic [ref=e1710]: HELP
+          - link "Payments" [ref=e1711] [cursor=pointer]:
+            - /url: /pages/payments
+          - link "Shipping" [ref=e1712] [cursor=pointer]:
+            - /url: /pages/shipping
+          - link "Cancellation & Returns" [ref=e1713] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG
+          - link "FAQ" [ref=e1714] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG
+        - generic [ref=e1715]:
+          - generic [ref=e1716]: CONSUMER POLICY
+          - link "Cancellation & Returns" [ref=e1717] [cursor=pointer]:
+            - /url: /pages/returnpolicy?otracker=footer_navlinks
+          - link "Terms Of Use" [ref=e1718] [cursor=pointer]:
+            - /url: /pages/terms?otracker=footer_navlinks
+          - link "Security" [ref=e1719] [cursor=pointer]:
+            - /url: /pages/paymentsecurity?otracker=footer_navlinks
+          - link "Privacy" [ref=e1720] [cursor=pointer]:
+            - /url: /pages/privacypolicy?otracker=footer_navlinks
+          - link "Sitemap" [ref=e1721] [cursor=pointer]:
+            - /url: /sitemap?otracker=footer_navlinks
+          - link "Grievance Redressal" [ref=e1722] [cursor=pointer]:
+            - /url: /pages/grievance-redressal-mechanism?otracker=footer_navlinks
+          - link "EPR Compliance" [ref=e1723] [cursor=pointer]:
+            - /url: /pages/ewaste-compliance-tnc?otracker=footer_navlinks
+          - link "FSSAI Food Safety Connect App" [ref=e1724] [cursor=pointer]:
+            - /url: https://fssai.gov.in/cms/food-safety-connect.php
+        - generic [ref=e1726]:
+          - generic [ref=e1727]: "Mail Us:"
+          - generic [ref=e1730]:
+            - paragraph [ref=e1731]: Flipkart Internet Private Limited,
+            - paragraph [ref=e1732]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e1733]: Clove Embassy Tech Village,
+            - paragraph [ref=e1734]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e1735]: Bengaluru, 560103,
+            - paragraph [ref=e1736]: Karnataka, India
+          - generic [ref=e1737]: Social
+          - generic [ref=e1738]:
+            - link [ref=e1740] [cursor=pointer]:
+              - /url: https://www.facebook.com/flipkart
+            - link [ref=e1743] [cursor=pointer]:
+              - /url: https://www.twitter.com/flipkart
+            - link [ref=e1746] [cursor=pointer]:
+              - /url: https://www.youtube.com/flipkart
+            - link [ref=e1749] [cursor=pointer]:
+              - /url: https://www.instagram.com/flipkart
+        - generic [ref=e1752]:
+          - generic [ref=e1753]: "Registered Office Address:"
+          - generic [ref=e1756]:
+            - paragraph [ref=e1757]: Flipkart Internet Private Limited,
+            - paragraph [ref=e1758]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e1759]: Clove Embassy Tech Village,
+            - paragraph [ref=e1760]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e1761]: Bengaluru, 560103,
+            - paragraph [ref=e1762]: Karnataka, India
+            - paragraph [ref=e1763]: "CIN : U51109KA2012PTC066107"
+            - paragraph [ref=e1764]:
+              - text: "Telephone:"
+              - link "044-45614709" [ref=e1765] [cursor=pointer]:
+                - /url: tel:044-45614709
+              - text: /
+              - link "044-45714709" [ref=e1766] [cursor=pointer]:
+                - /url: tel:044-45714709
+      - generic [ref=e1768]:
+        - link "Become a Seller" [ref=e1771] [cursor=pointer]:
+          - /url: https://seller.flipkart.com/?utm_source=fkwebsite&utm_medium=websitedirect
+        - generic [ref=e1772]: Advertise
+        - link "Gift Cards" [ref=e1776] [cursor=pointer]:
+          - /url: /the-gift-card-store?otracker=footer_navlinks
+        - link "Help Center" [ref=e1779] [cursor=pointer]:
+          - /url: /helpcentre?otracker=footer_navlinks
+        - generic [ref=e1780]: © 2007-2026 Flipkart.com

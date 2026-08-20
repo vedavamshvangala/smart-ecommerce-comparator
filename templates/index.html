@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QUICKSHOP</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>🛒 QUICKSHOP</h1>
+        <p>Compare products, prices and reviews</p>
+    </header>
+
+    <main class="container">
+
+        <form class="search-box" action="/search" method="get">
+            <input
+                type="text"
+                id="searchInput"
+                name="q"
+                value="{{ search_term }}"
+                placeholder="Search for a product..."
+                autocomplete="off"
+            >
+
+            <button type="submit">Search</button>
+        </form>
+
+        {% if results is not none %}
+
+        <section class="results-section">
+
+            <h2>
+                Search results
+                {% if search_term %}
+                for "{{ search_term }}"
+                {% endif %}
+            </h2>
+
+            <!-- Flipkart -->
+            <div class="store-section">
+
+                <h3 class="store-title">🛍️ Flipkart</h3>
+
+                {% set flipkart_results = results
+                    | selectattr("store", "equalto", "Flipkart")
+                    | list
+                %}
+
+                {% if flipkart_results %}
+
+                <div class="product-grid">
+
+                    {% for result in flipkart_results[:2] %}
+
+                    <div class="product-card">
+
+                        <div class="store-name">Flipkart</div>
+
+                        <h4>{{ result.product_name }}</h4>
+
+                        <div class="price">
+                            {{ result.current_selling_price }}
+                        </div>
+
+                        <div class="details">
+                            <span>⭐ {{ result.rating }}</span>
+                            <span>💬 {{ result.review_count }} reviews</span>
+                        </div>
+
+                        <a
+                            class="product-button"
+                            href="{{ result.product_url|default('#', true) }}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Product
+                        </a>
+
+                    </div>
+
+                    {% endfor %}
+
+                </div>
+
+                {% else %}
+
+                <p class="no-results">
+                    No matching Flipkart products found
+                </p>
+
+                {% endif %}
+
+            </div>
+
+
+            <!-- Amazon -->
+            <div class="store-section">
+
+                <h3 class="store-title">📦 Amazon</h3>
+
+                {% if amazon_status %}
+                <p class="no-results">{{ amazon_status }}</p>
+                {% endif %}
+
+                {% set amazon_results = results
+                    | selectattr("store", "equalto", "Amazon")
+                    | list
+                %}
+
+                {% if amazon_results %}
+
+                <div class="product-grid">
+
+                    {% for result in amazon_results[:2] %}
+
+                    <div class="product-card">
+
+                        <div class="store-name">Amazon</div>
+
+                        <h4>{{ result.product_name }}</h4>
+
+                        <div class="price">
+                            {{ result.current_selling_price }}
+                        </div>
+
+                        <div class="details">
+                            <span>⭐ {{ result.rating }}</span>
+                            <span>💬 {{ result.review_count }} reviews</span>
+                        </div>
+
+                        <a
+                            class="product-button"
+                            href="{{ result.product_url|default('#', true) }}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Product
+                        </a>
+
+                    </div>
+
+                    {% endfor %}
+
+                </div>
+
+                {% elif not amazon_status %}
+
+                <p class="no-results">
+                    No matching Amazon products found
+                </p>
+
+                {% endif %}
+
+            </div>
+
+
+            <!-- Myntra -->
+            <div class="store-section">
+
+                <h3 class="store-title">👟 Myntra</h3>
+
+                {% if myntra_status %}
+                <p class="no-results">{{ myntra_status }}</p>
+                {% endif %}
+
+                {% set myntra_results = results
+                    | selectattr("store", "equalto", "Myntra")
+                    | list
+                %}
+
+                {% if myntra_results %}
+
+                <div class="product-grid">
+
+                    {% for result in myntra_results[:2] %}
+
+                    <div class="product-card">
+
+                        <div class="store-name">Myntra</div>
+
+                        <h4>{{ result.product_name }}</h4>
+
+                        <div class="price">
+                            {{ result.current_selling_price }}
+                        </div>
+
+                        <div class="details">
+                            <span>⭐ {{ result.rating }}</span>
+                            <span>💬 {{ result.review_count }} reviews</span>
+                        </div>
+
+                        <a
+                            class="product-button"
+                            href="{{ result.product_url|default('#', true) }}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Product
+                        </a>
+
+                    </div>
+
+                    {% endfor %}
+
+                </div>
+
+                {% elif not myntra_status %}
+
+                <p class="no-results">
+                    No matching Myntra products found
+                </p>
+
+                {% endif %}
+
+            </div>
+
+        </section>
+
+        {% endif %}
+
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

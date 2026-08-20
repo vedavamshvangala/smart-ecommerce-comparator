@@ -1,0 +1,1065 @@
+- generic [ref=e2]:
+  - text: Skip To Content
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - banner:
+        - generic [ref=e8]:
+          - list:
+            - listitem [ref=e9]:
+              - button "Sign In / Join Ajio" [ref=e10]: Sign In / Join AJIO
+            - listitem [ref=e11]:
+              - link "Customer Care" [ref=e12] [cursor=pointer]:
+                - /url: /selfcare
+            - listitem [ref=e13]:
+              - link "Visit Ajioluxe" [ref=e14] [cursor=pointer]:
+                - /url: https://luxe.ajio.com
+                - text: Visit AJIOLUXE
+        - link [ref=e16] [cursor=pointer]:
+          - /url: /
+          - img "Ajio logo" [ref=e17]
+        - generic [ref=e18]:
+          - navigation [ref=e19]:
+            - list [ref=e20]:
+              - listitem [ref=e21]:
+                - generic [ref=e24]:
+                  - link "MEN" [ref=e25] [cursor=pointer]:
+                    - /url: https://www.ajio.com/sections/men
+                  - button "MEN More" [ref=e26] [cursor=pointer]
+              - listitem [ref=e27]:
+                - generic [ref=e30]:
+                  - link "WOMEN" [ref=e31] [cursor=pointer]:
+                    - /url: https://www.ajio.com/sections/women
+                  - button "WOMEN More" [ref=e32] [cursor=pointer]
+              - listitem [ref=e33]:
+                - generic [ref=e36]:
+                  - link "KIDS" [ref=e37] [cursor=pointer]:
+                    - /url: https://www.ajio.com/sections/kids
+                  - button "KIDS More" [ref=e38] [cursor=pointer]
+              - listitem [ref=e39]:
+                - generic [ref=e42]:
+                  - link "BEAUTY" [ref=e43] [cursor=pointer]:
+                    - /url: /s/beauty-5269-65820
+                  - button "BEAUTY More" [ref=e44] [cursor=pointer]
+              - listitem [ref=e45]:
+                - generic [ref=e48]:
+                  - link "Home & Kitchen" [ref=e49] [cursor=pointer]:
+                    - /url: /c/8312
+                  - button "Home & Kitchen More" [ref=e50] [cursor=pointer]
+          - generic [ref=e51]:
+            - search:
+              - generic [ref=e52]:
+                - textbox "Search AJIO" [ref=e54]
+                - button "Submit search" [ref=e55] [cursor=pointer]:
+                  - generic [ref=e56]: 
+            - generic "wishlist icon" [ref=e57]:
+              - button "Wishlist icon" [ref=e58]
+            - generic [ref=e59]:
+              - alert [ref=e60]
+              - link "Cart" [ref=e61] [cursor=pointer]:
+                - /url: /cart
+                - generic [ref=e62]: 
+    - main [ref=e63]:
+      - generic [ref=e65]:
+        - generic:
+          - navigation "Breadcrumb" [ref=e66]:
+            - list:
+              - listitem [ref=e67] [cursor=pointer]:
+                - link "Home" [ref=e68]:
+                  - /url: /
+                - text: /
+              - listitem [ref=e69] [cursor=pointer]:
+                - link "iPhone 15" [ref=e70]:
+                  - /url: "#"
+          - generic [ref=e71]:
+            - region "Product Filter options" [ref=e73]:
+              - button [expanded] [ref=e74] [cursor=pointer]:
+                - strong [ref=e75]: Refine By
+                - text: 
+              - generic [ref=e76]: "Note: When an option is selected, it may move to the top of the list."
+              - generic [ref=e78]:
+                - list [ref=e79]:
+                  - listitem [ref=e80]:
+                    - generic [ref=e82]:
+                      - button "Shop For" [expanded] [ref=e84] [cursor=pointer]: −
+                      - generic [ref=e87]:
+                        - list [ref=e88]:
+                          - listitem [ref=e89]:
+                            - checkbox "Women with 5,227 items" [ref=e90]:
+                              - generic [ref=e91]:  Women (5,227)
+                          - listitem [ref=e93]:
+                            - checkbox "Men with 4,201 items" [ref=e94]:
+                              - generic [ref=e95]:  Men (4,201)
+                          - listitem [ref=e97]:
+                            - checkbox "Boys with 2,412 items" [ref=e98]:
+                              - generic [ref=e99]:  Boys (2,412)
+                          - listitem [ref=e101]:
+                            - checkbox "Girls with 2,343 items" [ref=e102]:
+                              - generic [ref=e103]:  Girls (2,343)
+                          - listitem [ref=e105]:
+                            - checkbox "Home & Kitchen with 104 items" [ref=e106]:
+                              - generic [ref=e107]:  Home & Kitchen (104)
+                        - button "MORE" [ref=e109] [cursor=pointer]:
+                          - strong [ref=e110]: MORE
+                  - listitem [ref=e111]:
+                    - generic [ref=e113]:
+                      - button "category" [expanded] [ref=e115] [cursor=pointer]: −
+                      - generic [ref=e118]:
+                        - list [ref=e119]:
+                          - listitem [ref=e120]:
+                            - checkbox "Tshirts with 1,745 items" [ref=e121]:
+                              - generic [ref=e122]:  Tshirts (1,745)
+                          - listitem [ref=e124]:
+                            - checkbox "Shirts with 1,341 items" [ref=e125]:
+                              - generic [ref=e126]:  Shirts (1,341)
+                          - listitem [ref=e128]:
+                            - checkbox "Watches with 673 items" [ref=e129]:
+                              - generic [ref=e130]:  Watches (673)
+                          - listitem [ref=e132]:
+                            - checkbox "Trousers & Pants with 571 items" [ref=e133]:
+                              - generic [ref=e134]:  Trousers & Pants (571)
+                          - listitem [ref=e136]:
+                            - checkbox "Dresses & Frocks with 455 items" [ref=e137]:
+                              - generic [ref=e138]:  Dresses & Frocks (455)
+                        - button "MORE" [ref=e140] [cursor=pointer]:
+                          - strong [ref=e141]: MORE
+                  - listitem [ref=e142]:
+                    - button "price" [ref=e146] [cursor=pointer]: +
+                  - listitem [ref=e149]:
+                    - button "brands" [ref=e153] [cursor=pointer]: +
+                  - listitem [ref=e156]:
+                    - button "occasion" [ref=e160] [cursor=pointer]: +
+                  - listitem [ref=e163]:
+                    - button "discount ranges" [ref=e167] [cursor=pointer]: +
+                  - listitem [ref=e170]:
+                    - button "colors" [ref=e174] [cursor=pointer]: +
+                  - listitem [ref=e177]:
+                    - button "size & fit" [ref=e181] [cursor=pointer]: +
+                  - listitem [ref=e184]:
+                    - button "highlights" [ref=e188] [cursor=pointer]: +
+                  - listitem [ref=e191]:
+                    - button "vibes" [ref=e195] [cursor=pointer]: +
+                  - listitem [ref=e198]:
+                    - button "rating" [ref=e202] [cursor=pointer]: +
+                - generic [ref=e206]:
+                  - button "More Filters" [expanded] [ref=e207] [cursor=pointer]:
+                    - strong [ref=e208]: More Filters
+                    - text: 
+                  - generic [ref=e209]:
+                    - generic "Please select upto 3 categories to view more filters" [ref=e210]
+                    - button "Select Category" [ref=e211] [cursor=pointer]:
+                      - strong [ref=e212]: Select Category
+            - generic [ref=e213]:
+              - generic [ref=e214]:
+                - heading "iPhone 15" [level=1] [ref=e215]
+                - generic:
+                  - list
+              - generic [ref=e218]:
+                - strong [ref=e220]: 14,399 Items Found
+                - generic [ref=e221]:
+                  - generic "Grid" [ref=e222]
+                  - group "Grid" [ref=e223]:
+                    - button "Show 3 products per row" [ref=e225]
+                    - button "Show 5 products per row" [ref=e227] [cursor=pointer]
+                - generic [ref=e228]:
+                  - generic "Sort By" [ref=e229]
+                  - generic: Sorted By -Relevance
+                  - generic [ref=e230]:
+                    - combobox "Sort By" [ref=e231]:
+                      - option "Relevance" [selected]
+                      - option "Discount"
+                      - option "Price (lowest first)"
+                      - option "What's New"
+                      - option "Price (highest first)"
+                      - option "Ratings"
+                    - generic: 
+              - generic "grid" [ref=e234]:
+                - row [ref=e235]:
+                  - gridcell "Auriglo Anti-Slip Grip iPhone 17 Pro Max Phone Case. Current price; ₹5,999. MRP ₹7,999. 25% off discount available. false .":
+                    - row [ref=e236]:
+                      - link "Auriglo Anti-Slip Grip iPhone 17 Pro Max Phone Case. Current price; ₹5,999. MRP ₹7,999. 25% off discount available. false ." [ref=e238] [cursor=pointer]:
+                        - /url: /auriglo-anti-slip-grip-iphone-17-pro-max-phone-case/p/703168329_black?
+                        - generic [ref=e242]:
+                          - heading [level=2] [ref=e243]:
+                            - strong [ref=e245]: Auriglo
+                            - generic [ref=e246]: Anti-Slip Grip iPhone 17 Pro Max Phone Case
+                          - generic [ref=e247]:
+                            - strong [ref=e249]: ₹5,999
+                            - generic [ref=e250]:
+                              - text: ₹7,999
+                              - generic [ref=e251]: (25% off)
+                  - gridcell "BESTSELLER Apple USB-C Woven Charge Cable - MQKJ3ZM/A. Current price; ₹1,736. MRP ₹1,900. 9% off discount available. false .":
+                    - row [ref=e252]:
+                      - link "BESTSELLER Apple USB-C Woven Charge Cable - MQKJ3ZM/A. Current price; ₹1,736. MRP ₹1,900. 9% off discount available. false ." [ref=e254] [cursor=pointer]:
+                        - /url: /apple-usb-c-woven-charge-cable--mqkj3zm-a/p/4931788980_multi?
+                        - generic [ref=e255]:
+                          - generic [ref=e256]: BESTSELLER
+                          - generic [ref=e259]:
+                            - heading [level=2] [ref=e260]:
+                              - strong [ref=e262]: Apple
+                              - generic [ref=e263]: USB-C Woven Charge Cable - MQKJ3ZM/A
+                            - generic [ref=e264]:
+                              - paragraph [ref=e266]: "4"
+                              - paragraph [ref=e269]: "| 66"
+                            - generic [ref=e270]:
+                              - strong [ref=e272]: ₹1,736
+                              - generic [ref=e273]:
+                                - text: ₹1,900
+                                - generic [ref=e274]: (9% off)
+                  - gridcell "Iski Uski Yellow Gold Diamond-Studded Navratna Ring. Current price; ₹41,487. MRP ₹52,515. 21% off discount available. false Offer price ₹41,072.":
+                    - row [ref=e275]:
+                      - link "Iski Uski Yellow Gold Diamond-Studded Navratna Ring. Current price; ₹41,487. MRP ₹52,515. 21% off discount available. false Offer price ₹41,072." [ref=e277] [cursor=pointer]:
+                        - /url: /iski-uski-yellow-gold-diamond-studded-navratna-ring/p/460963506_yellowgold?
+                        - generic [ref=e281]:
+                          - heading [level=2] [ref=e282]:
+                            - strong [ref=e284]: Iski Uski
+                            - generic [ref=e285]: Yellow Gold Diamond-Studded Navratna Ring
+                          - generic [ref=e286]:
+                            - strong [ref=e288]: ₹41,487
+                            - generic [ref=e289]:
+                              - text: ₹52,515
+                              - generic [ref=e290]: (21% off)
+                          - generic [ref=e291]:
+                            - text: "Offer Price:"
+                            - generic [ref=e293]: ₹41,072
+                  - gridcell "Avsar Women Yellow Gold American Diamond-Studded Divya Ring. Current price; ₹5,187. MRP ₹7,410. 30% off discount available. false Offer price ₹5,135.":
+                    - row [ref=e294]:
+                      - link "Avsar Women Yellow Gold American Diamond-Studded Divya Ring. Current price; ₹5,187. MRP ₹7,410. 30% off discount available. false Offer price ₹5,135." [ref=e296] [cursor=pointer]:
+                        - /url: /avsar-women-yellow-gold-american-diamond-studded-divya-ring/p/469810100_yellow?
+                        - generic [ref=e300]:
+                          - heading [level=2] [ref=e301]:
+                            - strong [ref=e303]: Avsar
+                            - generic [ref=e304]: Women Yellow Gold American Diamond-Studded Divya Ring
+                          - generic [ref=e305]:
+                            - strong [ref=e307]: ₹5,187
+                            - generic [ref=e308]:
+                              - text: ₹7,410
+                              - generic [ref=e309]: (30% off)
+                          - generic [ref=e310]:
+                            - text: "Offer Price:"
+                            - generic [ref=e312]: ₹5,135
+                  - gridcell "Iski Uski Yellow Gold Hallmark Ring. Current price; ₹181,844. MRP ₹233,133. 22% off discount available. false Offer price ₹180,844.":
+                    - row [ref=e313]:
+                      - link "Iski Uski Yellow Gold Hallmark Ring. Current price; ₹181,844. MRP ₹233,133. 22% off discount available. false Offer price ₹180,844." [ref=e315] [cursor=pointer]:
+                        - /url: /iski-uski-yellow-gold-hallmark-ring/p/469163966_yellowgold?
+                        - generic [ref=e319]:
+                          - heading [level=2] [ref=e320]:
+                            - strong [ref=e322]: Iski Uski
+                            - generic [ref=e323]: Yellow Gold Hallmark Ring
+                          - generic [ref=e324]:
+                            - strong [ref=e326]: ₹181,844
+                            - generic [ref=e327]:
+                              - text: ₹233,133
+                              - generic [ref=e328]: (22% off)
+                          - generic [ref=e329]:
+                            - text: "Offer Price:"
+                            - generic [ref=e331]: ₹180,844
+                  - gridcell "BESTSELLER Iski Uski Yellow Gold Diamond-Studded Navratna Ring. Current price; ₹32,209. MRP ₹41,293. 22% off discount available. false Offer price ₹31,887.":
+                    - row [ref=e332]:
+                      - link "BESTSELLER Iski Uski Yellow Gold Diamond-Studded Navratna Ring. Current price; ₹32,209. MRP ₹41,293. 22% off discount available. false Offer price ₹31,887." [ref=e334] [cursor=pointer]:
+                        - /url: /iski-uski-yellow-gold-diamond-studded-navratna-ring/p/460963524_yellowgold?
+                        - generic [ref=e335]:
+                          - generic [ref=e336]: BESTSELLER
+                          - generic [ref=e339]:
+                            - heading [level=2] [ref=e340]:
+                              - strong [ref=e342]: Iski Uski
+                              - generic [ref=e343]: Yellow Gold Diamond-Studded Navratna Ring
+                            - generic [ref=e344]:
+                              - paragraph [ref=e346]: "3"
+                              - paragraph [ref=e349]: "| 7"
+                            - generic [ref=e350]:
+                              - strong [ref=e352]: ₹32,209
+                              - generic [ref=e353]:
+                                - text: ₹41,293
+                                - generic [ref=e354]: (22% off)
+                            - generic [ref=e355]:
+                              - text: "Offer Price:"
+                              - generic [ref=e357]: ₹31,887
+                  - gridcell "Iski Uski Diamond Studded Yellow Gold Band Ring. Current price; ₹179,333. MRP ₹232,900. 23% off discount available. false Offer price ₹178,333.":
+                    - row [ref=e358]:
+                      - link "Iski Uski Diamond Studded Yellow Gold Band Ring. Current price; ₹179,333. MRP ₹232,900. 23% off discount available. false Offer price ₹178,333." [ref=e360] [cursor=pointer]:
+                        - /url: /iski-uski-diamond-studded-yellow-gold-band-ring/p/460963380_yellowgold?
+                        - generic [ref=e364]:
+                          - heading [level=2] [ref=e365]:
+                            - strong [ref=e367]: Iski Uski
+                            - generic [ref=e368]: Diamond Studded Yellow Gold Band Ring
+                          - generic [ref=e369]:
+                            - strong [ref=e371]: ₹179,333
+                            - generic [ref=e372]:
+                              - text: ₹232,900
+                              - generic [ref=e373]: (23% off)
+                          - generic [ref=e374]:
+                            - text: "Offer Price:"
+                            - generic [ref=e376]: ₹178,333
+                  - gridcell "BESTSELLER Avsar Yellow Gold Cubic Zirconia Sadhana Ring. Current price; ₹7,475. MRP ₹14,950. 50% off discount available. false .":
+                    - row [ref=e377]:
+                      - link "BESTSELLER Avsar Yellow Gold Cubic Zirconia Sadhana Ring. Current price; ₹7,475. MRP ₹14,950. 50% off discount available. false ." [ref=e379] [cursor=pointer]:
+                        - /url: /avsar-yellow-gold-cubic-zirconia-sadhana-ring/p/469469091_yellow?
+                        - generic [ref=e380]:
+                          - generic [ref=e381]: BESTSELLER
+                          - generic [ref=e384]:
+                            - heading [level=2] [ref=e385]:
+                              - strong [ref=e387]: Avsar
+                              - generic [ref=e388]: Yellow Gold Cubic Zirconia Sadhana Ring
+                            - generic [ref=e389]:
+                              - paragraph [ref=e391]: "2.7"
+                              - paragraph [ref=e394]: "| 16"
+                            - generic [ref=e395]:
+                              - strong [ref=e397]: ₹7,475
+                              - generic [ref=e398]:
+                                - text: ₹14,950
+                                - generic [ref=e399]: (50% off)
+                  - gridcell "Puma individualRISE Youth Quarter-Zip Top. Current price; ₹1,075. MRP ₹2,499. 57% off discount available. false Offer price ₹753.":
+                    - row [ref=e400]:
+                      - link "Puma individualRISE Youth Quarter-Zip Top. Current price; ₹1,075. MRP ₹2,499. 57% off discount available. false Offer price ₹753." [ref=e402] [cursor=pointer]:
+                        - /url: /puma-individualrise-youth-quarter-zip-top/p/702214992_black?
+                        - generic [ref=e406]:
+                          - heading [level=2] [ref=e407]:
+                            - strong [ref=e409]: Puma
+                            - generic [ref=e410]: individualRISE Youth Quarter-Zip Top
+                          - generic [ref=e411]:
+                            - paragraph [ref=e413]: "3.9"
+                            - paragraph [ref=e416]: "| 10"
+                          - generic [ref=e417]:
+                            - strong [ref=e419]: ₹1,075
+                            - generic [ref=e420]:
+                              - text: ₹2,499
+                              - generic [ref=e421]: (57% off)
+                          - generic [ref=e422]:
+                            - text: "Offer Price:"
+                            - generic [ref=e424]: ₹753
+                  - gridcell "Puma LaFrancé RNR Basketball Sneakers. Current price; ₹5,760. MRP ₹11,999. 52% off discount available. false Offer price ₹4,896.":
+                    - row [ref=e425]:
+                      - link "Puma LaFrancé RNR Basketball Sneakers. Current price; ₹5,760. MRP ₹11,999. 52% off discount available. false Offer price ₹4,896." [ref=e427] [cursor=pointer]:
+                        - /url: /puma-lafranc-rnr-basketball-sneakers/p/702240173_pink?
+                        - generic [ref=e431]:
+                          - heading [level=2] [ref=e432]:
+                            - strong [ref=e434]: Puma
+                            - generic [ref=e435]: LaFrancé RNR Basketball Sneakers
+                          - generic [ref=e436]:
+                            - paragraph [ref=e438]: "2.8"
+                            - paragraph [ref=e441]: "| 13"
+                          - generic [ref=e442]:
+                            - strong [ref=e444]: ₹5,760
+                            - generic [ref=e445]:
+                              - text: ₹11,999
+                              - generic [ref=e446]: (52% off)
+                          - generic [ref=e447]:
+                            - text: "Offer Price:"
+                            - generic [ref=e449]: ₹4,896
+                  - gridcell "Puma Essentials Logo Lab Youth Holiday Tee. Current price; ₹494. MRP ₹1,299. 62% off discount available. false Offer price ₹346.":
+                    - row [ref=e450]:
+                      - link "Puma Essentials Logo Lab Youth Holiday Tee. Current price; ₹494. MRP ₹1,299. 62% off discount available. false Offer price ₹346." [ref=e452] [cursor=pointer]:
+                        - /url: /puma-essentials-logo-lab-youth-holiday-tee/p/702529513_black?
+                        - generic [ref=e456]:
+                          - heading [level=2] [ref=e457]:
+                            - strong [ref=e459]: Puma
+                            - generic [ref=e460]: Essentials Logo Lab Youth Holiday Tee
+                          - generic [ref=e461]:
+                            - paragraph [ref=e463]: "4.2"
+                            - paragraph [ref=e466]: "| 14"
+                          - generic [ref=e467]:
+                            - strong [ref=e469]: ₹494
+                            - generic [ref=e470]:
+                              - text: ₹1,299
+                              - generic [ref=e471]: (62% off)
+                          - generic [ref=e472]:
+                            - text: "Offer Price:"
+                            - generic [ref=e474]: ₹346
+                  - gridcell "Shein Shein Men Medium Length Spread Collar Full Sleeve Shirt. Current price; ₹599. MRP ₹599. false Offer price ₹419.":
+                    - row [ref=e475]:
+                      - link "Shein Shein Men Medium Length Spread Collar Full Sleeve Shirt. Current price; ₹599. MRP ₹599. false Offer price ₹419." [ref=e477] [cursor=pointer]:
+                        - /url: /shein-shein-men-medium-length-spread-collar-full-sleeve-shirt/p/443401068_white?
+                        - generic [ref=e481]:
+                          - heading [level=2] [ref=e482]:
+                            - strong [ref=e484]: Shein
+                            - generic [ref=e485]: Shein Men Medium Length Spread Collar Full Sleeve Shirt
+                          - generic [ref=e486]:
+                            - paragraph [ref=e488]: "4.3"
+                            - paragraph [ref=e491]: "| 4"
+                          - strong [ref=e494]: ₹599
+                          - generic [ref=e495]:
+                            - text: "Offer Price:"
+                            - generic [ref=e497]: ₹419
+                  - gridcell "NEW The Souled Store Cotton Linen Let's Fly|The Souled Store - Men Embroidered Regular Fit Shirt. Current price; ₹1,682. MRP ₹1,699. 1% off discount available. false .":
+                    - row [ref=e498]:
+                      - link "NEW The Souled Store Cotton Linen Let's Fly|The Souled Store - Men Embroidered Regular Fit Shirt. Current price; ₹1,682. MRP ₹1,699. 1% off discount available. false ." [ref=e500] [cursor=pointer]:
+                        - /url: /the-souled-store-cotton-linen-let-s-fly-the-souled-store--men-embroidered-regular-fit-shirt/p/703810543_navy?
+                        - generic [ref=e501]:
+                          - generic [ref=e502]: NEW
+                          - generic [ref=e505]:
+                            - heading [level=2] [ref=e506]:
+                              - strong [ref=e508]: The Souled Store
+                              - generic [ref=e509]: Cotton Linen Let's Fly|The Souled Store - Men Embroidered Regular Fit Shirt
+                            - generic [ref=e510]:
+                              - strong [ref=e512]: ₹1,682
+                              - generic [ref=e513]:
+                                - text: ₹1,699
+                                - generic [ref=e514]: (1% off)
+                  - gridcell "NEWSEASON KISAH Men 7-in-1 Rakhi Gift Set. Current price; ₹1,999. MRP ₹2,999. 33% off discount available. false Offer price ₹1,499.":
+                    - row [ref=e515]:
+                      - link "NEWSEASON KISAH Men 7-in-1 Rakhi Gift Set. Current price; ₹1,999. MRP ₹2,999. 33% off discount available. false Offer price ₹1,499." [ref=e517] [cursor=pointer]:
+                        - /url: /kisah-men-7-in-1-rakhi-gift-set/p/469827477_blue?
+                        - generic [ref=e518]:
+                          - generic [ref=e519]: NEWSEASON
+                          - generic [ref=e522]:
+                            - heading [level=2] [ref=e523]:
+                              - strong [ref=e525]: KISAH
+                              - generic [ref=e526]: Men 7-in-1 Rakhi Gift Set
+                            - generic [ref=e527]:
+                              - strong [ref=e529]: ₹1,999
+                              - generic [ref=e530]:
+                                - text: ₹2,999
+                                - generic [ref=e531]: (33% off)
+                            - generic [ref=e532]:
+                              - text: Best Price
+                              - generic [ref=e534]: ₹1,499
+                  - gridcell "BESTSELLER Apple Mag Safe Iphone Fine Woven Wallet-A3323. Current price; ₹2,822. MRP ₹5,900. 52% off discount available. false .":
+                    - row [ref=e535]:
+                      - link "BESTSELLER Apple Mag Safe Iphone Fine Woven Wallet-A3323. Current price; ₹2,822. MRP ₹5,900. 52% off discount available. false ." [ref=e537] [cursor=pointer]:
+                        - /url: /apple-mag-safe-iphone-fine-woven-wallet-a3323/p/4944230930_multi?
+                        - generic [ref=e538]:
+                          - generic [ref=e539]: BESTSELLER
+                          - generic [ref=e542]:
+                            - heading [level=2] [ref=e543]:
+                              - strong [ref=e545]: Apple
+                              - generic [ref=e546]: Mag Safe Iphone Fine Woven Wallet-A3323
+                            - generic [ref=e547]:
+                              - strong [ref=e549]: ₹2,822
+                              - generic [ref=e550]:
+                                - text: ₹5,900
+                                - generic [ref=e551]: (52% off)
+                  - gridcell "NEW Shein Shein Men Medium Length Spread Collar Full Sleeve Shirt. Current price; ₹529. MRP ₹599. 12% off discount available. false Offer price ₹370.":
+                    - row [ref=e552]:
+                      - link "NEW Shein Shein Men Medium Length Spread Collar Full Sleeve Shirt. Current price; ₹529. MRP ₹599. 12% off discount available. false Offer price ₹370." [ref=e554] [cursor=pointer]:
+                        - /url: /shein-shein-men-medium-length-spread-collar-full-sleeve-shirt/p/443401068_lightolive?
+                        - generic [ref=e555]:
+                          - generic [ref=e556]: NEW
+                          - generic [ref=e559]:
+                            - heading [level=2] [ref=e560]:
+                              - strong [ref=e562]: Shein
+                              - generic [ref=e563]: Shein Men Medium Length Spread Collar Full Sleeve Shirt
+                            - generic [ref=e564]:
+                              - paragraph [ref=e566]: "4.3"
+                              - paragraph [ref=e569]: "| 4"
+                            - generic [ref=e570]:
+                              - strong [ref=e572]: ₹529
+                              - generic [ref=e573]:
+                                - text: ₹599
+                                - generic [ref=e574]: (12% off)
+                            - generic [ref=e575]:
+                              - text: "Offer Price:"
+                              - generic [ref=e577]: ₹370
+                  - gridcell "Emori Women Yellow Gold Alina Cluster Glimmery Diamond-Studded Ring. Current price; ₹97,210. MRP ₹102,326. 5% off discount available. false Offer price ₹96,238.":
+                    - row [ref=e578]:
+                      - link "Emori Women Yellow Gold Alina Cluster Glimmery Diamond-Studded Ring. Current price; ₹97,210. MRP ₹102,326. 5% off discount available. false Offer price ₹96,238." [ref=e580] [cursor=pointer]:
+                        - /url: /emori-women-yellow-gold-alina-cluster-glimmery-diamond-studded-ring/p/469695687_goldyellow?
+                        - generic [ref=e584]:
+                          - heading [level=2] [ref=e585]:
+                            - strong [ref=e587]: Emori
+                            - generic [ref=e588]: Women Yellow Gold Alina Cluster Glimmery Diamond-Studded Ring
+                          - generic [ref=e589]:
+                            - strong [ref=e591]: ₹97,210
+                            - generic [ref=e592]:
+                              - text: ₹102,326
+                              - generic [ref=e593]: (5% off)
+                          - generic [ref=e594]:
+                            - text: "Offer Price:"
+                            - generic [ref=e596]: ₹96,238
+                  - gridcell "Emori Women Yellow Gold Lab Grown Diamond-Studded Cocktail Ring. Current price; ₹69,618. MRP ₹81,903. 15% off discount available. false Offer price ₹68,922.":
+                    - row [ref=e597]:
+                      - link "Emori Women Yellow Gold Lab Grown Diamond-Studded Cocktail Ring. Current price; ₹69,618. MRP ₹81,903. 15% off discount available. false Offer price ₹68,922." [ref=e599] [cursor=pointer]:
+                        - /url: /emori-women-yellow-gold-lab-grown-diamond-studded-cocktail-ring/p/469750214_yellowgold?
+                        - generic [ref=e603]:
+                          - heading [level=2] [ref=e604]:
+                            - strong [ref=e606]: Emori
+                            - generic [ref=e607]: Women Yellow Gold Lab Grown Diamond-Studded Cocktail Ring
+                          - generic [ref=e608]:
+                            - strong [ref=e610]: ₹69,618
+                            - generic [ref=e611]:
+                              - text: ₹81,903
+                              - generic [ref=e612]: (15% off)
+                          - generic [ref=e613]:
+                            - text: "Offer Price:"
+                            - generic [ref=e615]: ₹68,922
+                  - gridcell "Emori Women White Gold Round Solitaire Halo Ring. Current price; ₹63,711. MRP ₹74,083. 14% off discount available. false Offer price ₹63,074.":
+                    - row [ref=e616]:
+                      - link "Emori Women White Gold Round Solitaire Halo Ring. Current price; ₹63,711. MRP ₹74,083. 14% off discount available. false Offer price ₹63,074." [ref=e618] [cursor=pointer]:
+                        - /url: /emori-women-white-gold-round-solitaire-halo-ring/p/469695357_whitegold?
+                        - generic [ref=e622]:
+                          - heading [level=2] [ref=e623]:
+                            - strong [ref=e625]: Emori
+                            - generic [ref=e626]: Women White Gold Round Solitaire Halo Ring
+                          - generic [ref=e627]:
+                            - strong [ref=e629]: ₹63,711
+                            - generic [ref=e630]:
+                              - text: ₹74,083
+                              - generic [ref=e631]: (14% off)
+                          - generic [ref=e632]:
+                            - text: "Offer Price:"
+                            - generic [ref=e634]: ₹63,074
+                  - gridcell "Emori Women Yellow Gold Triple Sparkle Solitaire Lab Grown Diamond Ring. Current price; ₹67,705. MRP ₹83,587. 19% off discount available. false Offer price ₹67,028.":
+                    - row [ref=e635]:
+                      - link "Emori Women Yellow Gold Triple Sparkle Solitaire Lab Grown Diamond Ring. Current price; ₹67,705. MRP ₹83,587. 19% off discount available. false Offer price ₹67,028." [ref=e637] [cursor=pointer]:
+                        - /url: /emori-women-yellow-gold-triple-sparkle-solitaire-lab-grown-diamond-ring/p/469695223_goldyellow?
+                        - generic [ref=e641]:
+                          - heading [level=2] [ref=e642]:
+                            - strong [ref=e644]: Emori
+                            - generic [ref=e645]: Women Yellow Gold Triple Sparkle Solitaire Lab Grown Diamond Ring
+                          - generic [ref=e646]:
+                            - strong [ref=e648]: ₹67,705
+                            - generic [ref=e649]:
+                              - text: ₹83,587
+                              - generic [ref=e650]: (19% off)
+                          - generic [ref=e651]:
+                            - text: "Offer Price:"
+                            - generic [ref=e653]: ₹67,028
+                  - gridcell "BESTSELLER Fort Collins Boys Quilted Puffer Jacket. Current price; ₹975. MRP ₹2,475. 61% off discount available. false Offer price ₹683.":
+                    - row [ref=e654]:
+                      - link "BESTSELLER Fort Collins Boys Quilted Puffer Jacket. Current price; ₹975. MRP ₹2,475. 61% off discount available. false Offer price ₹683." [ref=e656] [cursor=pointer]:
+                        - /url: /fort-collins-boys-quilted-puffer-jacket/p/469766933_olive?
+                        - generic [ref=e657]:
+                          - generic [ref=e658]: BESTSELLER
+                          - generic [ref=e661]:
+                            - heading [level=2] [ref=e662]:
+                              - strong [ref=e664]: Fort Collins
+                              - generic [ref=e665]: Boys Quilted Puffer Jacket
+                            - generic [ref=e666]:
+                              - paragraph [ref=e668]: "4.2"
+                              - paragraph [ref=e671]: "| 76"
+                            - generic [ref=e672]:
+                              - strong [ref=e674]: ₹975
+                              - generic [ref=e675]:
+                                - text: ₹2,475
+                                - generic [ref=e676]: (61% off)
+                            - generic [ref=e677]:
+                              - text: "Offer Price:"
+                              - generic [ref=e679]: ₹683
+                  - gridcell "Iski Uski Yellow Gold Diamond-Studded Cocktail Ring. Current price; ₹134,701. MRP ₹174,937. 23% off discount available. false Offer price ₹133,701.":
+                    - row [ref=e680]:
+                      - link "Iski Uski Yellow Gold Diamond-Studded Cocktail Ring. Current price; ₹134,701. MRP ₹174,937. 23% off discount available. false Offer price ₹133,701." [ref=e682] [cursor=pointer]:
+                        - /url: /iski-uski-yellow-gold-diamond-studded-cocktail-ring/p/460963490_yellowgold?
+                        - generic [ref=e686]:
+                          - heading [level=2] [ref=e687]:
+                            - strong [ref=e689]: Iski Uski
+                            - generic [ref=e690]: Yellow Gold Diamond-Studded Cocktail Ring
+                          - generic [ref=e691]:
+                            - strong [ref=e693]: ₹134,701
+                            - generic [ref=e694]:
+                              - text: ₹174,937
+                              - generic [ref=e695]: (23% off)
+                          - generic [ref=e696]:
+                            - text: "Offer Price:"
+                            - generic [ref=e698]: ₹133,701
+                  - gridcell "RIO GIRLS Girls Care Bear Ringer Crew-Neck T-Shirt. Current price; ₹203. MRP ₹399. 49% off discount available. false Offer price ₹142.":
+                    - row [ref=e699]:
+                      - link "RIO GIRLS Girls Care Bear Ringer Crew-Neck T-Shirt. Current price; ₹203. MRP ₹399. 49% off discount available. false Offer price ₹142." [ref=e701] [cursor=pointer]:
+                        - /url: /rio-girls-girls-care-bear-ringer-crew-neck-t-shirt/p/443107964_white?
+                        - generic [ref=e705]:
+                          - heading [level=2] [ref=e706]:
+                            - strong [ref=e708]: RIO GIRLS
+                            - generic [ref=e709]: Girls Care Bear Ringer Crew-Neck T-Shirt
+                          - generic [ref=e710]:
+                            - paragraph [ref=e712]: "4.4"
+                            - paragraph [ref=e715]: "| 37"
+                          - generic [ref=e716]:
+                            - strong [ref=e718]: ₹203
+                            - generic [ref=e719]:
+                              - text: ₹399
+                              - generic [ref=e720]: (49% off)
+                          - generic [ref=e721]:
+                            - text: "Offer Price:"
+                            - generic [ref=e723]: ₹142
+                  - gridcell "Hellcat Boys Typographic Print T-Shirt & Pants Set. Current price; ₹528. MRP ₹3,298. 84% off discount available. false Offer price ₹462.":
+                    - row [ref=e724]:
+                      - link "Hellcat Boys Typographic Print T-Shirt & Pants Set. Current price; ₹528. MRP ₹3,298. 84% off discount available. false Offer price ₹462." [ref=e726] [cursor=pointer]:
+                        - /url: /hellcat-boys-typographic-print-t-shirt--pants-set/p/702834962_black?
+                        - generic [ref=e730]:
+                          - heading [level=2] [ref=e731]:
+                            - strong [ref=e733]: Hellcat
+                            - generic [ref=e734]: Boys Typographic Print T-Shirt & Pants Set
+                          - generic [ref=e735]:
+                            - paragraph [ref=e737]: "2.7"
+                            - paragraph [ref=e740]: "| 290"
+                          - generic [ref=e741]:
+                            - strong [ref=e743]: ₹528
+                            - generic [ref=e744]:
+                              - text: ₹3,298
+                              - generic [ref=e745]: (84% off)
+                          - generic [ref=e746]:
+                            - text: "Offer Price:"
+                            - generic [ref=e748]: ₹462
+                  - gridcell "SHINE ETERNAL Men White Gold Lab Grown Diamond-Studded Yin Yang Ring. Current price; ₹131,383. MRP ₹131,383. false Offer price ₹130,383.":
+                    - row [ref=e749]:
+                      - link "SHINE ETERNAL Men White Gold Lab Grown Diamond-Studded Yin Yang Ring. Current price; ₹131,383. MRP ₹131,383. false Offer price ₹130,383." [ref=e751] [cursor=pointer]:
+                        - /url: /shine-eternal-men-white-gold-lab-grown-diamond-studded-yin-yang-ring/p/469756295_whitegold?
+                        - generic [ref=e755]:
+                          - heading [level=2] [ref=e756]:
+                            - strong [ref=e758]: SHINE ETERNAL
+                            - generic [ref=e759]: Men White Gold Lab Grown Diamond-Studded Yin Yang Ring
+                          - strong [ref=e762]: ₹131,383
+                          - generic [ref=e763]:
+                            - text: "Offer Price:"
+                            - generic [ref=e765]: ₹130,383
+                  - gridcell "VALANOVA Women Sterling Silver Lab Grown Diamond Ring. Current price; ₹8,004. MRP ₹12,807. 38% off discount available. false Offer price ₹7,924.":
+                    - row [ref=e766]:
+                      - link "VALANOVA Women Sterling Silver Lab Grown Diamond Ring. Current price; ₹8,004. MRP ₹12,807. 38% off discount available. false Offer price ₹7,924." [ref=e768] [cursor=pointer]:
+                        - /url: /valanova-women-sterling-silver-lab-grown-diamond-ring/p/469650845_white?
+                        - generic [ref=e772]:
+                          - heading [level=2] [ref=e773]:
+                            - strong [ref=e775]: VALANOVA
+                            - generic [ref=e776]: Women Sterling Silver Lab Grown Diamond Ring
+                          - generic [ref=e777]:
+                            - strong [ref=e779]: ₹8,004
+                            - generic [ref=e780]:
+                              - text: ₹12,807
+                              - generic [ref=e781]: (38% off)
+                          - generic [ref=e782]:
+                            - text: "Offer Price:"
+                            - generic [ref=e784]: ₹7,924
+                  - gridcell "Emori Men White Gold Inlay Round Lab Grown Diamond-Studded Band Ring. Current price; ₹80,661. MRP ₹84,906. 5% off discount available. false Offer price ₹79,854.":
+                    - row [ref=e785]:
+                      - link "Emori Men White Gold Inlay Round Lab Grown Diamond-Studded Band Ring. Current price; ₹80,661. MRP ₹84,906. 5% off discount available. false Offer price ₹79,854." [ref=e787] [cursor=pointer]:
+                        - /url: /emori-men-white-gold-inlay-round-lab-grown-diamond-studded-band-ring/p/469749965_whitegold?
+                        - generic [ref=e791]:
+                          - heading [level=2] [ref=e792]:
+                            - strong [ref=e794]: Emori
+                            - generic [ref=e795]: Men White Gold Inlay Round Lab Grown Diamond-Studded Band Ring
+                          - generic [ref=e796]:
+                            - strong [ref=e798]: ₹80,661
+                            - generic [ref=e799]:
+                              - text: ₹84,906
+                              - generic [ref=e800]: (5% off)
+                          - generic [ref=e801]:
+                            - text: "Offer Price:"
+                            - generic [ref=e803]: ₹79,854
+                  - gridcell "Emori Women Yellow Gold Sunflower Lab Grown Diamond-Studded Solitaire Ring. Current price; ₹93,380. MRP ₹104,921. 11% off discount available. false Offer price ₹92,446.":
+                    - row [ref=e804]:
+                      - link "Emori Women Yellow Gold Sunflower Lab Grown Diamond-Studded Solitaire Ring. Current price; ₹93,380. MRP ₹104,921. 11% off discount available. false Offer price ₹92,446." [ref=e806] [cursor=pointer]:
+                        - /url: /emori-women-yellow-gold-sunflower-lab-grown-diamond-studded-solitaire-ring/p/469750148_yellowgold?
+                        - generic [ref=e810]:
+                          - heading [level=2] [ref=e811]:
+                            - strong [ref=e813]: Emori
+                            - generic [ref=e814]: Women Yellow Gold Sunflower Lab Grown Diamond-Studded Solitaire Ring
+                          - generic [ref=e815]:
+                            - strong [ref=e817]: ₹93,380
+                            - generic [ref=e818]:
+                              - text: ₹104,921
+                              - generic [ref=e819]: (11% off)
+                          - generic [ref=e820]:
+                            - text: "Offer Price:"
+                            - generic [ref=e822]: ₹92,446
+                  - gridcell "Avsar Yellow Gold Diamond-Studded Poonam Ring. Current price; ₹61,819. MRP ₹123,637. 50% off discount available. false .":
+                    - row [ref=e823]:
+                      - link "Avsar Yellow Gold Diamond-Studded Poonam Ring. Current price; ₹61,819. MRP ₹123,637. 50% off discount available. false ." [ref=e825] [cursor=pointer]:
+                        - /url: /avsar-yellow-gold-diamond-studded-poonam-ring/p/469439879_yellow?
+                        - generic [ref=e829]:
+                          - heading [level=2] [ref=e830]:
+                            - strong [ref=e832]: Avsar
+                            - generic [ref=e833]: Yellow Gold Diamond-Studded Poonam Ring
+                          - generic [ref=e834]:
+                            - strong [ref=e836]: ₹61,819
+                            - generic [ref=e837]:
+                              - text: ₹123,637
+                              - generic [ref=e838]: (50% off)
+                  - gridcell "Iski Uski Yellow Gold Diamond-Studded Cocktail Ring. Current price; ₹124,210. MRP ₹159,244. 22% off discount available. false Offer price ₹123,210.":
+                    - row [ref=e839]:
+                      - link "Iski Uski Yellow Gold Diamond-Studded Cocktail Ring. Current price; ₹124,210. MRP ₹159,244. 22% off discount available. false Offer price ₹123,210." [ref=e841] [cursor=pointer]:
+                        - /url: /iski-uski-yellow-gold-diamond-studded-cocktail-ring/p/460963458_yellowgold?
+                        - generic [ref=e845]:
+                          - heading [level=2] [ref=e846]:
+                            - strong [ref=e848]: Iski Uski
+                            - generic [ref=e849]: Yellow Gold Diamond-Studded Cocktail Ring
+                          - generic [ref=e850]:
+                            - strong [ref=e852]: ₹124,210
+                            - generic [ref=e853]:
+                              - text: ₹159,244
+                              - generic [ref=e854]: (22% off)
+                          - generic [ref=e855]:
+                            - text: "Offer Price:"
+                            - generic [ref=e857]: ₹123,210
+                  - gridcell "Iski Uski Yellow Gold Diamond-Studded Cocktail Ring. Current price; ₹139,791. MRP ₹179,219. 22% off discount available. false Offer price ₹138,791.":
+                    - row [ref=e858]:
+                      - link "Iski Uski Yellow Gold Diamond-Studded Cocktail Ring. Current price; ₹139,791. MRP ₹179,219. 22% off discount available. false Offer price ₹138,791." [ref=e860] [cursor=pointer]:
+                        - /url: /iski-uski-yellow-gold-diamond-studded-cocktail-ring/p/460963500_yellowgold?
+                        - generic [ref=e864]:
+                          - heading [level=2] [ref=e865]:
+                            - strong [ref=e867]: Iski Uski
+                            - generic [ref=e868]: Yellow Gold Diamond-Studded Cocktail Ring
+                          - generic [ref=e869]:
+                            - strong [ref=e871]: ₹139,791
+                            - generic [ref=e872]:
+                              - text: ₹179,219
+                              - generic [ref=e873]: (22% off)
+                          - generic [ref=e874]:
+                            - text: "Offer Price:"
+                            - generic [ref=e876]: ₹138,791
+                  - gridcell "Iski Uski Beaded Yellow Gold Ring. Current price; ₹97,763. MRP ₹125,337. 22% off discount available. false Offer price ₹96,785.":
+                    - row [ref=e877]:
+                      - link "Iski Uski Beaded Yellow Gold Ring. Current price; ₹97,763. MRP ₹125,337. 22% off discount available. false Offer price ₹96,785." [ref=e879] [cursor=pointer]:
+                        - /url: /iski-uski-beaded-yellow-gold-ring/p/469163910_yellowgold?
+                        - generic [ref=e883]:
+                          - heading [level=2] [ref=e884]:
+                            - strong [ref=e886]: Iski Uski
+                            - generic [ref=e887]: Beaded Yellow Gold Ring
+                          - generic [ref=e888]:
+                            - strong [ref=e890]: ₹97,763
+                            - generic [ref=e891]:
+                              - text: ₹125,337
+                              - generic [ref=e892]: (22% off)
+                          - generic [ref=e893]:
+                            - text: "Offer Price:"
+                            - generic [ref=e895]: ₹96,785
+                  - gridcell "VALANOVA Women Sterling Silver Gold-Plated Lab Grown Diamond-Studded Ring. Current price; ₹24,906. MRP ₹39,850. 38% off discount available. false Offer price ₹24,657.":
+                    - row [ref=e896]:
+                      - link "VALANOVA Women Sterling Silver Gold-Plated Lab Grown Diamond-Studded Ring. Current price; ₹24,906. MRP ₹39,850. 38% off discount available. false Offer price ₹24,657." [ref=e898] [cursor=pointer]:
+                        - /url: /valanova-women-sterling-silver-gold-plated-lab-grown-diamond-studded-ring/p/469650753_yellow?
+                        - generic [ref=e902]:
+                          - heading [level=2] [ref=e903]:
+                            - strong [ref=e905]: VALANOVA
+                            - generic [ref=e906]: Women Sterling Silver Gold-Plated Lab Grown Diamond-Studded Ring
+                          - generic [ref=e907]:
+                            - strong [ref=e909]: ₹24,906
+                            - generic [ref=e910]:
+                              - text: ₹39,850
+                              - generic [ref=e911]: (38% off)
+                          - generic [ref=e912]:
+                            - text: "Offer Price:"
+                            - generic [ref=e914]: ₹24,657
+                  - gridcell "VALANOVA Women Sterling Silver Rose Gold-Plated Lab Grown Diamond Ring. Current price; ₹2,514. MRP ₹4,023. 38% off discount available. false Offer price ₹2,489.":
+                    - row [ref=e915]:
+                      - link "VALANOVA Women Sterling Silver Rose Gold-Plated Lab Grown Diamond Ring. Current price; ₹2,514. MRP ₹4,023. 38% off discount available. false Offer price ₹2,489." [ref=e917] [cursor=pointer]:
+                        - /url: /valanova-women-sterling-silver-rose-gold-plated-lab-grown-diamond-ring/p/469650608_rose?
+                        - generic [ref=e921]:
+                          - heading [level=2] [ref=e922]:
+                            - strong [ref=e924]: VALANOVA
+                            - generic [ref=e925]: Women Sterling Silver Rose Gold-Plated Lab Grown Diamond Ring
+                          - generic [ref=e926]:
+                            - strong [ref=e928]: ₹2,514
+                            - generic [ref=e929]:
+                              - text: ₹4,023
+                              - generic [ref=e930]: (38% off)
+                          - generic [ref=e931]:
+                            - text: "Offer Price:"
+                            - generic [ref=e933]: ₹2,489
+                  - gridcell "Avsar White Gold Cubic Zirconia Studded Varsha Ring. Current price; ₹19,625. MRP ₹39,250. 50% off discount available. false .":
+                    - row [ref=e934]:
+                      - link "Avsar White Gold Cubic Zirconia Studded Varsha Ring. Current price; ₹19,625. MRP ₹39,250. 50% off discount available. false ." [ref=e936] [cursor=pointer]:
+                        - /url: /avsar-white-gold-cubic-zirconia-studded-varsha-ring/p/469468845_white?
+                        - generic [ref=e940]:
+                          - heading [level=2] [ref=e941]:
+                            - strong [ref=e943]: Avsar
+                            - generic [ref=e944]: White Gold Cubic Zirconia Studded Varsha Ring
+                          - generic [ref=e945]:
+                            - strong [ref=e947]: ₹19,625
+                            - generic [ref=e948]:
+                              - text: ₹39,250
+                              - generic [ref=e949]: (50% off)
+                  - gridcell "Hellcat Boys Graphic Print T-Shirt & Pants Set. Current price; ₹528. MRP ₹3,298. 84% off discount available. false Offer price ₹462.":
+                    - row [ref=e950]:
+                      - link "Hellcat Boys Graphic Print T-Shirt & Pants Set. Current price; ₹528. MRP ₹3,298. 84% off discount available. false Offer price ₹462." [ref=e952] [cursor=pointer]:
+                        - /url: /hellcat-boys-graphic-print-t-shirt--pants-set/p/702834962_blue?
+                        - generic [ref=e956]:
+                          - heading [level=2] [ref=e957]:
+                            - strong [ref=e959]: Hellcat
+                            - generic [ref=e960]: Boys Graphic Print T-Shirt & Pants Set
+                          - generic [ref=e961]:
+                            - paragraph [ref=e963]: "2.7"
+                            - paragraph [ref=e966]: "| 290"
+                          - generic [ref=e967]:
+                            - strong [ref=e969]: ₹528
+                            - generic [ref=e970]:
+                              - text: ₹3,298
+                              - generic [ref=e971]: (84% off)
+                          - generic [ref=e972]:
+                            - text: "Offer Price:"
+                            - generic [ref=e974]: ₹462
+                  - gridcell "Dishis Yellow Gold Diamond Studded Ring. Current price; ₹51,247. MRP ₹85,411. 40% off discount available. false Offer price ₹50,735.":
+                    - row [ref=e975]:
+                      - link "Dishis Yellow Gold Diamond Studded Ring. Current price; ₹51,247. MRP ₹85,411. 40% off discount available. false Offer price ₹50,735." [ref=e977] [cursor=pointer]:
+                        - /url: /dishis-yellow-gold-diamond-studded-ring/p/469139282_yellow?
+                        - generic [ref=e981]:
+                          - heading [level=2] [ref=e982]:
+                            - strong [ref=e984]: Dishis
+                            - generic [ref=e985]: Yellow Gold Diamond Studded Ring
+                          - generic [ref=e986]:
+                            - strong [ref=e988]: ₹51,247
+                            - generic [ref=e989]:
+                              - text: ₹85,411
+                              - generic [ref=e990]: (40% off)
+                          - generic [ref=e991]:
+                            - text: "Offer Price:"
+                            - generic [ref=e993]: ₹50,735
+                  - gridcell "NEWSEASON Altheory by AZORTE NBA Chicago Bulls Relaxed Fit Basketball T-Shirt. Current price; ₹999. MRP ₹999. false Offer price ₹699.":
+                    - row [ref=e994]:
+                      - link "NEWSEASON Altheory by AZORTE NBA Chicago Bulls Relaxed Fit Basketball T-Shirt. Current price; ₹999. MRP ₹999. false Offer price ₹699." [ref=e996] [cursor=pointer]:
+                        - /url: /altheory-by-azorte-nba-chicago-bulls-relaxed-fit-basketball-t-shirt/p/443118577_darkred?
+                        - generic [ref=e997]:
+                          - generic [ref=e998]: NEWSEASON
+                          - generic [ref=e1001]:
+                            - heading [level=2] [ref=e1002]:
+                              - strong [ref=e1004]: Altheory by AZORTE
+                              - generic [ref=e1005]: NBA Chicago Bulls Relaxed Fit Basketball T-Shirt
+                            - strong [ref=e1008]: ₹999
+                            - generic [ref=e1009]:
+                              - text: "Offer Price:"
+                              - generic [ref=e1011]: ₹699
+                  - gridcell "Iski Uski Yellow Gold Henry Solitaire Ring. Current price; ₹135,047. MRP ₹164,691. 18% off discount available. false Offer price ₹134,047.":
+                    - row [ref=e1012]:
+                      - link "Iski Uski Yellow Gold Henry Solitaire Ring. Current price; ₹135,047. MRP ₹164,691. 18% off discount available. false Offer price ₹134,047." [ref=e1014] [cursor=pointer]:
+                        - /url: /iski-uski-yellow-gold-henry-solitaire-ring/p/469083446_yellowgold?
+                        - generic [ref=e1018]:
+                          - heading [level=2] [ref=e1019]:
+                            - strong [ref=e1021]: Iski Uski
+                            - generic [ref=e1022]: Yellow Gold Henry Solitaire Ring
+                          - generic [ref=e1023]:
+                            - strong [ref=e1025]: ₹135,047
+                            - generic [ref=e1026]:
+                              - text: ₹164,691
+                              - generic [ref=e1027]: (18% off)
+                          - generic [ref=e1028]:
+                            - text: "Offer Price:"
+                            - generic [ref=e1030]: ₹134,047
+                  - gridcell "Dishis Yellow Gold Diamond-Studded Ring. Current price; ₹21,829. MRP ₹36,381. 40% off discount available. false Offer price ₹21,611.":
+                    - row [ref=e1031]:
+                      - link "Dishis Yellow Gold Diamond-Studded Ring. Current price; ₹21,829. MRP ₹36,381. 40% off discount available. false Offer price ₹21,611." [ref=e1033] [cursor=pointer]:
+                        - /url: /dishis-yellow-gold-diamond-studded-ring/p/469525915_yellowgold?
+                        - generic [ref=e1037]:
+                          - heading [level=2] [ref=e1038]:
+                            - strong [ref=e1040]: Dishis
+                            - generic [ref=e1041]: Yellow Gold Diamond-Studded Ring
+                          - generic [ref=e1042]:
+                            - paragraph [ref=e1044]: "2.3"
+                            - paragraph [ref=e1047]: "| 3"
+                          - generic [ref=e1048]:
+                            - strong [ref=e1050]: ₹21,829
+                            - generic [ref=e1051]:
+                              - text: ₹36,381
+                              - generic [ref=e1052]: (40% off)
+                          - generic [ref=e1053]:
+                            - text: "Offer Price:"
+                            - generic [ref=e1055]: ₹21,611
+                  - gridcell "Avsar Women Yellow Gold American Diamond-Studded Karnataka Ring. Current price; ₹5,564. MRP ₹7,949. 30% off discount available. false Offer price ₹5,508.":
+                    - row [ref=e1056]:
+                      - link "Avsar Women Yellow Gold American Diamond-Studded Karnataka Ring. Current price; ₹5,564. MRP ₹7,949. 30% off discount available. false Offer price ₹5,508." [ref=e1058] [cursor=pointer]:
+                        - /url: /avsar-women-yellow-gold-american-diamond-studded-karnataka-ring/p/469810076_yellow?
+                        - generic [ref=e1062]:
+                          - heading [level=2] [ref=e1063]:
+                            - strong [ref=e1065]: Avsar
+                            - generic [ref=e1066]: Women Yellow Gold American Diamond-Studded Karnataka Ring
+                          - generic [ref=e1067]:
+                            - strong [ref=e1069]: ₹5,564
+                            - generic [ref=e1070]:
+                              - text: ₹7,949
+                              - generic [ref=e1071]: (30% off)
+                          - generic [ref=e1072]:
+                            - text: "Offer Price:"
+                            - generic [ref=e1074]: ₹5,508
+                  - gridcell "Dishis Women Yellow Gold Diamond Ring. Current price; ₹45,795. MRP ₹76,325. 40% off discount available. false Offer price ₹45,337.":
+                    - row [ref=e1075]:
+                      - link "Dishis Women Yellow Gold Diamond Ring. Current price; ₹45,795. MRP ₹76,325. 40% off discount available. false Offer price ₹45,337." [ref=e1077] [cursor=pointer]:
+                        - /url: /dishis-women-yellow-gold-diamond-ring/p/469526218_yellowgold?
+                        - generic [ref=e1081]:
+                          - heading [level=2] [ref=e1082]:
+                            - strong [ref=e1084]: Dishis
+                            - generic [ref=e1085]: Women Yellow Gold Diamond Ring
+                          - generic [ref=e1086]:
+                            - strong [ref=e1088]: ₹45,795
+                            - generic [ref=e1089]:
+                              - text: ₹76,325
+                              - generic [ref=e1090]: (40% off)
+                          - generic [ref=e1091]:
+                            - text: "Offer Price:"
+                            - generic [ref=e1093]: ₹45,337
+                  - gridcell "Hellcat Boys Graphic Print T-Shirt & Pants Set. Current price; ₹528. MRP ₹3,298. 84% off discount available. false Offer price ₹462.":
+                    - row [ref=e1094]:
+                      - link "Hellcat Boys Graphic Print T-Shirt & Pants Set. Current price; ₹528. MRP ₹3,298. 84% off discount available. false Offer price ₹462." [ref=e1096] [cursor=pointer]:
+                        - /url: /hellcat-boys-graphic-print-t-shirt--pants-set/p/702835114_orange?
+                        - generic [ref=e1100]:
+                          - heading [level=2] [ref=e1101]:
+                            - strong [ref=e1103]: Hellcat
+                            - generic [ref=e1104]: Boys Graphic Print T-Shirt & Pants Set
+                          - generic [ref=e1105]:
+                            - paragraph [ref=e1107]: "2.8"
+                            - paragraph [ref=e1110]: "| 173"
+                          - generic [ref=e1111]:
+                            - strong [ref=e1113]: ₹528
+                            - generic [ref=e1114]:
+                              - text: ₹3,298
+                              - generic [ref=e1115]: (84% off)
+                          - generic [ref=e1116]:
+                            - text: "Offer Price:"
+                            - generic [ref=e1118]: ₹462
+                  - gridcell "Fashion Comfortz Girls Pack of 3 Graphic Print Bloomers. Current price; ₹140. MRP ₹847. 83% off discount available. false .":
+                    - row [ref=e1119]:
+                      - link "Fashion Comfortz Girls Pack of 3 Graphic Print Bloomers. Current price; ₹140. MRP ₹847. 83% off discount available. false ." [ref=e1121] [cursor=pointer]:
+                        - /url: /fashion-comfortz-girls-pack-of-3-graphic-print-bloomers/p/702083089_multi?
+                        - generic [ref=e1125]:
+                          - heading [level=2] [ref=e1126]:
+                            - strong [ref=e1128]: Fashion Comfortz
+                            - generic [ref=e1129]: Girls Pack of 3 Graphic Print Bloomers
+                          - generic [ref=e1130]:
+                            - strong [ref=e1132]: ₹140
+                            - generic [ref=e1133]:
+                              - text: ₹847
+                              - generic [ref=e1134]: (83% off)
+                  - gridcell "GUESS Girls Cotton Printed Jeans. Current price; ₹3,660. MRP ₹6,100. 40% off discount available. false Offer price ₹2,760.":
+                    - row [ref=e1135]:
+                      - link "GUESS Girls Cotton Printed Jeans. Current price; ₹3,660. MRP ₹6,100. 40% off discount available. false Offer price ₹2,760." [ref=e1137] [cursor=pointer]:
+                        - /url: /guess-girls-cotton-printed-jeans/p/702830065_blue?
+                        - generic [ref=e1141]:
+                          - heading [level=2] [ref=e1142]:
+                            - strong [ref=e1144]: GUESS
+                            - generic [ref=e1145]: Girls Cotton Printed Jeans
+                          - generic [ref=e1146]:
+                            - strong [ref=e1148]: ₹3,660
+                            - generic [ref=e1149]:
+                              - text: ₹6,100
+                              - generic [ref=e1150]: (40% off)
+                          - generic [ref=e1151]:
+                            - text: "Offer Price:"
+                            - generic [ref=e1153]: ₹2,760
+    - contentinfo [ref=e1158]:
+      - list [ref=e1160]:
+        - listitem [ref=e1161]:
+          - generic [ref=e1162]: 
+          - generic "EASY EXCHANGE" [ref=e1163]:
+            - strong [ref=e1164]: EASY EXCHANGE
+        - listitem [ref=e1165]:
+          - generic [ref=e1166]: 
+          - generic "100% HANDPICKED" [ref=e1167]:
+            - strong [ref=e1168]: 100% HANDPICKED
+        - listitem [ref=e1169]:
+          - generic [ref=e1170]: 
+          - generic "ASSURED QUALITY" [ref=e1171]:
+            - strong [ref=e1172]: ASSURED QUALITY
+      - generic [ref=e1174]:
+        - generic [ref=e1175]:
+          - generic [ref=e1176]:
+            - heading "AJIO" [level=2] [ref=e1177]:
+              - strong [ref=e1178]: AJIO
+            - list [ref=e1179]:
+              - listitem [ref=e1180]:
+                - link "Who We Are" [ref=e1181] [cursor=pointer]:
+                  - /url: https://www.ajio.com/help/whoweare
+              - listitem [ref=e1182]:
+                - link "Terms & Conditions" [ref=e1183] [cursor=pointer]:
+                  - /url: https://www.ajio.com/help/termsAndCondition
+              - listitem [ref=e1184]:
+                - link "We Respect Your Privacy" [ref=e1185] [cursor=pointer]:
+                  - /url: https://www.ajio.com/privacypolicy
+              - listitem [ref=e1186]:
+                - link "Fees & Payments" [ref=e1187] [cursor=pointer]:
+                  - /url: https://www.ajio.com/fee-payment-promotion-policy
+              - listitem [ref=e1188]:
+                - link "Returns & Refunds Policy" [ref=e1189] [cursor=pointer]:
+                  - /url: https://www.ajio.com/return-refund-policy
+              - listitem [ref=e1190]:
+                - link "Promotions Terms & Conditions" [ref=e1191] [cursor=pointer]:
+                  - /url: https://www.ajio.com/ajio-own-sale-policy
+              - listitem [ref=e1192]:
+                - link "Delivery and Shipping Policy" [ref=e1193] [cursor=pointer]:
+                  - /url: https://www.ajio.com/delivery-and-shipping-policy
+              - listitem [ref=e1194]:
+                - link "Blog" [ref=e1195] [cursor=pointer]:
+                  - /url: https://blog.ajio.com/
+          - generic [ref=e1196]:
+            - heading "Help" [level=2] [ref=e1197]:
+              - strong [ref=e1198]: Help
+            - list [ref=e1199]:
+              - listitem [ref=e1200]:
+                - link "Track Your Order" [ref=e1201] [cursor=pointer]:
+                  - /url: https://www.ajio.com/my-account/orders
+              - listitem [ref=e1202]:
+                - link "Frequently Asked Questions" [ref=e1203] [cursor=pointer]:
+                  - /url: https://www.ajio.com/selfcare
+              - listitem [ref=e1204]:
+                - link "Returns" [ref=e1205] [cursor=pointer]:
+                  - /url: https://www.ajio.com/selfcare
+              - listitem [ref=e1206]:
+                - link "Cancellations" [ref=e1207] [cursor=pointer]:
+                  - /url: https://www.ajio.com/selfcare
+              - listitem [ref=e1208]:
+                - link "Payments" [ref=e1209] [cursor=pointer]:
+                  - /url: https://www.ajio.com/selfcare
+              - listitem [ref=e1210]:
+                - link "Customer Care" [ref=e1211] [cursor=pointer]:
+                  - /url: https://www.ajio.com/selfcare
+              - listitem [ref=e1212]:
+                - link "How Do I Redeem My Coupon" [ref=e1213] [cursor=pointer]:
+                  - /url: https://www.ajio.com/coupon-faq
+          - generic [ref=e1214]:
+            - heading "Shop by" [level=2] [ref=e1215]:
+              - strong [ref=e1216]: Shop by
+            - list [ref=e1217]:
+              - listitem [ref=e1218]:
+                - link "All" [ref=e1219] [cursor=pointer]:
+                  - /url: /s/sale-number-1-5624-76591
+              - listitem [ref=e1220]:
+                - link "Men" [ref=e1221] [cursor=pointer]:
+                  - /url: https://www.ajio.com/sections/men
+              - listitem [ref=e1222]:
+                - link "Women" [ref=e1223] [cursor=pointer]:
+                  - /url: https://www.ajio.com/sections/women
+              - listitem [ref=e1224]:
+                - link "Kids" [ref=e1225] [cursor=pointer]:
+                  - /url: https://www.ajio.com/sections/kids
+              - listitem [ref=e1226]:
+                - link "Indie" [ref=e1227] [cursor=pointer]:
+                  - /url: https://www.ajio.com/shop/indie
+              - listitem [ref=e1228]:
+                - link "Stores" [ref=e1229] [cursor=pointer]:
+                  - /url: https://www.ajio.com/sections/stores
+              - listitem [ref=e1230]:
+                - link "New Arrivals" [ref=e1231] [cursor=pointer]:
+                  - /url: https://www.ajio.com/sections/fresh-arrivals
+              - listitem [ref=e1232]:
+                - link "Brand Directory" [ref=e1233] [cursor=pointer]:
+                  - /url: https://www.ajio.com/help/BrandListing
+              - listitem [ref=e1234]:
+                - link "Home" [ref=e1235] [cursor=pointer]:
+                  - /url: https://www.ajio.com/home
+              - listitem [ref=e1236]:
+                - link "Collections" [ref=e1237] [cursor=pointer]:
+                  - /url: https://www.ajio.com/capsule/newin
+          - generic [ref=e1238]:
+            - heading "Follow us" [level=2] [ref=e1239]:
+              - strong [ref=e1240]: Follow us
+            - list [ref=e1241]:
+              - listitem [ref=e1242]:
+                - link "Facebook" [ref=e1243] [cursor=pointer]:
+                  - /url: https://www.facebook.com/AJIOlife
+              - listitem [ref=e1244]:
+                - link "Instagram- AJIOlife" [ref=e1245] [cursor=pointer]:
+                  - /url: https://www.instagram.com/AJIOlife/
+              - listitem [ref=e1246]:
+                - link "Instagram- AJIO LUXE" [ref=e1247] [cursor=pointer]:
+                  - /url: https://www.instagram.com/ajioluxe/
+              - listitem [ref=e1248]:
+                - link "Twitter" [ref=e1249] [cursor=pointer]:
+                  - /url: https://twitter.com/AJIOLife
+              - listitem [ref=e1250]:
+                - link "Pinterest" [ref=e1251] [cursor=pointer]:
+                  - /url: https://www.pinterest.com/ajiolife/
+        - generic [ref=e1252]:
+          - generic [ref=e1253]:
+            - heading "Payment Methods" [level=2] [ref=e1254]:
+              - strong [ref=e1255]: Payment Methods
+            - list [ref=e1257]:
+              - listitem "Net banking" [ref=e1258]:
+                - generic [ref=e1259]: 
+              - listitem "Visa" [ref=e1260]:
+                - generic [ref=e1261]: 
+              - listitem "Master card" [ref=e1262]:
+                - generic [ref=e1263]: 
+              - listitem "Amex" [ref=e1264]:
+                - generic [ref=e1265]: 
+              - listitem "Cash on delivery" [ref=e1266]:
+                - generic [ref=e1267]: 
+              - listitem "Jio money" [ref=e1268]:
+                - generic [ref=e1269]: 
+          - generic [ref=e1270]:
+            - heading "Secure Systems" [level=2] [ref=e1271]:
+              - strong [ref=e1272]: Secure Systems
+            - list [ref=e1274]:
+              - listitem "SSL" [ref=e1275]:
+                - generic [ref=e1276]: 
