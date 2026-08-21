@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import os
+import traceback
 
 app = Flask(__name__)
 
@@ -20,15 +21,27 @@ def home():
     if search_term:
         results = []
 
+        print("=" * 70, flush=True)
+        print(f"SEARCH STARTED: {search_term}", flush=True)
+        print("=" * 70, flush=True)
+
         from playwright_test import amazon_search, main, myntra_search
 
         # --------------------------------------------------
         # Flipkart
         # --------------------------------------------------
+        print(
+            f"[FLIPKART] Starting search for: {search_term}",
+            flush=True,
+        )
+
         try:
             flipkart_results = main(search_term)
 
-            print("FLIPKART RESULTS:", flipkart_results)
+            print(
+                f"[FLIPKART] Results: {flipkart_results}",
+                flush=True,
+            )
 
             results.extend(
                 {**result, "store": "Flipkart"}
@@ -39,16 +52,30 @@ def home():
                 flipkart_status = "No matching Flipkart products found"
 
         except Exception as error:
-            print("FLIPKART ERROR:", repr(error))
+            print(
+                f"[FLIPKART] ERROR: {repr(error)}",
+                flush=True,
+            )
+
+            traceback.print_exc()
+
             flipkart_status = "Flipkart temporarily unavailable"
 
         # --------------------------------------------------
         # Amazon
         # --------------------------------------------------
+        print(
+            f"[AMAZON] Starting search for: {search_term}",
+            flush=True,
+        )
+
         try:
             amazon_results = amazon_search(search_term)
 
-            print("AMAZON RESULTS:", amazon_results)
+            print(
+                f"[AMAZON] Results: {amazon_results}",
+                flush=True,
+            )
 
             results.extend(
                 {**result, "store": "Amazon"}
@@ -59,7 +86,12 @@ def home():
                 amazon_status = "No matching Amazon products found"
 
         except Exception as error:
-            print("AMAZON ERROR:", repr(error))
+            print(
+                f"[AMAZON] ERROR: {repr(error)}",
+                flush=True,
+            )
+
+            traceback.print_exc()
 
             if "No visible relevant Amazon product was found." in str(error):
                 amazon_status = "No matching Amazon products found"
@@ -69,10 +101,18 @@ def home():
         # --------------------------------------------------
         # Myntra
         # --------------------------------------------------
+        print(
+            f"[MYNTRA] Starting search for: {search_term}",
+            flush=True,
+        )
+
         try:
             myntra_results = myntra_search(search_term)
 
-            print("MYNTRA RESULTS:", myntra_results)
+            print(
+                f"[MYNTRA] Results: {myntra_results}",
+                flush=True,
+            )
 
             results.extend(
                 {**result, "store": "Myntra"}
@@ -83,8 +123,19 @@ def home():
                 myntra_status = "No matching Myntra products found"
 
         except Exception as error:
-            print("MYNTRA ERROR:", repr(error))
-            myntra_status = f"Myntra temporarily unavailable"
+            print(
+                f"[MYNTRA] ERROR: {repr(error)}",
+                flush=True,
+            )
+
+            traceback.print_exc()
+
+            myntra_status = "Myntra temporarily unavailable"
+
+        print("=" * 70, flush=True)
+        print(f"SEARCH FINISHED: {search_term}", flush=True)
+        print(f"TOTAL RESULTS: {len(results)}", flush=True)
+        print("=" * 70, flush=True)
 
     return render_template(
         "index.html",
