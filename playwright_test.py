@@ -1,12 +1,48 @@
 """Playwright product collectors for Flipkart, Amazon India and Myntra."""
 
 import json
+import os
 import re
 import sys
 import time
-from urllib.parse import parse_qs, quote_plus, unquote, urljoin, urlparse
+from urllib.parse import (
+    parse_qs,
+    quote_plus,
+    unquote,
+    urljoin,
+    urlparse,
+)
 
+# ============================================================
+# RENDER / PLAYWRIGHT CONFIGURATION
+# ============================================================
+
+# IMPORTANT:
+# The Render build installs Playwright browsers into this folder.
+# Setting it here ensures runtime uses the SAME folder.
+if os.name != "nt":
+    os.environ.setdefault(
+        "PLAYWRIGHT_BROWSERS_PATH",
+        "/opt/render/project/src/ms-playwright",
+    )
+
+import requests
 from playwright.sync_api import sync_playwright
+
+
+# ============================================================
+# CONFIGURATION
+# ============================================================
+
+MAX_RESULTS = 2
+
+# Render Free has only 512 MB RAM.
+# Do NOT inspect hundreds of products.
+FLIPKART_MAX_LINKS = 30
+AMAZON_MAX_CARDS = 25
+
+PAGE_TIMEOUT_MS = 20000
+WAIT_AFTER_LOAD_MS = 1000
 
 
 # ============================================================
@@ -240,9 +276,7 @@ def _rank_results(
         if matched_keywords == 0:
             continue
 
-        coverage_score = matched_keywords * 1000
-
-        score += coverage_score
+        score += matched_keywords * 1000
 
         score -= position
 
@@ -284,10 +318,72 @@ def _rank_results(
 
         results.append(result)
 
-        if len(results) == 2:
+        if len(results) >= MAX_RESULTS:
             break
 
     return results
+
+
+def _fallback_results(
+    search_term: str,
+    candidates: list[dict[str, str]],
+) -> list[dict[str, str]]:
+
+    query_tokens = _search_tokens(search_term)
+
+    important_tokens = {
+        token
+        for token in query_tokens
+        if token not in GENERIC_SEARCH_TERMS
+    }
+
+    if not important_tokens:
+        important_tokens = set(query_tokens)
+
+    fallback = []
+
+    for position, candidate in enumerate(candidates):
+
+        product_name = candidate.get(
+            "product_name",
+            "",
+        )
+
+        name_tokens = set(
+            _search_tokens(product_name)
+        )
+
+        if not name_tokens:
+            continue
+
+        matched = 0
+
+        for query_token in important_tokens:
+
+            if _token_matches(
+                query_token,
+                name_tokens,
+            ):
+                matched += 1
+
+        if matched == len(important_tokens):
+
+            fallback.append(
+                (
+                    -position,
+                    candidate,
+                )
+            )
+
+    fallback.sort(
+        key=lambda item: item[0],
+        reverse=True,
+    )
+
+    return [
+        candidate
+        for _, candidate in fallback
+    ]
 
 
 # ============================================================
@@ -296,6 +392,12 @@ def _rank_results(
 
 def _launch_browser(playwright):
 
+    print(
+        "[PLAYWRIGHT] Browsers path = "
+        f"{os.environ.get('PLAYWRIGHT_BROWSERS_PATH', 'default')}",
+        flush=True,
+    )
+
     return playwright.chromium.launch(
         headless=True,
         args=[
@@ -303,17 +405,53 @@ def _launch_browser(playwright):
             "--disable-setuid-sandbox",
             "--disable-dev-shm-usage",
             "--disable-gpu",
+            "--no-zygote",
+            "--disable-background-networking",
+            "--disable-background-timer-throttling",
+            "--disable-renderer-backgrounding",
+            "--disable-features=Translate,BackForwardCache",
         ],
     )
+
+
+def _new_page(browser):
+
+    context = browser.new_context(
+        viewport={
+            "width": 1280,
+            "height": 720,
+        },
+        user_agent=(
+            "Mozilla/5.0 (X11; Linux x86_64) "
+            "AppleWebKit/537.36 "
+            "(KHTML, like Gecko) "
+            "Chrome/131.0.0.0 "
+            "Safari/537.36"
+        ),
+        locale="en-IN",
+    )
+
+    page = context.new_page()
+
+    page.set_default_timeout(
+        5000
+    )
+
+    return context, page
 
 
 def _raise_if_restricted(page) -> None:
 
     try:
+
         text = page.locator(
             "body"
-        ).inner_text().lower()
+        ).inner_text(
+            timeout=3000
+        ).lower()
+
     except Exception:
+
         return
 
     if re.search(
@@ -323,6 +461,7 @@ def _raise_if_restricted(page) -> None:
         r"unusual traffic",
         text,
     ):
+
         raise RuntimeError(
             "The storefront presented an access restriction; "
             "no bypass was attempted."
@@ -389,84 +528,9 @@ def _extract_product_name(text: str) -> str:
     return "Not displayed"
 
 
-def _flipkart_fallback_results(
-    search_term: str,
-    candidates: list[dict[str, str]],
-) -> list[dict[str, str]]:
-
-    """
-    Fallback ranking for Flipkart.
-
-    The normal ranking can occasionally return only one result
-    because Flipkart's rendered text varies between page loads.
-
-    This fallback requires the important search terms to match,
-    but does not require every generic word such as "for".
-    """
-
-    query_tokens = _search_tokens(search_term)
-
-    important_tokens = {
-        token
-        for token in query_tokens
-        if token not in GENERIC_SEARCH_TERMS
-    }
-
-    if not important_tokens:
-        important_tokens = set(query_tokens)
-
-    fallback = []
-
-    for position, candidate in enumerate(candidates):
-
-        product_name = candidate.get(
-            "product_name",
-            "",
-        )
-
-        name_tokens = set(
-            _search_tokens(product_name)
-        )
-
-        if not name_tokens:
-            continue
-
-        matched = 0
-
-        for query_token in important_tokens:
-
-            if _token_matches(
-                query_token,
-                name_tokens,
-            ):
-                matched += 1
-
-        if matched == len(important_tokens):
-
-            fallback.append(
-                (
-                    -position,
-                    candidate,
-                )
-            )
-
-    fallback.sort(
-        key=lambda item: item[0],
-        reverse=True,
-    )
-
-    return [
-        candidate
-        for _, candidate in fallback
-    ]
-
-
 def main(
     search_term: str,
 ) -> list[dict[str, str]]:
-    """
-    Collect up to two relevant Flipkart products.
-    """
 
     print(
         f"[FLIPKART] Starting search: {search_term}",
@@ -475,10 +539,17 @@ def main(
 
     with sync_playwright() as playwright:
 
-        browser = _launch_browser(playwright)
-        page = browser.new_page()
+        browser = _launch_browser(
+            playwright
+        )
+
+        context = None
 
         try:
+
+            context, page = _new_page(
+                browser
+            )
 
             search_url = (
                 "https://www.flipkart.com/search?q="
@@ -488,50 +559,69 @@ def main(
             page.goto(
                 search_url,
                 wait_until="domcontentloaded",
-                timeout=30000,
+                timeout=PAGE_TIMEOUT_MS,
             )
 
-            page.wait_for_timeout(1500)
+            page.wait_for_timeout(
+                WAIT_AFTER_LOAD_MS
+            )
 
-            _raise_if_restricted(page)
+            _raise_if_restricted(
+                page
+            )
 
             links = page.locator(
                 'a[href*="/p/"]'
             )
 
-            candidates = []
-            seen_urls = set()
+            total_links = links.count()
 
-            count = links.count()
+            inspect_count = min(
+                total_links,
+                FLIPKART_MAX_LINKS,
+            )
 
             print(
-                f"[FLIPKART] Product links found: {count}",
+                "[FLIPKART] Total product links found: "
+                f"{total_links}",
                 flush=True,
             )
 
-            for index in range(count):
+            print(
+                "[FLIPKART] Inspecting only: "
+                f"{inspect_count}",
+                flush=True,
+            )
 
-                link = links.nth(index)
+            candidates = []
+            seen_urls = set()
 
-                try:
-                    if not link.is_visible():
-                        continue
-                except Exception:
-                    continue
+            for index in range(
+                inspect_count
+            ):
 
-                try:
-                    text = link.inner_text().strip()
-                except Exception:
-                    continue
-
-                href = link.get_attribute(
-                    "href"
+                link = links.nth(
+                    index
                 )
 
-                if not text or not href:
+                try:
+
+                    text = link.inner_text(
+                        timeout=1500
+                    ).strip()
+
+                    href = (
+                        link.get_attribute(
+                            "href"
+                        )
+                        or ""
+                    )
+
+                except Exception:
+
                     continue
 
-                if text.startswith("₹"):
+                if not text or not href:
                     continue
 
                 path = href.split(
@@ -542,14 +632,20 @@ def main(
                 if path in seen_urls:
                     continue
 
-                seen_urls.add(path)
+                seen_urls.add(
+                    path
+                )
 
                 try:
 
                     parent_text = (
                         link
-                        .locator("xpath=..")
-                        .inner_text()
+                        .locator(
+                            "xpath=.."
+                        )
+                        .inner_text(
+                            timeout=1500
+                        )
                     )
 
                 except Exception:
@@ -560,170 +656,161 @@ def main(
                     f"{parent_text}\n{text}"
                 )
 
-                # --------------------------------------------
-                # PRICE
-                # --------------------------------------------
-
                 price_match = re.search(
                     r"₹[\d,]+",
                     rendered,
                 )
 
-                # --------------------------------------------
-                # RATING / REVIEWS
-                # --------------------------------------------
-
-                match = re.search(
-                    r"^\s*(\d(?:\.\d)?)\s*"
+                rating_match = re.search(
+                    r"(?m)^\s*"
+                    r"(\d(?:\.\d)?)\s*"
                     r"([\d,]+)\s+Ratings?\s*&\s*"
                     r"([\d,]+)\s+Reviews?\s*$",
                     rendered,
-                    re.IGNORECASE |
-                    re.MULTILINE,
+                    re.IGNORECASE,
                 )
 
-                if not match:
+                if not rating_match:
 
-                    match = re.search(
-                        r"(?m)^\s*(\d(?:\.\d)?)\s*"
+                    rating_match = re.search(
+                        r"(?m)^\s*"
+                        r"(\d(?:\.\d)?)\s*"
                         r"\(([\d,]+)\)\s*$",
                         rendered,
                     )
 
-                candidate = {
-                    "product_name":
-                        _extract_product_name(text),
+                product_name = (
+                    _extract_product_name(
+                        text
+                    )
+                )
 
-                    "product_url":
-                        urljoin(
-                            "https://www.flipkart.com",
-                            path,
-                        ),
-
-                    "current_selling_price":
-                        (
-                            price_match.group()
-                            if price_match
-                            else "Not displayed"
-                        ),
-
-                    "rating":
-                        (
-                            match.group(1)
-                            if match
-                            else "Not displayed"
-                        ),
-
-                    "review_count":
-                        (
-                            match.group(3)
-                            if match and match.lastindex == 3
-                            else (
-                                match.group(2)
-                                if match
-                                else "Not displayed"
-                            )
-                        ),
-                }
-
-                # Only retain useful product names.
                 if (
-                    candidate["product_name"]
-                    and candidate["product_name"]
-                    != "Not displayed"
+                    not product_name
+                    or product_name
+                    == "Not displayed"
                 ):
+                    continue
 
-                    candidates.append(candidate)
+                candidates.append(
+                    {
+                        "product_name":
+                            product_name,
+
+                        "product_url":
+                            urljoin(
+                                "https://www.flipkart.com",
+                                path,
+                            ),
+
+                        "current_selling_price":
+                            (
+                                price_match.group()
+                                if price_match
+                                else "Not displayed"
+                            ),
+
+                        "rating":
+                            (
+                                rating_match.group(1)
+                                if rating_match
+                                else "Not displayed"
+                            ),
+
+                        "review_count":
+                            (
+                                rating_match.group(3)
+                                if (
+                                    rating_match
+                                    and rating_match.lastindex
+                                    == 3
+                                )
+                                else (
+                                    rating_match.group(2)
+                                    if rating_match
+                                    else "Not displayed"
+                                )
+                            ),
+                    }
+                )
 
             print(
-                f"[FLIPKART] Extracted "
-                f"{len(candidates)} candidates",
+                "[FLIPKART] Extracted candidates: "
+                f"{len(candidates)}",
                 flush=True,
             )
-
-            # ------------------------------------------------
-            # NORMAL RANKING
-            # ------------------------------------------------
 
             results = _rank_results(
                 search_term,
                 candidates,
             )
 
-            # ------------------------------------------------
-            # FALLBACK
-            #
-            # If normal ranking gives fewer than two products,
-            # use the Flipkart-specific fallback.
-            # ------------------------------------------------
+            if len(results) < MAX_RESULTS:
 
-            if len(results) < 2:
-
-                fallback_results = (
-                    _flipkart_fallback_results(
-                        search_term,
-                        candidates,
-                    )
+                fallback = _fallback_results(
+                    search_term,
+                    candidates,
                 )
 
                 existing_urls = {
-                    result.get("product_url")
+                    result.get(
+                        "product_url"
+                    )
                     for result in results
                 }
 
-                for candidate in fallback_results:
+                for candidate in fallback:
 
-                    candidate_url = candidate.get(
-                        "product_url"
+                    candidate_url = (
+                        candidate.get(
+                            "product_url"
+                        )
                     )
 
                     if candidate_url in existing_urls:
                         continue
 
-                    results.append(candidate)
+                    results.append(
+                        candidate
+                    )
 
                     existing_urls.add(
                         candidate_url
                     )
 
-                    if len(results) >= 2:
+                    if len(results) >= MAX_RESULTS:
                         break
 
-            # ------------------------------------------------
-            # FINAL FALLBACK
-            #
-            # If Flipkart has candidates but the relevance
-            # matcher was too strict, use the first two
-            # actual visible product candidates.
-            #
-            # This is deliberately only used when we have
-            # candidates and normal matching produced fewer
-            # than two.
-            # ------------------------------------------------
-
-            if len(results) < 2:
+            # Last fallback: actual visible candidates.
+            if len(results) < MAX_RESULTS:
 
                 existing_urls = {
-                    result.get("product_url")
+                    result.get(
+                        "product_url"
+                    )
                     for result in results
                 }
 
                 for candidate in candidates:
 
-                    candidate_url = candidate.get(
-                        "product_url"
+                    candidate_url = (
+                        candidate.get(
+                            "product_url"
+                        )
                     )
 
                     if candidate_url in existing_urls:
                         continue
 
-                    results.append(candidate)
+                    results.append(
+                        candidate
+                    )
 
                     existing_urls.add(
                         candidate_url
                     )
 
-                    if len(results) >= 2:
+                    if len(results) >= MAX_RESULTS:
                         break
 
             if not results:
@@ -733,10 +820,13 @@ def main(
                     "product was found."
                 )
 
-            results = results[:2]
+            results = results[
+                :MAX_RESULTS
+            ]
 
             print(
-                f"[FLIPKART] Found {len(results)} products",
+                "[FLIPKART] Found "
+                f"{len(results)} products",
                 flush=True,
             )
 
@@ -765,7 +855,17 @@ def main(
 
         finally:
 
-            browser.close()
+            if context is not None:
+
+                try:
+                    context.close()
+                except Exception:
+                    pass
+
+            try:
+                browser.close()
+            except Exception:
+                pass
 
 
 # ============================================================
@@ -779,7 +879,9 @@ def _amazon_product_url(
     if not href:
         return None
 
-    parsed = urlparse(href)
+    parsed = urlparse(
+        href
+    )
 
     if "/sspa/click" in parsed.path:
 
@@ -857,12 +959,16 @@ def _amazon_title_link(card):
             matches.count()
         ):
 
-            element = matches.nth(index)
+            element = matches.nth(
+                index
+            )
 
             try:
 
                 text = " ".join(
-                    element.inner_text().split()
+                    element.inner_text(
+                        timeout=1000
+                    ).split()
                 )
 
             except Exception:
@@ -900,21 +1006,29 @@ def _amazon_title_link(card):
 
     candidates = []
 
+    link_count = product_links.count()
+
     for index in range(
-        product_links.count()
+        link_count
     ):
 
-        link = product_links.nth(index)
-
-        href = (
-            link.get_attribute("href")
-            or ""
+        link = product_links.nth(
+            index
         )
 
         try:
 
+            href = (
+                link.get_attribute(
+                    "href"
+                )
+                or ""
+            )
+
             text = " ".join(
-                link.inner_text().split()
+                link.inner_text(
+                    timeout=1000
+                ).split()
             )
 
         except Exception:
@@ -957,10 +1071,17 @@ def amazon_search(
 
     with sync_playwright() as playwright:
 
-        browser = _launch_browser(playwright)
-        page = browser.new_page()
+        browser = _launch_browser(
+            playwright
+        )
+
+        context = None
 
         try:
+
+            context, page = _new_page(
+                browser
+            )
 
             search_url = (
                 "https://www.amazon.in/s?k="
@@ -970,66 +1091,90 @@ def amazon_search(
             cards = None
             usable = False
 
-            for attempt in range(3):
+            for attempt in range(2):
 
                 try:
 
                     page.goto(
                         search_url,
-                        wait_until="commit",
-                        timeout=30000,
+                        wait_until="domcontentloaded",
+                        timeout=PAGE_TIMEOUT_MS,
                     )
 
-                    page.wait_for_timeout(2500)
+                    page.wait_for_timeout(
+                        1500
+                    )
 
                 except Exception as error:
 
                     print(
-                        f"[AMAZON] Navigation attempt "
-                        f"{attempt + 1} failed: {error}",
+                        "[AMAZON] Navigation attempt "
+                        f"{attempt + 1} failed: "
+                        f"{error}",
                         flush=True,
                     )
 
-                    if attempt == 2:
+                    if attempt == 1:
                         raise
 
-                    time.sleep(2)
+                    time.sleep(1)
+
                     continue
 
-                _raise_if_restricted(page)
+                _raise_if_restricted(
+                    page
+                )
 
                 cards = page.locator(
                     '[data-component-type="s-search-result"]'
                 )
 
-                card_count = cards.count()
+                total_cards = cards.count()
+
+                inspect_count = min(
+                    total_cards,
+                    AMAZON_MAX_CARDS,
+                )
 
                 print(
-                    f"[AMAZON] Search result cards: "
-                    f"{card_count}",
+                    "[AMAZON] Total result cards: "
+                    f"{total_cards}",
+                    flush=True,
+                )
+
+                print(
+                    "[AMAZON] Inspecting only: "
+                    f"{inspect_count}",
                     flush=True,
                 )
 
                 usable = False
 
                 for index in range(
-                    card_count
+                    inspect_count
                 ):
 
-                    card = cards.nth(index)
+                    card = cards.nth(
+                        index
+                    )
 
                     try:
 
-                        if not card.is_visible():
+                        if not card.is_visible(
+                            timeout=1000
+                        ):
                             continue
 
-                        title_link = _amazon_title_link(
-                            card
+                        title_link = (
+                            _amazon_title_link(
+                                card
+                            )
                         )
 
                         if title_link is not None:
 
                             usable = True
+
                             break
 
                     except Exception:
@@ -1039,8 +1184,8 @@ def amazon_search(
                 if usable:
                     break
 
-                if attempt < 2:
-                    time.sleep(2)
+                if attempt == 0:
+                    time.sleep(1)
 
             if cards is None or not usable:
 
@@ -1058,26 +1203,38 @@ def amazon_search(
 
                     cards = alternative_cards
 
+                    inspect_count = min(
+                        cards.count(),
+                        AMAZON_MAX_CARDS,
+                    )
+
                     usable = False
 
                     for index in range(
-                        cards.count()
+                        inspect_count
                     ):
 
-                        card = cards.nth(index)
+                        card = cards.nth(
+                            index
+                        )
 
                         try:
 
-                            if not card.is_visible():
+                            if not card.is_visible(
+                                timeout=1000
+                            ):
                                 continue
 
-                            title_link = _amazon_title_link(
-                                card
+                            title_link = (
+                                _amazon_title_link(
+                                    card
+                                )
                             )
 
                             if title_link is not None:
 
                                 usable = True
+
                                 break
 
                         except Exception:
@@ -1094,15 +1251,24 @@ def amazon_search(
             candidates = []
             seen_urls = set()
 
+            inspect_count = min(
+                cards.count(),
+                AMAZON_MAX_CARDS,
+            )
+
             for index in range(
-                cards.count()
+                inspect_count
             ):
 
-                card = cards.nth(index)
+                card = cards.nth(
+                    index
+                )
 
                 try:
 
-                    if not card.is_visible():
+                    if not card.is_visible(
+                        timeout=1000
+                    ):
                         continue
 
                 except Exception:
@@ -1119,7 +1285,18 @@ def amazon_search(
                 try:
 
                     raw_title = " ".join(
-                        title_link.inner_text().split()
+                        title_link
+                        .inner_text(
+                            timeout=1500
+                        )
+                        .split()
+                    )
+
+                    href = (
+                        title_link.get_attribute(
+                            "href"
+                        )
+                        or ""
                     )
 
                 except Exception:
@@ -1135,21 +1312,10 @@ def amazon_search(
                     )
                 )
 
-                try:
-
-                    href = (
-                        title_link.get_attribute(
-                            "href"
-                        )
-                        or ""
+                product_url = (
+                    _amazon_product_url(
+                        href
                     )
-
-                except Exception:
-
-                    href = ""
-
-                product_url = _amazon_product_url(
-                    href
                 )
 
                 if (
@@ -1163,23 +1329,19 @@ def amazon_search(
                     product_url
                 )
 
-                price_element = card.locator(
-                    ".a-price .a-offscreen"
-                ).first
-
-                rating_element = card.locator(
-                    "span.a-icon-alt"
-                ).first
-
-                review_element = card.locator(
-                    'a[href*="customerReviews"]'
-                ).first
-
                 try:
+
+                    price_element = (
+                        card.locator(
+                            ".a-price .a-offscreen"
+                        ).first
+                    )
 
                     price = (
                         price_element
-                        .inner_text()
+                        .inner_text(
+                            timeout=1000
+                        )
                         .strip()
                         if price_element.count()
                         else "Not displayed"
@@ -1191,9 +1353,17 @@ def amazon_search(
 
                 try:
 
+                    rating_element = (
+                        card.locator(
+                            "span.a-icon-alt"
+                        ).first
+                    )
+
                     rating_text = (
                         rating_element
-                        .inner_text()
+                        .inner_text(
+                            timeout=1000
+                        )
                         .strip()
                         if rating_element.count()
                         else ""
@@ -1211,10 +1381,20 @@ def amazon_search(
 
                 try:
 
+                    review_element = (
+                        card.locator(
+                            'a[href*="customerReviews"]'
+                        ).first
+                    )
+
                     review_text = (
                         review_element
-                        .inner_text()
-                        .strip("() ")
+                        .inner_text(
+                            timeout=1000
+                        )
+                        .strip(
+                            "() "
+                        )
                         if review_element.count()
                         else ""
                     )
@@ -1254,8 +1434,8 @@ def amazon_search(
                 )
 
             print(
-                f"[AMAZON] Extracted "
-                f"{len(candidates)} candidates",
+                "[AMAZON] Extracted candidates: "
+                f"{len(candidates)}",
                 flush=True,
             )
 
@@ -1263,6 +1443,42 @@ def amazon_search(
                 search_term,
                 candidates,
             )
+
+            if len(results) < MAX_RESULTS:
+
+                fallback = _fallback_results(
+                    search_term,
+                    candidates,
+                )
+
+                existing_urls = {
+                    result.get(
+                        "product_url"
+                    )
+                    for result in results
+                }
+
+                for candidate in fallback:
+
+                    candidate_url = (
+                        candidate.get(
+                            "product_url"
+                        )
+                    )
+
+                    if candidate_url in existing_urls:
+                        continue
+
+                    results.append(
+                        candidate
+                    )
+
+                    existing_urls.add(
+                        candidate_url
+                    )
+
+                    if len(results) >= MAX_RESULTS:
+                        break
 
             if not results:
 
@@ -1273,13 +1489,20 @@ def amazon_search(
 
             for result in results:
 
-                result["product_name"] = result.pop(
-                    "display_name",
-                    result["product_name"],
+                result["product_name"] = (
+                    result.pop(
+                        "display_name",
+                        result["product_name"],
+                    )
                 )
 
+            results = results[
+                :MAX_RESULTS
+            ]
+
             print(
-                f"[AMAZON] Found {len(results)} products",
+                "[AMAZON] Found "
+                f"{len(results)} products",
                 flush=True,
             )
 
@@ -1296,7 +1519,17 @@ def amazon_search(
 
         finally:
 
-            browser.close()
+            if context is not None:
+
+                try:
+                    context.close()
+                except Exception:
+                    pass
+
+            try:
+                browser.close()
+            except Exception:
+                pass
 
 
 # ============================================================
@@ -1331,8 +1564,10 @@ def myntra_search(
     headers = {
         "User-Agent": (
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/131.0.0.0 Safari/537.36"
+            "AppleWebKit/537.36 "
+            "(KHTML, like Gecko) "
+            "Chrome/131.0.0.0 "
+            "Safari/537.36"
         ),
         "Accept": (
             "text/html,application/xhtml+xml,"
@@ -1342,14 +1577,12 @@ def myntra_search(
         "Accept-Language": "en-US,en;q=0.9",
     }
 
-    import requests
-
     try:
 
         response = requests.get(
             search_url,
             headers=headers,
-            timeout=30,
+            timeout=20,
         )
 
     except requests.RequestException as error:
@@ -1426,6 +1659,7 @@ def myntra_search(
             if depth == 0:
 
                 end = position + 1
+
                 break
 
     if end is None:
@@ -1452,17 +1686,26 @@ def myntra_search(
 
     for product in products:
 
-        if not isinstance(product, dict):
+        if not isinstance(
+            product,
+            dict,
+        ):
             continue
 
         name = str(
-            product.get("productName")
-            or product.get("product")
+            product.get(
+                "productName"
+            )
+            or product.get(
+                "product"
+            )
             or ""
         ).strip()
 
         landing_url = str(
-            product.get("landingPageUrl")
+            product.get(
+                "landingPageUrl"
+            )
             or ""
         ).strip()
 
@@ -1471,7 +1714,9 @@ def myntra_search(
 
         product_url = (
             landing_url
-            if landing_url.startswith("http")
+            if landing_url.startswith(
+                "http"
+            )
             else urljoin(
                 "https://www.myntra.com/",
                 landing_url,
@@ -1486,8 +1731,12 @@ def myntra_search(
         )
 
         price_value = (
-            product.get("price")
-            or product.get("mrp")
+            product.get(
+                "price"
+            )
+            or product.get(
+                "mrp"
+            )
         )
 
         rating_value = product.get(
@@ -1560,6 +1809,42 @@ def myntra_search(
         candidates,
     )
 
+    if len(results) < MAX_RESULTS:
+
+        fallback = _fallback_results(
+            search_term,
+            candidates,
+        )
+
+        existing_urls = {
+            result.get(
+                "product_url"
+            )
+            for result in results
+        }
+
+        for candidate in fallback:
+
+            candidate_url = (
+                candidate.get(
+                    "product_url"
+                )
+            )
+
+            if candidate_url in existing_urls:
+                continue
+
+            results.append(
+                candidate
+            )
+
+            existing_urls.add(
+                candidate_url
+            )
+
+            if len(results) >= MAX_RESULTS:
+                break
+
     if not results:
 
         raise RuntimeError(
@@ -1567,8 +1852,13 @@ def myntra_search(
             "product was found."
         )
 
+    results = results[
+        :MAX_RESULTS
+    ]
+
     print(
-        f"[MYNTRA] Found {len(results)} products",
+        "[MYNTRA] Found "
+        f"{len(results)} products",
         flush=True,
     )
 
@@ -1593,7 +1883,9 @@ if __name__ == "__main__":
     term = sys.argv[1].strip()
 
     print("=" * 70)
-    print(f'[TEST] SEARCH TERM: "{term}"')
+    print(
+        f'[TEST] SEARCH TERM: "{term}"'
+    )
     print("=" * 70)
 
     print("\nFLIPKART:")
@@ -1601,7 +1893,9 @@ if __name__ == "__main__":
 
     try:
 
-        flipkart_results = main(term)
+        flipkart_results = main(
+            term
+        )
 
         for result in flipkart_results:
             print(result)
@@ -1617,7 +1911,9 @@ if __name__ == "__main__":
 
     try:
 
-        amazon_results = amazon_search(term)
+        amazon_results = amazon_search(
+            term
+        )
 
         for result in amazon_results:
             print(result)
@@ -1633,7 +1929,9 @@ if __name__ == "__main__":
 
     try:
 
-        myntra_results = myntra_search(term)
+        myntra_results = myntra_search(
+            term
+        )
 
         for result in myntra_results:
             print(result)
@@ -1644,7 +1942,14 @@ if __name__ == "__main__":
             f"Myntra error: {error}"
         )
 
-    print("\n" + "=" * 70)
-    print("[TEST] SEARCH COMPLETE")
-    print("=" * 70)
-    
+    print(
+        "\n" + "=" * 70
+    )
+
+    print(
+        "[TEST] SEARCH COMPLETE"
+    )
+
+    print(
+        "=" * 70
+    )
