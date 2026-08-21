@@ -21,17 +21,13 @@ def home():
     if search_term:
         results = []
 
-        print("=" * 70, flush=True)
-        print(f"SEARCH STARTED: {search_term}", flush=True)
-        print("=" * 70, flush=True)
-
         from playwright_test import amazon_search, main, myntra_search
 
         # --------------------------------------------------
         # Flipkart
         # --------------------------------------------------
         print(
-            f"[FLIPKART] Starting search for: {search_term}",
+            f"[FLIPKART] Starting search: {search_term}",
             flush=True,
         )
 
@@ -56,16 +52,18 @@ def home():
                 f"[FLIPKART] ERROR: {repr(error)}",
                 flush=True,
             )
-
             traceback.print_exc()
 
-            flipkart_status = "Flipkart temporarily unavailable"
+            # TEMPORARY: show the real error on the webpage
+            flipkart_status = (
+                f"Render error: {type(error).__name__}: {error}"
+            )
 
         # --------------------------------------------------
         # Amazon
         # --------------------------------------------------
         print(
-            f"[AMAZON] Starting search for: {search_term}",
+            f"[AMAZON] Starting search: {search_term}",
             flush=True,
         )
 
@@ -90,19 +88,18 @@ def home():
                 f"[AMAZON] ERROR: {repr(error)}",
                 flush=True,
             )
-
             traceback.print_exc()
 
-            if "No visible relevant Amazon product was found." in str(error):
-                amazon_status = "No matching Amazon products found"
-            else:
-                amazon_status = "Amazon temporarily unavailable"
+            # TEMPORARY: show the real error on the webpage
+            amazon_status = (
+                f"Render error: {type(error).__name__}: {error}"
+            )
 
         # --------------------------------------------------
         # Myntra
         # --------------------------------------------------
         print(
-            f"[MYNTRA] Starting search for: {search_term}",
+            f"[MYNTRA] Starting search: {search_term}",
             flush=True,
         )
 
@@ -127,15 +124,12 @@ def home():
                 f"[MYNTRA] ERROR: {repr(error)}",
                 flush=True,
             )
-
             traceback.print_exc()
 
-            myntra_status = "Myntra temporarily unavailable"
-
-        print("=" * 70, flush=True)
-        print(f"SEARCH FINISHED: {search_term}", flush=True)
-        print(f"TOTAL RESULTS: {len(results)}", flush=True)
-        print("=" * 70, flush=True)
+            # TEMPORARY: show the real error on the webpage
+            myntra_status = (
+                f"Render error: {type(error).__name__}: {error}"
+            )
 
     return render_template(
         "index.html",
