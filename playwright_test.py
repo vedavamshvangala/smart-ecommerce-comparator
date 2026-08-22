@@ -5,21 +5,12 @@ import os
 import re
 import sys
 import time
-from urllib.parse import (
-    parse_qs,
-    quote_plus,
-    unquote,
-    urljoin,
-    urlparse,
-)
+from urllib.parse import parse_qs, quote_plus, unquote, urljoin, urlparse
 
 # ============================================================
 # RENDER / PLAYWRIGHT CONFIGURATION
 # ============================================================
 
-# IMPORTANT:
-# The Render build installs Playwright browsers into this folder.
-# Setting it here ensures runtime uses the SAME folder.
 if os.name != "nt":
     os.environ.setdefault(
         "PLAYWRIGHT_BROWSERS_PATH",
@@ -36,17 +27,20 @@ from playwright.sync_api import sync_playwright
 
 MAX_RESULTS = 2
 
-# Render Free has only 512 MB RAM.
-# Do NOT inspect hundreds of products.
-FLIPKART_MAX_LINKS = 30
+# Reduced from 60. We only need enough cards to find the top 2
+# relevant products and avoid spending time inspecting dozens of links.
+FLIPKART_MAX_LINKS = 15
 AMAZON_MAX_CARDS = 25
 
-PAGE_TIMEOUT_MS = 20000
-WAIT_AFTER_LOAD_MS = 1000
+PAGE_TIMEOUT_MS = 25000
+
+# Reduced from 1500 ms. domcontentloaded already waits for the page
+# document; a short settling delay is enough for the product cards.
+WAIT_AFTER_LOAD_MS = 500
 
 
 # ============================================================
-# SEARCH / RANKING HELPERS
+# SEARCH HELPERS
 # ============================================================
 
 GENERIC_SEARCH_TERMS = {
@@ -72,8 +66,6 @@ GENERIC_SEARCH_TERMS = {
 
 
 def _search_tokens(text: str) -> list[str]:
-    """Convert text into normalized search tokens."""
-
     text = str(text or "").lower()
 
     text = text.replace("u.s.", "us")
@@ -85,11 +77,9 @@ def _search_tokens(text: str) -> list[str]:
 
     text = re.sub(r"[^a-z0-9]+", " ", text)
 
-    raw_tokens = text.split()
-
     tokens = []
 
-    for token in raw_tokens:
+    for token in text.split():
 
         if not token:
             continue
@@ -97,19 +87,9 @@ def _search_tokens(text: str) -> list[str]:
         if len(token) > 4 and token.endswith("ies"):
             token = token[:-3] + "y"
 
-        elif len(token) > 4 and token.endswith("ches"):
-            token = token[:-2]
-
-        elif len(token) > 4 and token.endswith("shes"):
-            token = token[:-2]
-
-        elif len(token) > 4 and token.endswith("xes"):
-            token = token[:-2]
-
-        elif len(token) > 4 and token.endswith("zes"):
-            token = token[:-2]
-
-        elif len(token) > 4 and token.endswith("ses"):
+        elif len(token) > 4 and token.endswith(
+            ("ches", "shes", "xes", "zes", "ses")
+        ):
             token = token[:-2]
 
         elif len(token) > 4 and token.endswith("s"):
@@ -159,6 +139,10 @@ def _token_matches(
     return False
 
 
+# ============================================================
+# RANKING
+# ============================================================
+
 def _rank_results(
     search_term: str,
     candidates: list[dict[str, str]],
@@ -174,29 +158,6 @@ def _rank_results(
 
     if not search_keywords:
         search_keywords = query_tokens
-
-    gender_aliases = {
-        "men": {"men", "mens", "male", "man"},
-        "mens": {"men", "mens", "male", "man"},
-        "male": {"men", "mens", "male", "man"},
-        "man": {"men", "mens", "male", "man"},
-
-        "women": {"women", "womens", "female", "woman"},
-        "womens": {"women", "womens", "female", "woman"},
-        "female": {"women", "womens", "female", "woman"},
-        "woman": {"women", "womens", "female", "woman"},
-    }
-
-    all_gender_tokens = {
-        "men",
-        "mens",
-        "male",
-        "man",
-        "women",
-        "womens",
-        "female",
-        "woman",
-    }
 
     ranked = []
 
@@ -214,69 +175,31 @@ def _rank_results(
         if not name_tokens:
             continue
 
-        score = 0
         matched_keywords = 0
-
-        product_gender_tokens = (
-            name_tokens & all_gender_tokens
-        )
+        score = 0
 
         for query_token in search_keywords:
 
-            if query_token in gender_aliases:
+            if _token_matches(
+                query_token,
+                name_tokens,
+            ):
 
-                if product_gender_tokens:
+                matched_keywords += 1
 
-                    if any(
-                        gender in gender_aliases[query_token]
-                        for gender in product_gender_tokens
-                    ):
-                        matched_keywords += 1
-                        score += 100
-                    else:
-                        continue
-
+                if query_token in name_tokens:
+                    score += 100
                 else:
-                    continue
-
-                continue
-
-            if query_token in name_tokens:
-
-                matched_keywords += 1
-                score += 100
-                continue
-
-            matching_tokens = [
-                name_token
-                for name_token in name_tokens
-                if (
-                    len(query_token) >= 4
-                    and name_token.startswith(query_token)
-                )
-                or (
-                    len(name_token) >= 4
-                    and query_token.startswith(name_token)
-                )
-            ]
-
-            if matching_tokens:
-
-                matched_keywords += 1
-                score += 70
-
-                score += max(
-                    len(token)
-                    for token in matching_tokens
-                )
-
-        if not search_keywords:
-            continue
+                    score += 70
 
         if matched_keywords == 0:
             continue
 
         score += matched_keywords * 1000
+
+        # Strongly prefer products matching all meaningful words.
+        if matched_keywords == len(search_keywords):
+            score += 10000
 
         score -= position
 
@@ -329,44 +252,40 @@ def _fallback_results(
     candidates: list[dict[str, str]],
 ) -> list[dict[str, str]]:
 
-    query_tokens = _search_tokens(search_term)
-
     important_tokens = {
         token
-        for token in query_tokens
+        for token in _search_tokens(search_term)
         if token not in GENERIC_SEARCH_TERMS
     }
 
     if not important_tokens:
-        important_tokens = set(query_tokens)
+        important_tokens = set(
+            _search_tokens(search_term)
+        )
 
     fallback = []
 
     for position, candidate in enumerate(candidates):
 
-        product_name = candidate.get(
-            "product_name",
-            "",
-        )
-
         name_tokens = set(
-            _search_tokens(product_name)
+            _search_tokens(
+                candidate.get(
+                    "product_name",
+                    "",
+                )
+            )
         )
 
         if not name_tokens:
             continue
 
-        matched = 0
-
-        for query_token in important_tokens:
-
-            if _token_matches(
+        if all(
+            _token_matches(
                 query_token,
                 name_tokens,
-            ):
-                matched += 1
-
-        if matched == len(important_tokens):
+            )
+            for query_token in important_tokens
+        ):
 
             fallback.append(
                 (
@@ -387,14 +306,47 @@ def _fallback_results(
 
 
 # ============================================================
-# COMMON PLAYWRIGHT HELPERS
+# COMMON HELPERS
 # ============================================================
+
+def _clean_text(text: str) -> str:
+    return " ".join(
+        str(text or "").split()
+    )
+
+
+def _extract_price(text: str) -> str:
+
+    if not text:
+        return "Not displayed"
+
+    # Handles:
+    # ₹1,299
+    # ₹ 1,299
+    # ₹1,299.00
+    match = re.search(
+        r"₹\s*[\d,]+(?:\.\d{1,2})?",
+        text,
+    )
+
+    if not match:
+        return "Not displayed"
+
+    return (
+        match.group()
+        .replace("₹ ", "₹")
+        .strip()
+    )
+
 
 def _launch_browser(playwright):
 
     print(
         "[PLAYWRIGHT] Browsers path = "
-        f"{os.environ.get('PLAYWRIGHT_BROWSERS_PATH', 'default')}",
+        + os.environ.get(
+            "PLAYWRIGHT_BROWSERS_PATH",
+            "default",
+        ),
         flush=True,
     )
 
@@ -434,13 +386,13 @@ def _new_page(browser):
     page = context.new_page()
 
     page.set_default_timeout(
-        5000
+        6000
     )
 
     return context, page
 
 
-def _raise_if_restricted(page) -> None:
+def _raise_if_restricted(page):
 
     try:
 
@@ -457,8 +409,7 @@ def _raise_if_restricted(page) -> None:
     if re.search(
         r"captcha|robot check|"
         r"enter the characters you see below|"
-        r"access denied|"
-        r"unusual traffic",
+        r"access denied|unusual traffic",
         text,
     ):
 
@@ -475,39 +426,55 @@ def _raise_if_restricted(page) -> None:
 def _extract_product_name(text: str) -> str:
 
     rating_pattern = re.compile(
-        r"^\s*\d(?:\.\d)?\s*"
-        r"(?:[\d,]+\s+ratings?\s*&\s*"
-        r"[\d,]+\s+reviews?|\([\d,]+\))"
+        r"^\s*"
+        r"\d(?:\.\d)?"
+        r"\s*"
+        r"(?:"
+        r"\([\d,]+\)"
+        r"|"
+        r"[\d,]+\s+ratings?\s*&\s*[\d,]+\s+reviews?"
+        r")"
         r"\s*$",
         re.IGNORECASE,
     )
 
     offer_pattern = re.compile(
-        r"^(?:bank offer|hot deal|only few left|"
-        r"upto\s+.*|.*\d+%\s+off.*|.*exchange.*)$",
+        r"^(?:"
+        r"bank offer"
+        r"|hot deal"
+        r"|only few left"
+        r"|upto\s+.*"
+        r"|.*\d+%\s+off.*"
+        r"|.*exchange.*"
+        r")$",
         re.IGNORECASE,
     )
 
     specification_pattern = re.compile(
-        r"^\s*\d+(?:\.\d+)?\s*"
-        r"(?:gb|tb|mp|mah|inch|inches|cm)\s*$|"
-        r"^\s*\d+\s*gb\s+"
-        r"(?:ram|rom).*$",
+        r"^\s*"
+        r"\d+(?:\.\d+)?\s*"
+        r"(?:gb|tb|mp|mah|inch|inches|cm)"
+        r".*$"
+        r"|"
+        r"^\s*\d+\s*gb\s+(?:ram|rom).*$",
         re.IGNORECASE,
     )
 
     for raw_line in text.splitlines():
 
         line = raw_line.strip()
-        lower = line.lower()
 
         if not line:
             continue
+
+        lower = line.lower()
 
         if lower in {
             "add to compare",
             "currently unavailable",
             "out of stock",
+            "add to cart",
+            "buy now",
         }:
             continue
 
@@ -526,6 +493,155 @@ def _extract_product_name(text: str) -> str:
         return line
 
     return "Not displayed"
+
+
+def _flipkart_card(link):
+
+    """
+    Fast Flipkart card lookup.
+
+    Instead of trying several ancestors with long individual
+    timeouts, use the first product-card ancestor directly.
+    """
+
+    try:
+
+        card = link.locator(
+            "xpath=ancestor::div[.//a[contains(@href,'/p/')]][1]"
+        )
+
+        text = card.inner_text(
+            timeout=700
+        )
+
+        if text:
+            return card
+
+    except Exception:
+        pass
+
+    return link
+
+
+def _flipkart_extract_card(
+    link,
+) -> dict[str, str] | None:
+
+    try:
+
+        if not link.is_visible(
+            timeout=300
+        ):
+            return None
+
+        href = (
+            link.get_attribute(
+                "href"
+            )
+            or ""
+        )
+
+        link_text = _clean_text(
+            link.inner_text(
+                timeout=700
+            )
+        )
+
+    except Exception:
+
+        return None
+
+    if not href or not link_text:
+        return None
+
+    path = href.split(
+        "?",
+        1,
+    )[0]
+
+    if "/p/" not in path:
+        return None
+
+    card = _flipkart_card(
+        link
+    )
+
+    try:
+
+        card_text = card.inner_text(
+            timeout=700
+        )
+
+    except Exception:
+
+        card_text = link_text
+
+    # Sometimes the card itself doesn't expose all text.
+    # Combine link + card text so price isn't lost.
+    rendered = (
+        card_text
+        + "\n"
+        + link_text
+    )
+
+    product_name = _extract_product_name(
+        link_text
+    )
+
+    if product_name == "Not displayed":
+
+        product_name = _extract_product_name(
+            card_text
+        )
+
+    if product_name == "Not displayed":
+        return None
+
+    rating_match = re.search(
+        r"(?m)^\s*"
+        r"(\d(?:\.\d)?)"
+        r"\s*"
+        r"(?:"
+        r"\(([\d,]+)\)"
+        r"|"
+        r"([\d,]+)\s+Ratings?\s*&\s*"
+        r"([\d,]+)\s+Reviews?"
+        r")"
+        r"\s*$",
+        rendered,
+        re.IGNORECASE,
+    )
+
+    rating = (
+        rating_match.group(1)
+        if rating_match
+        else "Not displayed"
+    )
+
+    review_count = "Not displayed"
+
+    if rating_match:
+
+        review_count = (
+            rating_match.group(4)
+            or rating_match.group(2)
+            or "Not displayed"
+        )
+
+    price = _extract_price(
+        rendered
+    )
+
+    return {
+        "product_name": product_name,
+        "product_url": urljoin(
+            "https://www.flipkart.com",
+            path,
+        ),
+        "current_selling_price": price,
+        "rating": rating,
+        "review_count": review_count,
+    }
 
 
 def main(
@@ -556,6 +672,11 @@ def main(
                 f"{quote_plus(search_term)}"
             )
 
+            print(
+                f"[FLIPKART] URL: {search_url}",
+                flush=True,
+            )
+
             page.goto(
                 search_url,
                 wait_until="domcontentloaded",
@@ -582,13 +703,13 @@ def main(
             )
 
             print(
-                "[FLIPKART] Total product links found: "
+                "[FLIPKART] Product links found: "
                 f"{total_links}",
                 flush=True,
             )
 
             print(
-                "[FLIPKART] Inspecting only: "
+                "[FLIPKART] Inspecting: "
                 f"{inspect_count}",
                 flush=True,
             )
@@ -600,138 +721,26 @@ def main(
                 inspect_count
             ):
 
-                link = links.nth(
-                    index
+                result = _flipkart_extract_card(
+                    links.nth(index)
                 )
 
-                try:
-
-                    text = link.inner_text(
-                        timeout=1500
-                    ).strip()
-
-                    href = (
-                        link.get_attribute(
-                            "href"
-                        )
-                        or ""
-                    )
-
-                except Exception:
-
+                if not result:
                     continue
 
-                if not text or not href:
-                    continue
+                product_url = result[
+                    "product_url"
+                ]
 
-                path = href.split(
-                    "?",
-                    1,
-                )[0]
-
-                if path in seen_urls:
+                if product_url in seen_urls:
                     continue
 
                 seen_urls.add(
-                    path
+                    product_url
                 )
-
-                try:
-
-                    parent_text = (
-                        link
-                        .locator(
-                            "xpath=.."
-                        )
-                        .inner_text(
-                            timeout=1500
-                        )
-                    )
-
-                except Exception:
-
-                    parent_text = ""
-
-                rendered = (
-                    f"{parent_text}\n{text}"
-                )
-
-                price_match = re.search(
-                    r"₹[\d,]+",
-                    rendered,
-                )
-
-                rating_match = re.search(
-                    r"(?m)^\s*"
-                    r"(\d(?:\.\d)?)\s*"
-                    r"([\d,]+)\s+Ratings?\s*&\s*"
-                    r"([\d,]+)\s+Reviews?\s*$",
-                    rendered,
-                    re.IGNORECASE,
-                )
-
-                if not rating_match:
-
-                    rating_match = re.search(
-                        r"(?m)^\s*"
-                        r"(\d(?:\.\d)?)\s*"
-                        r"\(([\d,]+)\)\s*$",
-                        rendered,
-                    )
-
-                product_name = (
-                    _extract_product_name(
-                        text
-                    )
-                )
-
-                if (
-                    not product_name
-                    or product_name
-                    == "Not displayed"
-                ):
-                    continue
 
                 candidates.append(
-                    {
-                        "product_name":
-                            product_name,
-
-                        "product_url":
-                            urljoin(
-                                "https://www.flipkart.com",
-                                path,
-                            ),
-
-                        "current_selling_price":
-                            (
-                                price_match.group()
-                                if price_match
-                                else "Not displayed"
-                            ),
-
-                        "rating":
-                            (
-                                rating_match.group(1)
-                                if rating_match
-                                else "Not displayed"
-                            ),
-
-                        "review_count":
-                            (
-                                rating_match.group(3)
-                                if (
-                                    rating_match
-                                    and rating_match.lastindex
-                                    == 3
-                                )
-                                else (
-                                    rating_match.group(2)
-                                    if rating_match
-                                    else "Not displayed"
-                                )
-                            ),
-                    }
+                    result
                 )
 
             print(
@@ -761,42 +770,8 @@ def main(
 
                 for candidate in fallback:
 
-                    candidate_url = (
-                        candidate.get(
-                            "product_url"
-                        )
-                    )
-
-                    if candidate_url in existing_urls:
-                        continue
-
-                    results.append(
-                        candidate
-                    )
-
-                    existing_urls.add(
-                        candidate_url
-                    )
-
-                    if len(results) >= MAX_RESULTS:
-                        break
-
-            # Last fallback: actual visible candidates.
-            if len(results) < MAX_RESULTS:
-
-                existing_urls = {
-                    result.get(
+                    candidate_url = candidate.get(
                         "product_url"
-                    )
-                    for result in results
-                }
-
-                for candidate in candidates:
-
-                    candidate_url = (
-                        candidate.get(
-                            "product_url"
-                        )
                     )
 
                     if candidate_url in existing_urls:
@@ -864,6 +839,7 @@ def main(
 
             try:
                 browser.close()
+
             except Exception:
                 pass
 
@@ -965,10 +941,10 @@ def _amazon_title_link(card):
 
             try:
 
-                text = " ".join(
+                text = _clean_text(
                     element.inner_text(
-                        timeout=1000
-                    ).split()
+                        timeout=800
+                    )
                 )
 
             except Exception:
@@ -999,65 +975,7 @@ def _amazon_title_link(card):
 
             return element
 
-    product_links = card.locator(
-        'a[href*="/dp/"], '
-        'a[href*="/sspa/click"]'
-    )
-
-    candidates = []
-
-    link_count = product_links.count()
-
-    for index in range(
-        link_count
-    ):
-
-        link = product_links.nth(
-            index
-        )
-
-        try:
-
-            href = (
-                link.get_attribute(
-                    "href"
-                )
-                or ""
-            )
-
-            text = " ".join(
-                link.inner_text(
-                    timeout=1000
-                ).split()
-            )
-
-        except Exception:
-
-            continue
-
-        if not text:
-            continue
-
-        if text.startswith("₹"):
-            continue
-
-        if "customerReviews" in href:
-            continue
-
-        candidates.append(
-            (
-                len(text),
-                link,
-            )
-        )
-
-    if not candidates:
-        return None
-
-    return max(
-        candidates,
-        key=lambda item: item[0],
-    )[1]
+    return None
 
 
 def amazon_search(
@@ -1088,173 +1006,45 @@ def amazon_search(
                 f"{quote_plus(search_term)}"
             )
 
-            cards = None
-            usable = False
+            page.goto(
+                search_url,
+                wait_until="domcontentloaded",
+                timeout=PAGE_TIMEOUT_MS,
+            )
 
-            for attempt in range(2):
+            page.wait_for_timeout(
+                1800
+            )
 
-                try:
+            _raise_if_restricted(
+                page
+            )
 
-                    page.goto(
-                        search_url,
-                        wait_until="domcontentloaded",
-                        timeout=PAGE_TIMEOUT_MS,
-                    )
+            cards = page.locator(
+                '[data-component-type="s-search-result"]'
+            )
 
-                    page.wait_for_timeout(
-                        1500
-                    )
-
-                except Exception as error:
-
-                    print(
-                        "[AMAZON] Navigation attempt "
-                        f"{attempt + 1} failed: "
-                        f"{error}",
-                        flush=True,
-                    )
-
-                    if attempt == 1:
-                        raise
-
-                    time.sleep(1)
-
-                    continue
-
-                _raise_if_restricted(
-                    page
-                )
+            if cards.count() == 0:
 
                 cards = page.locator(
-                    '[data-component-type="s-search-result"]'
-                )
-
-                total_cards = cards.count()
-
-                inspect_count = min(
-                    total_cards,
-                    AMAZON_MAX_CARDS,
-                )
-
-                print(
-                    "[AMAZON] Total result cards: "
-                    f"{total_cards}",
-                    flush=True,
-                )
-
-                print(
-                    "[AMAZON] Inspecting only: "
-                    f"{inspect_count}",
-                    flush=True,
-                )
-
-                usable = False
-
-                for index in range(
-                    inspect_count
-                ):
-
-                    card = cards.nth(
-                        index
-                    )
-
-                    try:
-
-                        if not card.is_visible(
-                            timeout=1000
-                        ):
-                            continue
-
-                        title_link = (
-                            _amazon_title_link(
-                                card
-                            )
-                        )
-
-                        if title_link is not None:
-
-                            usable = True
-
-                            break
-
-                    except Exception:
-
-                        continue
-
-                if usable:
-                    break
-
-                if attempt == 0:
-                    time.sleep(1)
-
-            if cards is None or not usable:
-
-                alternative_cards = page.locator(
                     "div.s-result-item[data-asin]"
                 )
 
-                if alternative_cards.count() > 0:
+            total_cards = cards.count()
 
-                    print(
-                        "[AMAZON] Using alternative "
-                        "result-card selector",
-                        flush=True,
-                    )
+            inspect_count = min(
+                total_cards,
+                AMAZON_MAX_CARDS,
+            )
 
-                    cards = alternative_cards
-
-                    inspect_count = min(
-                        cards.count(),
-                        AMAZON_MAX_CARDS,
-                    )
-
-                    usable = False
-
-                    for index in range(
-                        inspect_count
-                    ):
-
-                        card = cards.nth(
-                            index
-                        )
-
-                        try:
-
-                            if not card.is_visible(
-                                timeout=1000
-                            ):
-                                continue
-
-                            title_link = (
-                                _amazon_title_link(
-                                    card
-                                )
-                            )
-
-                            if title_link is not None:
-
-                                usable = True
-
-                                break
-
-                        except Exception:
-
-                            continue
-
-            if cards is None or not usable:
-
-                raise RuntimeError(
-                    "No visible relevant Amazon "
-                    "product was found."
-                )
+            print(
+                "[AMAZON] Search result cards: "
+                f"{total_cards}",
+                flush=True,
+            )
 
             candidates = []
             seen_urls = set()
-
-            inspect_count = min(
-                cards.count(),
-                AMAZON_MAX_CARDS,
-            )
 
             for index in range(
                 inspect_count
@@ -1267,29 +1057,21 @@ def amazon_search(
                 try:
 
                     if not card.is_visible(
-                        timeout=1000
+                        timeout=800
                     ):
                         continue
 
-                except Exception:
+                    title_link = _amazon_title_link(
+                        card
+                    )
 
-                    continue
+                    if title_link is None:
+                        continue
 
-                title_link = _amazon_title_link(
-                    card
-                )
-
-                if title_link is None:
-                    continue
-
-                try:
-
-                    raw_title = " ".join(
-                        title_link
-                        .inner_text(
-                            timeout=1500
+                    raw_title = _clean_text(
+                        title_link.inner_text(
+                            timeout=1200
                         )
-                        .split()
                     )
 
                     href = (
@@ -1338,11 +1120,11 @@ def amazon_search(
                     )
 
                     price = (
-                        price_element
-                        .inner_text(
-                            timeout=1000
+                        _clean_text(
+                            price_element.inner_text(
+                                timeout=800
+                            )
                         )
-                        .strip()
                         if price_element.count()
                         else "Not displayed"
                     )
@@ -1353,20 +1135,12 @@ def amazon_search(
 
                 try:
 
-                    rating_element = (
+                    rating_text = _clean_text(
                         card.locator(
                             "span.a-icon-alt"
-                        ).first
-                    )
-
-                    rating_text = (
-                        rating_element
-                        .inner_text(
-                            timeout=1000
+                        ).first.inner_text(
+                            timeout=700
                         )
-                        .strip()
-                        if rating_element.count()
-                        else ""
                     )
 
                 except Exception:
@@ -1381,23 +1155,13 @@ def amazon_search(
 
                 try:
 
-                    review_element = (
+                    review_text = _clean_text(
                         card.locator(
                             'a[href*="customerReviews"]'
-                        ).first
-                    )
-
-                    review_text = (
-                        review_element
-                        .inner_text(
-                            timeout=1000
+                        ).first.inner_text(
+                            timeout=700
                         )
-                        .strip(
-                            "() "
-                        )
-                        if review_element.count()
-                        else ""
-                    )
+                    ).strip("() ")
 
                 except Exception:
 
@@ -1460,10 +1224,8 @@ def amazon_search(
 
                 for candidate in fallback:
 
-                    candidate_url = (
-                        candidate.get(
-                            "product_url"
-                        )
+                    candidate_url = candidate.get(
+                        "product_url"
                     )
 
                     if candidate_url in existing_urls:
@@ -1496,26 +1258,9 @@ def amazon_search(
                     )
                 )
 
-            results = results[
+            return results[
                 :MAX_RESULTS
             ]
-
-            print(
-                "[AMAZON] Found "
-                f"{len(results)} products",
-                flush=True,
-            )
-
-            return results
-
-        except Exception as error:
-
-            print(
-                f"[AMAZON] ERROR: {error!r}",
-                flush=True,
-            )
-
-            raise
 
         finally:
 
@@ -1528,6 +1273,7 @@ def amazon_search(
 
             try:
                 browser.close()
+
             except Exception:
                 pass
 
@@ -1714,9 +1460,7 @@ def myntra_search(
 
         product_url = (
             landing_url
-            if landing_url.startswith(
-                "http"
-            )
+            if landing_url.startswith("http")
             else urljoin(
                 "https://www.myntra.com/",
                 landing_url,
@@ -1731,12 +1475,8 @@ def myntra_search(
         )
 
         price_value = (
-            product.get(
-                "price"
-            )
-            or product.get(
-                "mrp"
-            )
+            product.get("price")
+            or product.get("mrp")
         )
 
         rating_value = product.get(
@@ -1804,6 +1544,12 @@ def myntra_search(
             }
         )
 
+    print(
+        "[MYNTRA] Extracted candidates: "
+        f"{len(candidates)}",
+        flush=True,
+    )
+
     results = _rank_results(
         search_term,
         candidates,
@@ -1825,10 +1571,8 @@ def myntra_search(
 
         for candidate in fallback:
 
-            candidate_url = (
-                candidate.get(
-                    "product_url"
-                )
+            candidate_url = candidate.get(
+                "product_url"
             )
 
             if candidate_url in existing_urls:
@@ -1852,17 +1596,9 @@ def myntra_search(
             "product was found."
         )
 
-    results = results[
+    return results[
         :MAX_RESULTS
     ]
-
-    print(
-        "[MYNTRA] Found "
-        f"{len(results)} products",
-        flush=True,
-    )
-
-    return results
 
 
 # ============================================================
@@ -1883,9 +1619,11 @@ if __name__ == "__main__":
     term = sys.argv[1].strip()
 
     print("=" * 70)
+
     print(
         f'[TEST] SEARCH TERM: "{term}"'
     )
+
     print("=" * 70)
 
     print("\nFLIPKART:")
