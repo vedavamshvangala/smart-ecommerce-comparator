@@ -4,12 +4,7 @@ import json
 import os
 import re
 import sys
-import time
 from urllib.parse import parse_qs, quote_plus, unquote, urljoin, urlparse
-
-# ============================================================
-# RENDER / PLAYWRIGHT CONFIGURATION
-# ============================================================
 
 if os.name != "nt":
     os.environ.setdefault(
@@ -27,15 +22,16 @@ from playwright.sync_api import sync_playwright
 
 MAX_RESULTS = 2
 
-# Reduced from 60. We only need enough cards to find the top 2
-# relevant products and avoid spending time inspecting dozens of links.
 FLIPKART_MAX_LINKS = 15
-AMAZON_MAX_CARDS = 25
+
+# ============================================================
+# AMAZON SPEED CONFIGURATION
+# ============================================================
+
+AMAZON_MAX_CARDS = 15
+AMAZON_WAIT_AFTER_LOAD_MS = 500
 
 PAGE_TIMEOUT_MS = 25000
-
-# Reduced from 1500 ms. domcontentloaded already waits for the page
-# document; a short settling delay is enough for the product cards.
 WAIT_AFTER_LOAD_MS = 500
 
 
@@ -197,7 +193,6 @@ def _rank_results(
 
         score += matched_keywords * 1000
 
-        # Strongly prefer products matching all meaningful words.
         if matched_keywords == len(search_keywords):
             score += 10000
 
@@ -320,10 +315,6 @@ def _extract_price(text: str) -> str:
     if not text:
         return "Not displayed"
 
-    # Handles:
-    # ₹1,299
-    # ₹ 1,299
-    # ₹1,299.00
     match = re.search(
         r"₹\s*[\d,]+(?:\.\d{1,2})?",
         text,
@@ -497,13 +488,6 @@ def _extract_product_name(text: str) -> str:
 
 def _flipkart_card(link):
 
-    """
-    Fast Flipkart card lookup.
-
-    Instead of trying several ancestors with long individual
-    timeouts, use the first product-card ancestor directly.
-    """
-
     try:
 
         card = link.locator(
@@ -576,8 +560,6 @@ def _flipkart_extract_card(
 
         card_text = link_text
 
-    # Sometimes the card itself doesn't expose all text.
-    # Combine link + card text so price isn't lost.
     rendered = (
         card_text
         + "\n"
@@ -795,9 +777,7 @@ def main(
                     "product was found."
                 )
 
-            results = results[
-                :MAX_RESULTS
-            ]
+            results = results[:MAX_RESULTS]
 
             print(
                 "[FLIPKART] Found "
@@ -839,7 +819,6 @@ def main(
 
             try:
                 browser.close()
-
             except Exception:
                 pass
 
@@ -916,66 +895,131 @@ def _amazon_relevance_name(
     )
 
 
-def _amazon_title_link(card):
+# ============================================================
+# AMAZON - FAST EXTRACTION
+# ============================================================
 
-    selectors = (
-        'a[href*="/dp/"] h2',
-        'a[href*="/sspa/click"] h2',
-        'a.a-link-normal[href*="/dp/"]',
-        'a.a-link-normal[href*="/sspa/click"]',
-    )
+def _amazon_extract_cards_fast(
+    cards,
+    inspect_count: int,
+):
 
-    for selector in selectors:
+    """
+    Fast Amazon extraction.
 
-        matches = card.locator(
-            selector
+    Instead of calling Playwright separately for:
+        - visibility
+        - title
+        - URL
+        - price
+        - rating
+        - reviews
+
+    for every card, this extracts the required information
+    from the first cards in one browser-side operation.
+    """
+
+    try:
+
+        raw_cards = cards.evaluate_all(
+            """
+            (cards, limit) => {
+                return cards.slice(0, limit).map(card => {
+
+                    const titleElement =
+                        card.querySelector(
+                            'a[href*="/dp/"] h2'
+                        ) ||
+                        card.querySelector(
+                            'a[href*="/sspa/click"] h2'
+                        ) ||
+                        card.querySelector(
+                            'h2'
+                        );
+
+                    let title = "";
+
+                    if (titleElement) {
+                        title = (
+                            titleElement.innerText || ""
+                        ).trim();
+                    }
+
+                    let titleLink = null;
+
+                    if (titleElement) {
+                        titleLink =
+                            titleElement.closest("a");
+                    }
+
+                    if (!titleLink) {
+                        titleLink =
+                            card.querySelector(
+                                'a[href*="/dp/"]'
+                            ) ||
+                            card.querySelector(
+                                'a[href*="/sspa/click"]'
+                            );
+                    }
+
+                    const href = titleLink
+                        ? (
+                            titleLink.getAttribute("href")
+                            || ""
+                        )
+                        : "";
+
+                    const priceElement =
+                        card.querySelector(
+                            ".a-price .a-offscreen"
+                        );
+
+                    const ratingElement =
+                        card.querySelector(
+                            "span.a-icon-alt"
+                        );
+
+                    const reviewElement =
+                        card.querySelector(
+                            'a[href*="customerReviews"]'
+                        );
+
+                    return {
+                        title: title,
+                        href: href,
+                        price: priceElement
+                            ? (
+                                priceElement.innerText || ""
+                            ).trim()
+                            : "",
+                        rating: ratingElement
+                            ? (
+                                ratingElement.innerText || ""
+                            ).trim()
+                            : "",
+                        reviews: reviewElement
+                            ? (
+                                reviewElement.innerText || ""
+                            ).trim()
+                            : ""
+                    };
+                });
+            }
+            """,
+            inspect_count,
         )
 
-        for index in range(
-            matches.count()
-        ):
+        return raw_cards
 
-            element = matches.nth(
-                index
-            )
+    except Exception as error:
 
-            try:
+        print(
+            f"[AMAZON] Fast extraction error: "
+            f"{error!r}",
+            flush=True,
+        )
 
-                text = _clean_text(
-                    element.inner_text(
-                        timeout=800
-                    )
-                )
-
-            except Exception:
-
-                continue
-
-            if not text:
-                continue
-
-            if text.startswith("₹"):
-                continue
-
-            try:
-
-                tag_name = element.evaluate(
-                    "node => node.tagName"
-                )
-
-            except Exception:
-
-                tag_name = ""
-
-            if tag_name == "H2":
-
-                return element.locator(
-                    "xpath=ancestor::a[1]"
-                )
-
-            return element
-
-    return None
+        return []
 
 
 def amazon_search(
@@ -1012,8 +1056,9 @@ def amazon_search(
                 timeout=PAGE_TIMEOUT_MS,
             )
 
+            # Reduced from 1800 ms to 500 ms.
             page.wait_for_timeout(
-                1800
+                AMAZON_WAIT_AFTER_LOAD_MS
             )
 
             _raise_if_restricted(
@@ -1043,49 +1088,42 @@ def amazon_search(
                 flush=True,
             )
 
+            print(
+                "[AMAZON] Inspecting: "
+                f"{inspect_count}",
+                flush=True,
+            )
+
             candidates = []
             seen_urls = set()
 
-            for index in range(
-                inspect_count
-            ):
+            # ==================================================
+            # FAST AMAZON EXTRACTION
+            # ==================================================
 
-                card = cards.nth(
-                    index
+            raw_cards = _amazon_extract_cards_fast(
+                cards,
+                inspect_count,
+            )
+
+            for raw_card in raw_cards:
+
+                raw_title = _clean_text(
+                    raw_card.get(
+                        "title",
+                        "",
+                    )
                 )
 
-                try:
-
-                    if not card.is_visible(
-                        timeout=800
-                    ):
-                        continue
-
-                    title_link = _amazon_title_link(
-                        card
+                href = (
+                    raw_card.get(
+                        "href",
+                        "",
                     )
+                    or ""
+                )
 
-                    if title_link is None:
-                        continue
-
-                    raw_title = _clean_text(
-                        title_link.inner_text(
-                            timeout=1200
-                        )
-                    )
-
-                    href = (
-                        title_link.get_attribute(
-                            "href"
-                        )
-                        or ""
-                    )
-
-                except Exception:
-
-                    continue
-
-                if not raw_title:
+                if not raw_title or not href:
                     continue
 
                 product_identity = (
@@ -1111,41 +1149,22 @@ def amazon_search(
                     product_url
                 )
 
-                try:
-
-                    price_element = (
-                        card.locator(
-                            ".a-price .a-offscreen"
-                        ).first
+                price = _clean_text(
+                    raw_card.get(
+                        "price",
+                        "",
                     )
+                )
 
-                    price = (
-                        _clean_text(
-                            price_element.inner_text(
-                                timeout=800
-                            )
-                        )
-                        if price_element.count()
-                        else "Not displayed"
-                    )
-
-                except Exception:
-
+                if not price:
                     price = "Not displayed"
 
-                try:
-
-                    rating_text = _clean_text(
-                        card.locator(
-                            "span.a-icon-alt"
-                        ).first.inner_text(
-                            timeout=700
-                        )
+                rating_text = _clean_text(
+                    raw_card.get(
+                        "rating",
+                        "",
                     )
-
-                except Exception:
-
-                    rating_text = ""
+                )
 
                 rating_match = re.search(
                     r"(\d(?:\.\d+)?)\s+out of",
@@ -1153,19 +1172,12 @@ def amazon_search(
                     re.IGNORECASE,
                 )
 
-                try:
-
-                    review_text = _clean_text(
-                        card.locator(
-                            'a[href*="customerReviews"]'
-                        ).first.inner_text(
-                            timeout=700
-                        )
-                    ).strip("() ")
-
-                except Exception:
-
-                    review_text = ""
+                review_text = _clean_text(
+                    raw_card.get(
+                        "reviews",
+                        "",
+                    )
+                ).strip("() ")
 
                 candidates.append(
                     {
@@ -1258,9 +1270,7 @@ def amazon_search(
                     )
                 )
 
-            return results[
-                :MAX_RESULTS
-            ]
+            return results[:MAX_RESULTS]
 
         finally:
 
@@ -1273,7 +1283,6 @@ def amazon_search(
 
             try:
                 browser.close()
-
             except Exception:
                 pass
 
@@ -1596,9 +1605,7 @@ def myntra_search(
             "product was found."
         )
 
-    return results[
-        :MAX_RESULTS
-    ]
+    return results[:MAX_RESULTS]
 
 
 # ============================================================

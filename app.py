@@ -2,7 +2,9 @@ from flask import Flask, render_template, request
 import os
 import sys
 import traceback
+import time
 from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 app = Flask(__name__)
 
@@ -32,7 +34,6 @@ def search():
     print_separator()
     print("[APP] SEARCH REQUEST RECEIVED", flush=True)
 
-    # Support both GET (?q=...) and POST (search_term=...)
     search_term = (
         request.args.get("q", "").strip()
         or request.form.get("search_term", "").strip()
@@ -63,7 +64,10 @@ def search():
     amazon_status = None
     myntra_status = None
 
-    # Import the collector module only when a search happens.
+    # ----------------------------------------------------------
+    # LOAD COLLECTOR
+    # ----------------------------------------------------------
+
     try:
         import playwright_test
 
@@ -90,154 +94,335 @@ def search():
         )
 
     # ==========================================================
-    # FLIPKART
+    # STORE SEARCH FUNCTIONS
     # ==========================================================
 
-    print_separator()
-    print(f"[APP] STARTING FLIPKART SEARCH: {search_term}", flush=True)
-    print_separator()
+    def search_flipkart():
+        start_time = time.perf_counter()
 
-    try:
-        flipkart_results = playwright_test.main(search_term)
-
+        print_separator()
         print(
-            f"[APP] FLIPKART RETURNED "
-            f"{len(flipkart_results or [])} PRODUCTS",
+            f"[APP] STARTING FLIPKART SEARCH: {search_term}",
             flush=True,
         )
 
-        for product in flipkart_results or []:
+        try:
+            data = playwright_test.main(search_term)
+
+            elapsed = time.perf_counter() - start_time
+
             print(
-                f"[APP] FLIPKART PRODUCT: "
+                f"[APP] FLIPKART SEARCH FINISHED "
+                f"IN {elapsed:.2f} SECONDS",
+                flush=True,
+            )
+
+            return {
+                "store": "Flipkart",
+                "results": data or [],
+                "error": None,
+                "time": elapsed,
+            }
+
+        except Exception as error:
+            elapsed = time.perf_counter() - start_time
+
+            print(
+                f"[APP] FLIPKART ERROR AFTER "
+                f"{elapsed:.2f} SECONDS: {error!r}",
+                flush=True,
+            )
+            traceback.print_exc()
+
+            return {
+                "store": "Flipkart",
+                "results": [],
+                "error": error,
+                "time": elapsed,
+            }
+
+    def search_amazon():
+        start_time = time.perf_counter()
+
+        print_separator()
+        print(
+            f"[APP] STARTING AMAZON SEARCH: {search_term}",
+            flush=True,
+        )
+
+        try:
+            data = playwright_test.amazon_search(search_term)
+
+            elapsed = time.perf_counter() - start_time
+
+            print(
+                f"[APP] AMAZON SEARCH FINISHED "
+                f"IN {elapsed:.2f} SECONDS",
+                flush=True,
+            )
+
+            return {
+                "store": "Amazon",
+                "results": data or [],
+                "error": None,
+                "time": elapsed,
+            }
+
+        except Exception as error:
+            elapsed = time.perf_counter() - start_time
+
+            print(
+                f"[APP] AMAZON ERROR AFTER "
+                f"{elapsed:.2f} SECONDS: {error!r}",
+                flush=True,
+            )
+            traceback.print_exc()
+
+            return {
+                "store": "Amazon",
+                "results": [],
+                "error": error,
+                "time": elapsed,
+            }
+
+    def search_myntra():
+        start_time = time.perf_counter()
+
+        print_separator()
+        print(
+            f"[APP] STARTING MYNTRA SEARCH: {search_term}",
+            flush=True,
+        )
+
+        try:
+            data = playwright_test.myntra_search(search_term)
+
+            elapsed = time.perf_counter() - start_time
+
+            print(
+                f"[APP] MYNTRA SEARCH FINISHED "
+                f"IN {elapsed:.2f} SECONDS",
+                flush=True,
+            )
+
+            return {
+                "store": "Myntra",
+                "results": data or [],
+                "error": None,
+                "time": elapsed,
+            }
+
+        except Exception as error:
+            elapsed = time.perf_counter() - start_time
+
+            print(
+                f"[APP] MYNTRA ERROR AFTER "
+                f"{elapsed:.2f} SECONDS: {error!r}",
+                flush=True,
+            )
+            traceback.print_exc()
+
+            return {
+                "store": "Myntra",
+                "results": [],
+                "error": error,
+                "time": elapsed,
+            }
+
+    # ==========================================================
+    # PARALLEL SEARCH
+    # ==========================================================
+
+    print_separator()
+    print(
+        "[APP] STARTING ALL STORE SEARCHES IN PARALLEL",
+        flush=True,
+    )
+    print(
+        f"[APP] QUERY = {search_term}",
+        flush=True,
+    )
+    print_separator()
+
+    overall_start = time.perf_counter()
+
+    search_functions = {
+        "Flipkart": search_flipkart,
+        "Amazon": search_amazon,
+        "Myntra": search_myntra,
+    }
+
+    completed_results = {}
+
+    with ThreadPoolExecutor(max_workers=3) as executor:
+
+        future_map = {
+            executor.submit(function): store
+            for store, function in search_functions.items()
+        }
+
+        for future in as_completed(future_map):
+
+            store = future_map[future]
+
+            try:
+                result = future.result()
+                completed_results[store] = result
+
+            except Exception as error:
+                print(
+                    f"[APP] UNEXPECTED {store} THREAD ERROR: "
+                    f"{error!r}",
+                    flush=True,
+                )
+                traceback.print_exc()
+
+                completed_results[store] = {
+                    "store": store,
+                    "results": [],
+                    "error": error,
+                    "time": 0,
+                }
+
+    # ==========================================================
+    # PROCESS RESULTS
+    # ==========================================================
+
+    # Keep the output order:
+    # Flipkart -> Amazon -> Myntra
+
+    store_order = [
+        "Flipkart",
+        "Amazon",
+        "Myntra",
+    ]
+
+    for store in store_order:
+
+        result_data = completed_results.get(
+            store,
+            {
+                "store": store,
+                "results": [],
+                "error": None,
+                "time": 0,
+            },
+        )
+
+        store_results = result_data["results"]
+        error = result_data["error"]
+        elapsed = result_data["time"]
+
+        print(
+            f"[APP] {store.upper()} RETURNED "
+            f"{len(store_results)} PRODUCTS",
+            flush=True,
+        )
+
+        if error is not None:
+
+            status_message = (
+                f"Unable to fetch {store} results: "
+                f"{type(error).__name__}: {error}"
+            )
+
+            if store == "Flipkart":
+                flipkart_status = status_message
+
+            elif store == "Amazon":
+                amazon_status = status_message
+
+            elif store == "Myntra":
+                myntra_status = status_message
+
+            continue
+
+        if not store_results:
+
+            status_message = (
+                f"No matching {store} products found"
+            )
+
+            if store == "Flipkart":
+                flipkart_status = status_message
+
+            elif store == "Amazon":
+                amazon_status = status_message
+
+            elif store == "Myntra":
+                myntra_status = status_message
+
+        for product in store_results:
+
+            print(
+                f"[APP] {store.upper()} PRODUCT: "
                 f"{product.get('product_name')}",
                 flush=True,
             )
 
             product = dict(product)
-            product["store"] = "Flipkart"
+            product["store"] = store
             results.append(product)
 
-        if not flipkart_results:
-            flipkart_status = "No matching Flipkart products found"
-
-    except Exception as error:
-        print(
-            f"[APP] FLIPKART ERROR: {error!r}",
-            flush=True,
-        )
-        traceback.print_exc()
-
-        flipkart_status = (
-            f"Unable to fetch Flipkart results: "
-            f"{type(error).__name__}: {error}"
-        )
-
     # ==========================================================
-    # AMAZON
+    # TIMING SUMMARY
     # ==========================================================
 
-    print_separator()
-    print(f"[APP] STARTING AMAZON SEARCH: {search_term}", flush=True)
-    print_separator()
-
-    try:
-        amazon_results = playwright_test.amazon_search(search_term)
-
-        print(
-            f"[APP] AMAZON RETURNED "
-            f"{len(amazon_results or [])} PRODUCTS",
-            flush=True,
-        )
-
-        for product in amazon_results or []:
-            print(
-                f"[APP] AMAZON PRODUCT: "
-                f"{product.get('product_name')}",
-                flush=True,
-            )
-
-            product = dict(product)
-            product["store"] = "Amazon"
-            results.append(product)
-
-        if not amazon_results:
-            amazon_status = "No matching Amazon products found"
-
-    except Exception as error:
-        print(
-            f"[APP] AMAZON ERROR: {error!r}",
-            flush=True,
-        )
-        traceback.print_exc()
-
-        amazon_status = (
-            f"Unable to fetch Amazon results: "
-            f"{type(error).__name__}: {error}"
-        )
-
-    # ==========================================================
-    # MYNTRA
-    # ==========================================================
-
-    print_separator()
-    print(f"[APP] STARTING MYNTRA SEARCH: {search_term}", flush=True)
-    print_separator()
-
-    try:
-        myntra_results = playwright_test.myntra_search(search_term)
-
-        print(
-            f"[APP] MYNTRA RETURNED "
-            f"{len(myntra_results or [])} PRODUCTS",
-            flush=True,
-        )
-
-        for product in myntra_results or []:
-            print(
-                f"[APP] MYNTRA PRODUCT: "
-                f"{product.get('product_name')}",
-                flush=True,
-            )
-
-            product = dict(product)
-            product["store"] = "Myntra"
-            results.append(product)
-
-        if not myntra_results:
-            myntra_status = "No matching Myntra products found"
-
-    except Exception as error:
-        print(
-            f"[APP] MYNTRA ERROR: {error!r}",
-            flush=True,
-        )
-        traceback.print_exc()
-
-        myntra_status = (
-            f"Unable to fetch Myntra results: "
-            f"{type(error).__name__}: {error}"
-        )
-
-    # ==========================================================
-    # FINAL RESULTS
-    # ==========================================================
+    total_elapsed = time.perf_counter() - overall_start
 
     print_separator()
     print("[APP] SEARCH FINISHED", flush=True)
-    print(f"[APP] TOTAL RESULTS = {len(results)}", flush=True)
+
+    print(
+        f"[APP] FLIPKART TIME = "
+        f"{completed_results.get('Flipkart', {}).get('time', 0):.2f} SECONDS",
+        flush=True,
+    )
+
+    print(
+        f"[APP] AMAZON TIME   = "
+        f"{completed_results.get('Amazon', {}).get('time', 0):.2f} SECONDS",
+        flush=True,
+    )
+
+    print(
+        f"[APP] MYNTRA TIME   = "
+        f"{completed_results.get('Myntra', {}).get('time', 0):.2f} SECONDS",
+        flush=True,
+    )
+
+    print(
+        f"[APP] TOTAL PARALLEL TIME = "
+        f"{total_elapsed:.2f} SECONDS",
+        flush=True,
+    )
+
+    print_separator()
+
+    # ==========================================================
+    # RESULT COUNTS
+    # ==========================================================
+
+    print(
+        f"[APP] TOTAL RESULTS = {len(results)}",
+        flush=True,
+    )
 
     flipkart_count = sum(
-        1 for item in results
+        1
+        for item in results
         if item.get("store") == "Flipkart"
     )
 
     amazon_count = sum(
-        1 for item in results
+        1
+        for item in results
         if item.get("store") == "Amazon"
     )
 
     myntra_count = sum(
-        1 for item in results
+        1
+        for item in results
         if item.get("store") == "Myntra"
     )
 
@@ -245,16 +430,21 @@ def search():
         f"[APP] FLIPKART = {flipkart_count}",
         flush=True,
     )
+
     print(
         f"[APP] AMAZON   = {amazon_count}",
         flush=True,
     )
+
     print(
         f"[APP] MYNTRA   = {myntra_count}",
         flush=True,
     )
 
-    for number, item in enumerate(results, start=1):
+    for number, item in enumerate(
+        results,
+        start=1,
+    ):
         print(
             f"[APP] RESULT {number}: "
             f"[{item.get('store')}] "
@@ -281,10 +471,19 @@ def search():
 
 @app.errorhandler(Exception)
 def handle_exception(error):
+
     print_separator()
-    print("[APP] UNHANDLED FLASK ERROR", flush=True)
-    print(f"[APP] ERROR = {error!r}", flush=True)
+    print(
+        "[APP] UNHANDLED FLASK ERROR",
+        flush=True,
+    )
+    print(
+        f"[APP] ERROR = {error!r}",
+        flush=True,
+    )
+
     traceback.print_exc()
+
     print_separator()
 
     return render_template(
@@ -303,16 +502,25 @@ def handle_exception(error):
 
 if __name__ == "__main__":
 
-    port = int(os.environ.get("PORT", 5000))
+    port = int(
+        os.environ.get(
+            "PORT",
+            5000,
+        )
+    )
 
     print()
     print("=" * 70)
     print("[APP] QUICKSHOP STARTING")
     print(f"[APP] Port: {port}")
     print(f"[APP] Python: {sys.executable}")
-    print(f"[APP] Working directory: {os.getcwd()}")
+    print(
+        f"[APP] Working directory: "
+        f"{os.getcwd()}"
+    )
 
     try:
+
         import playwright_test
 
         print(
@@ -321,23 +529,27 @@ if __name__ == "__main__":
         )
 
         print("[APP] Collector functions:")
+
         print(
             f"       Flipkart = "
             f"{hasattr(playwright_test, 'main')}"
         )
+
         print(
             f"       Amazon   = "
             f"{hasattr(playwright_test, 'amazon_search')}"
         )
+
         print(
             f"       Myntra   = "
             f"{hasattr(playwright_test, 'myntra_search')}"
         )
 
     except Exception as error:
+
         print(
-            f"[APP] WARNING: Could not load playwright_test: "
-            f"{error!r}"
+            f"[APP] WARNING: Could not load "
+            f"playwright_test: {error!r}"
         )
 
     print("=" * 70)
@@ -349,3 +561,4 @@ if __name__ == "__main__":
         debug=False,
         threaded=False,
     )
+    
